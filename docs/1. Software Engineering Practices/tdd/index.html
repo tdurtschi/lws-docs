@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>TDD - Lake Wingra Software Knowledge Base</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "TDD";
+        var mkdocs_page_input_path = "1. Software Engineering Practices/tdd.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Lake Wingra Software Knowledge Base
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">LWS Knowledge Base</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">1. Software Engineering Practices</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">TDD</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#why-do-you-write-the-test-first">Why do you write the test first?</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Tips & Tricks</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2.%20Tips%20%26%20Tricks/devExperience/">Developer Experience</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2.%20Tips%20%26%20Tricks/docker/">Docker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2.%20Tips%20%26%20Tricks/dotnet/">Dotnet</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2.%20Tips%20%26%20Tricks/git/">Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2.%20Tips%20%26%20Tricks/kuberenetes/">Kubernetes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Lake Wingra Software Knowledge Base</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">1. Software Engineering Practices</li>
+      <li class="breadcrumb-item active">TDD</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="tdd">TDD</h1>
+<h2 id="why-do-you-write-the-test-first">Why do you write the test first?</h2>
+<p>Test Driven Development (TDD) is a simple software development practice: First, a failing test is written. Then, the implementation is written. When writing code with TDD, the process involves repeating these two steps over and over again. In theory, this results in all application behavior being covered by tests.</p>
+<p>Personally I have found that when it comes to software quality, no technique is more powerful than TDD. However, arguments against TDD are out there. I'd like to address just one here, which is the idea that writing the test <em>first</em> is unnecessary.</p>
+<p>Consider the following XUnit test:</p>
+<pre><code class="language-csharp">public async Task New_ThrowsErrorIfDuplicateItem()
+{
+    var service = new ItemService(new InMemoryItemRepository());
+
+    var createItemDto = () =&gt; new CreateItemDto()
+    {
+        Value = &quot;false&quot;,
+        ItemHref = &quot;https://example.com/item&quot;,
+    };
+
+    Assert.ThrowsAsync&lt;DuplicateItemException&gt;(async () =&gt;
+        await service.New([createItemDto(), createItemDto()]));
+}
+</code></pre>
+<p>In this case, I wrote the test after the function which calculates duplicates &amp; throws the error. The test passed. Nice!</p>
+<p>Then I commented this logic from the service under test. I re-ran the test expecting it to fail. However, when I ran the test, I was surprised to see that it passed! </p>
+<p>But how? In this case, <code>ThrowsAsync()</code> is asynchronous, so it must be awaited. Currently, the test exits with no failures, because the test finishes before the asynchronous operation throws the exception.</p>
+<p>Here is the point... if you don't observe the test failing for the expected reason when the implementation is missing, then you don't actually know if your test tests the code you think it does.</p>
+<p>To put it another way, in order to have confidence in the test suite, you must test the test. When the functionality is not correct, we must observe the test failing for the expected reason.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../.." class="btn btn-neutral float-left" title="LWS Knowledge Base"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../2.%20Tips%20%26%20Tricks/devExperience/" class="btn btn-neutral float-right" title="Developer Experience">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../2.%20Tips%20%26%20Tricks/devExperience/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

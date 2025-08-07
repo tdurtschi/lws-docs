@@ -1,4 +1,6 @@
-# TDD - Why do you write the test first?
+# TDD 
+
+## Why do you write the test first?
 
 Test Driven Development (TDD) is a simple software development practice: First, a failing test is written. Then, the implementation is written. When writing code with TDD, the process involves repeating these two steps over and over again. In theory, this results in all application behavior being covered by tests.
 

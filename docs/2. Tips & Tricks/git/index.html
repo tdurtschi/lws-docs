@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>TDD - Why do you write the test first? - Lake Wingra Software Knowledge Base</title>
+    <title>Git - Lake Wingra Software Knowledge Base</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "TDD - Why do you write the test first?";
-        var mkdocs_page_input_path = "Software Engineering Topics/tdd.md";
+        var mkdocs_page_name = "Git";
+        var mkdocs_page_input_path = "2. Tips \u0026 Tricks/git.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -43,18 +43,26 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">LWS Knowledge Base</a>
                 </li>
               </ul>
-              <p class="caption"><span class="caption-text">Notes</span></p>
+              <p class="caption"><span class="caption-text">1. Software Engineering Practices</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Notes/docker/">Docker</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Notes/dotnet/">Dotnet</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1.%20Software%20Engineering%20Practices/tdd/">TDD</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Software Engineering Topics</span></p>
+              <p class="caption"><span class="caption-text">2. Tips & Tricks</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">TDD - Why do you write the test first?</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../devExperience/">Developer Experience</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../docker/">Docker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dotnet/">Dotnet</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Git</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#my-aliases">My aliases</a>
+    </li>
     </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../kuberenetes/">Kubernetes</a>
                   </li>
               </ul>
       </div>
@@ -71,8 +79,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Software Engineering Topics</li>
-      <li class="breadcrumb-item active">TDD - Why do you write the test first?</li>
+          <li class="breadcrumb-item">2. Tips & Tricks</li>
+      <li class="breadcrumb-item active">Git</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -81,34 +89,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="tdd-why-do-you-write-the-test-first">TDD - Why do you write the test first?</h1>
-<p>Test Driven Development (TDD) is a simple software development practice: First, a failing test is written. Then, the implementation is written. When writing code with TDD, the process involves repeating these two steps over and over again. In theory, this results in all application behavior being covered by tests.</p>
-<p>Personally I have found that when it comes to software quality, no technique is more powerful than TDD. However, arguments against TDD are out there. I'd like to address just one here, which is the idea that writing the test <em>first</em> is unnecessary.</p>
-<p>Consider the following XUnit test:</p>
-<pre><code class="language-csharp">public async Task New_ThrowsErrorIfDuplicateItem()
-{
-    var service = new ItemService(new InMemoryItemRepository());
+                <h1 id="git">Git</h1>
+<h2 id="my-aliases">My aliases</h2>
+<p>In particular, I use lol and lola constantly.</p>
+<p>To use, amend your <code>~/.gitconfig</code> file with the aliases you want to include:</p>
+<pre><code># This is Git's per-user configuration file.
+[user]
+    # ...
 
-    var createItemDto = () =&gt; new CreateItemDto()
-    {
-        Value = &quot;false&quot;,
-        ItemHref = &quot;https://example.com/item&quot;,
-    };
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    ds = diff --staged
+    lg = log -p
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all 
 
-    Assert.ThrowsAsync&lt;DuplicateItemException&gt;(async () =&gt;
-        await service.New([createItemDto(), createItemDto()]));
-}
 </code></pre>
-<p>In this case, I wrote the test after the function which calculates duplicates &amp; throws the error. The test passed. Nice!</p>
-<p>Then I commented this logic from the service under test. I re-ran the test expecting it to fail. However, when I ran the test, I was surprised to see that it passed! </p>
-<p>But how? In this case, <code>ThrowsAsync()</code> is asynchronous, so it must be awaited. Currently, the test exits with no failures, because the test finishes before the asynchronous operation throws the exception.</p>
-<p>Here is the point... if you don't observe the test failing for the expected reason when the implementation is missing, then you don't actually know if your test tests the code you think it does.</p>
-<p>To put it another way, in order to have confidence in the test suite, you must test the test. When the functionality is not correct, we must observe the test failing for the expected reason.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../Notes/dotnet/" class="btn btn-neutral float-left" title="Dotnet"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dotnet/" class="btn btn-neutral float-left" title="Dotnet"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../kuberenetes/" class="btn btn-neutral float-right" title="Kubernetes">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -131,8 +136,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../Notes/dotnet/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../dotnet/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../kuberenetes/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
