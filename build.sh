@@ -1,0 +1,1 @@
+pushd mkdocs; mkdocs build -d ../docs; popd;

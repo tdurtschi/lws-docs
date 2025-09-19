@@ -1,6 +1,6 @@
 # Kubernetes
 
-## Creating custom kubectl shortcuts
+## Custom kubectl shortcuts
 
 These examples use zsh, but could be easily adapted to bash.
 

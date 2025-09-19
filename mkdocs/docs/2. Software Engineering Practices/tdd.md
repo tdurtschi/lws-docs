@@ -1,10 +1,14 @@
-# TDD 
+# Test Driven Development (Draft)
 
-## Why do you write the test first?
+In my experience as a software engineer, I have found no technique is more powerful than Test Driven Development, or "TDD". 
 
-Test Driven Development (TDD) is a simple software development practice: First, a failing test is written. Then, the implementation is written. When writing code with TDD, the process involves repeating these two steps over and over again. In theory, this results in all application behavior being covered by tests.
+## What is TDD
 
-Personally I have found that when it comes to software quality, no technique is more powerful than TDD. However, arguments against TDD are out there. I'd like to address just one here, which is the idea that writing the test *first* is unnecessary.
+TDD is a simple software development practice: First, a failing test is written. Then, an implementation is written that makes the test pass. When developing an application, applying TDD means to repeat these two steps over and over again.
+
+## Why test first?
+
+Although TDD can provide a lot of value, arguments against TDD are out there. I'd like to address just one here, which is the idea that writing the test *first* is unnecessary.
 
 Consider the following XUnit test:
 
@@ -24,9 +28,9 @@ public async Task New_ThrowsErrorIfDuplicateItem()
 }
 ```
 
-In this case, I wrote the test after the function which calculates duplicates & throws the error. The test passed. Nice!
+In this case, I first wrote the function `ItemService.New` which throws the duplicate error, then wrote the test which creates duplicates. The test passed. Nice!
 
-Then I commented this logic from the service under test. I re-ran the test expecting it to fail. However, when I ran the test, I was surprised to see that it passed! 
+Then I removed the duplicate check from the service under test. I re-ran the test expecting it to fail, because now it can't throw the expected error. However, when I ran the test, I was surprised to see that it passed! 
 
 But how? In this case, `ThrowsAsync()` is asynchronous, so it must be awaited. Currently, the test exits with no failures, because the test finishes before the asynchronous operation throws the exception.
 

@@ -2,7 +2,9 @@
 
 ## My aliases
 
-In particular, I use lol and lola constantly.
+I find these git aliases useful to reduce typing. In particular, I use `git lol` and `git lola` daily, since they are very helpful commands and who can remember all those flags?
+
+To use a git alias, just substitute the command with the alias. E.g. `git st` instead of `git status` .
 
 To use, amend your `~/.gitconfig` file with the aliases you want to include:
 

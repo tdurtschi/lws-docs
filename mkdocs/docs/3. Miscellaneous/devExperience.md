@@ -1,4 +1,4 @@
-# Developer Experience
+# Developer Experience Tips
 
 ## Helpful key shortcuts for MacOS
 
@@ -51,3 +51,5 @@ More information: <https://keith.github.io/xcode-man-pages/sed.1.html>.
 My preferred way to work in the terminal.
 
 see https://ohmyz.sh/
+
+https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dotenv
