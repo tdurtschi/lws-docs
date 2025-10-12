@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Test Driven Development - Lake Wingra Software Knowledge Base</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Test Driven Development";
+        var mkdocs_page_input_path = "2. Software Engineering Practices/01- tdd.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Lake Wingra Software Knowledge Base
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">1. Lake Wingra Software</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1.%20Lake%20Wingra%20Software/01%20-%20whoAreWe/">About Us</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1.%20Lake%20Wingra%20Software/02%20-%20projects/">Open Source Projects</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Software Engineering Practices</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Test Driven Development</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-it">What is it?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#why-tdd">Why TDD?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#why-test-first">Why test first?</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3.%20Miscellaneous/01%20-%20goodStuff/">Good Stuff / External Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3.%20Miscellaneous/02%20-%20devExperience/">Developer Experience Tips</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3.%20Miscellaneous/03%20-%20docker/">Docker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3.%20Miscellaneous/04%20-%20dotnet/">Dotnet</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3.%20Miscellaneous/05%20-%20git/">Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3.%20Miscellaneous/06%20-%20kuberenetes/">Kubernetes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Lake Wingra Software Knowledge Base</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">2. Software Engineering Practices</li>
+      <li class="breadcrumb-item active">Test Driven Development</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="test-driven-development">Test Driven Development</h1>
+<p>I have found no technique that with a higher impact on software quality than <strong>Test Driven Development</strong>, or "<strong>TDD</strong>". I'm a huge fan, possibly bordering on fanatic, so just know you will get a very biased view of TDD here. Most software teams do not practice TDD, and since most software engineers are very bright people, I assume their reasoning is sound! But to me the results are so clear and so valuable, I just can't imagine going without.</p>
+<h2 id="what-is-it">What is it?</h2>
+<p>TDD, or Test Driven Development, is a simple software development practice: First, a developer creates a new automated test that describes some expected behavior in the code. </p>
+<p>At this point, the developer runs the test. However, the expected behavior doesn't exist, so the test will fail. </p>
+<p><em>Fig 1 - Failing Test</em></p>
+<p><img alt="1 - Failing Test" src="img/tdd-1.png" /></p>
+<p>Only after the test runs and fails, an implementation is written that makes the test pass.</p>
+<p><img alt="2 - Passing Test" src="img/tdd-2.png" /></p>
+<p><em>Fig 2 - Passing Test</em></p>
+<p>When every automated test passes, this provides an opportunity to refactor the code.</p>
+<p>After the developer has (optionally) refactored the code, it is time to work on the next incremental feature by writing a new test.</p>
+<p>As you can see, each of the 3 steps follows one of the others, forming a cycle. A common refrain among TDD practitioners is "Red-Green-Refactor". When developing an application, applying TDD means to repeat these three steps over and over and over again.</p>
+<h2 id="why-tdd">Why TDD?</h2>
+<p>The purpose of TDD is to ensure that test coverage remains high as possible. But test coverage isn't just a metric for its own sake. Let's step back and think about why test coverage is important.</p>
+<h2 id="why-test-first">Why test first?</h2>
+<p>Although TDD can provide a lot of value, arguments against TDD are out there. I'd like to address just one here, which is the idea that writing the test <em>first</em> is unnecessary.</p>
+<p>Consider the following XUnit test:</p>
+<pre><code class="language-csharp">public async Task New_ThrowsErrorIfDuplicateItem()
+{
+    var service = new ItemService(new InMemoryItemRepository());
+
+    var createItemDto = () =&gt; new CreateItemDto()
+    {
+        Value = &quot;false&quot;,
+        ItemHref = &quot;https://example.com/item&quot;,
+    };
+
+    Assert.ThrowsAsync&lt;DuplicateItemException&gt;(async () =&gt;
+        await service.New([createItemDto(), createItemDto()]));
+}
+</code></pre>
+<p>In this case, I first wrote the function <code>ItemService.New</code> which throws the duplicate error, then wrote the test which creates duplicates. The test passed. Nice!</p>
+<p>Then I removed the duplicate check from the service under test. I re-ran the test expecting it to fail, because now it can't throw the expected error. However, when I ran the test, I was surprised to see that it passed! </p>
+<p>But how? In this case, <code>ThrowsAsync()</code> is asynchronous, so it must be awaited. Currently, the test exits with no failures, because the test finishes before the asynchronous operation throws the exception.</p>
+<p>Here is the point... if you don't observe the test failing for the expected reason when the implementation is missing, then you don't actually know if your test tests the code you think it does.</p>
+<p>To put it another way, in order to have confidence in the test suite, you must test the test. When the functionality is not correct, we must observe the test failing for the expected reason.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../1.%20Lake%20Wingra%20Software/02%20-%20projects/" class="btn btn-neutral float-left" title="Open Source Projects"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../3.%20Miscellaneous/01%20-%20goodStuff/" class="btn btn-neutral float-right" title="Good Stuff / External Resources">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../1.%20Lake%20Wingra%20Software/02%20-%20projects/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../3.%20Miscellaneous/01%20-%20goodStuff/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

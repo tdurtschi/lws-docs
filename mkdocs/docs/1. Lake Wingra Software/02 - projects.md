@@ -1,6 +1,4 @@
-# Projects
-
-## Open Source Projects
+# Open Source Projects
 
 [Block Game](https://tdurtschi.github.io/block-game/) ([GitHub](https://github.com/tdurtschi/block-game))
 
