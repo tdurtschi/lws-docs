@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Kubernetes - Lake Wingra Software Knowledge Base</title>
+    <title>Dotnet - Lake Wingra Software Knowledge Base</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Kubernetes";
-        var mkdocs_page_input_path = "3. Miscellaneous/kuberenetes.md";
+        var mkdocs_page_name = "Dotnet";
+        var mkdocs_page_input_path = "3. Miscellaneous/04 - dotnet.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -45,33 +45,33 @@
               </ul>
               <p class="caption"><span class="caption-text">1. Lake Wingra Software</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../1.%20Lake%20Wingra%20Software/01whoAreWe/">About Us</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1.%20Lake%20Wingra%20Software/01%20-%20whoAreWe/">About Us</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../1.%20Lake%20Wingra%20Software/02projects/">Projects</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1.%20Lake%20Wingra%20Software/02%20-%20projects/">Open Source Projects</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">2. Software Engineering Practices</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../2.%20Software%20Engineering%20Practices/tdd/">Test Driven Development (Draft)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2.%20Software%20Engineering%20Practices/01-%20tdd/">Test Driven Development</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">3. Miscellaneous</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../devExperience/">Developer Experience Tips</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../01%20-%20goodStuff/">Good Stuff / External Resources</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../docker/">Docker</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../02%20-%20devExperience/">Developer Experience Tips</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../dotnet/">Dotnet</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../03%20-%20docker/">Docker</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../git/">Git</a>
-                  </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Kubernetes</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Dotnet</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#custom-kubectl-shortcuts">Custom kubectl shortcuts</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#k9s">k9s</a>
+    <li class="toctree-l2"><a class="reference internal" href="#override-a-value-in-appsettingsjson-with-environment-variable">Override a value in appsettings.json with environment variable</a>
     </li>
     </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05%20-%20git/">Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06%20-%20kuberenetes/">Kubernetes</a>
                   </li>
               </ul>
       </div>
@@ -89,7 +89,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">3. Miscellaneous</li>
-      <li class="breadcrumb-item active">Kubernetes</li>
+      <li class="breadcrumb-item active">Dotnet</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -98,48 +98,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="kubernetes">Kubernetes</h1>
-<h2 id="custom-kubectl-shortcuts">Custom kubectl shortcuts</h2>
-<p>These examples use zsh, but could be easily adapted to bash.</p>
-<p>To edit the zsh config file:</p>
-<pre><code class="language-bash">vim ~/.zshrc
-</code></pre>
-<p>Note: make sure you restart the terminal after making these updates, or run <code>zsh</code> to create a new session.</p>
-<p>Here are the aliases I use today:</p>
-<pre><code class="language-bash">alias k=kubectl
-alias kdev=&quot;kubectl config set-context --current --namespace=dev&quot;
-alias kqa=&quot;kubectl config set-context --current --namespace=qa&quot;
-alias kuat=&quot;kubectl config set-context --current --namespace=uat&quot;
-alias kgp=&quot;kubectl get pods&quot;
+                <h1 id="dotnet">Dotnet</h1>
+<h2 id="override-a-value-in-appsettingsjson-with-environment-variable">Override a value in appsettings.json with environment variable</h2>
+<p>To override application config using environment variables, use the following naming convention:</p>
+<pre><code class="language-bash"># For this appsettings.json file: {&quot;MyService&quot;: {&quot;Enabled&quot;: &quot;false&quot;}}
 
-kenv() { kubectl config set-context --current --namespace=$1; }
-kbash() { kubectl exec --stdin --tty $1 -- /bin/bash; }
-</code></pre>
-<p>As you can see, I use alias to create shortcuts for very common commands. If a shortcut requires an argument, you can create a function.</p>
-<p>Example usage:</p>
-<pre><code class="language-bash">&gt; kqa
-Context &quot;k8s-context&quot; modified.
+# Use an override for MyService.Enabled:
+# (Note the double underscore used instead of colon in env variable name)
+MyService__Enabled=&quot;true&quot; dotnet run --project MyProject 
 
-&gt; kgp
-NAME                                  READY   STATUS      RESTARTS   AGE
-my-service-99bcfcdf5-9vvkl            1/1     Running     0          25d
-
-&gt; kbash my-service-99bcfcdf5-9vvkl 
-root@my-service-99bcfcdf5-9vvkl:/&gt; 
+# Use defaults from appsettings.json:
+dotnet run --project MyProject
 </code></pre>
-<h2 id="k9s">k9s</h2>
-<p>Consider <a href="https://k9scli.io/">k9s</a> to simplify kubernetes management tasks including:</p>
-<ul>
-<li>Describing pods</li>
-<li>Executing shell on a pod</li>
-<li>Port forwarding</li>
-<li>Vewing Logs</li>
-</ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../git/" class="btn btn-neutral float-left" title="Git"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../03%20-%20docker/" class="btn btn-neutral float-left" title="Docker"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../05%20-%20git/" class="btn btn-neutral float-right" title="Git">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -162,8 +138,10 @@ root@my-service-99bcfcdf5-9vvkl:/&gt;
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../git/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../03%20-%20docker/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../05%20-%20git/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
