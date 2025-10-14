@@ -30,17 +30,17 @@ As you can see, each of the 3 steps follows one of the others, forming a __cycle
 
 The purpose of TDD is to ensure that test coverage remains as high as possible. But test coverage isn't just a metric for its own sake. Let’s step back and ask: why is test coverage important?
 
-What really matters at the end of the day is good software. In other words, the app should work! To make sure it works, we test it out. If the code is complete and it has been manually tested, we can confently deliver the app and call it a day. 
+What really matters at the end of the day is good software. In other words, the app should work! To make sure it works, we test it out. If the code is complete and it has been manually tested, we can confidently deliver the app and call it a day. 
 
 ![5 - Overly Simple diagram](../img/tdd-5.png)
 
 If only it was so simple!
 
-The reality for nearly all software is that it is never done; it is always being tweaked and improved. Top software companies like Amazon and Google push new updates to their major products daily or even multiple times a day. There is a term for this: [__Continuous Delivery__](https://martinfowler.com/books/continuousDelivery.html).
+The reality for nearly all software is that it's never done; it is always being tweaked and improved. Top software companies like Amazon and Google push new updates to their flagship products daily or even multiple times a day. There is a term for this: [__Continuous Delivery__](https://martinfowler.com/books/continuousDelivery.html).
 
 ![6 - Another cycle](../img/tdd-6.png)
 
-So a tension is born. We want frequent changes to the code, and we want to deliver quickly, but we also want the app to work. Some teams accept the risk of breaking things, and simply don't test. Other teams pay some error-prone humans to test each version of the app before it gets shipped. The third option is comprehensive __automated tests__. Having good test coverage is about delivering __quickly and confidently__.
+So a tension is born. We want frequent changes to the code, and we want to deliver quickly, but we also want the app to work. Some teams accept the risk of breaking things, and simply don't test. Other teams pay some error-prone humans to test each version of the app before it gets shipped. The third option is comprehensive __automated tests__. Having good test coverage is about __delivering quickly _and_ confidently__.
 
 ## Invest in Tests
 
@@ -52,7 +52,7 @@ However, beyond that lies another big return on investment in the form of __deve
 
 ## Test First
 
-One of the biggest arguments against TDD is that the whole idea of 'writing the test first' is unnecessary. But I think when you drill down on what makes a good test, the idea of writing them first naturally follows.
+One of the biggest arguments against TDD is that the whole idea of writing the test _first_ is unnecessary. But to me, when I think about what makes a test good, the idea of writing them first naturally follows.
 
 The main thing a good test should do is pass when things work as expected, and fail when they don't work as expected. It sounds obvious but it's worth saying. As the author of a good test, a developer needs to verify both of these scenarios. In other words, they must try the test on 2 different versions of the code and see that the test passes under the expected condition, and fails under incorrect conditions.
 
