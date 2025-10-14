@@ -50,7 +50,7 @@ First, as I mentioned earlier, your automated tests replace testing by hand. In 
 
 However, beyond that lies another big return on investment in the form of __developer confidence__. This is somewhat hard to convey if you haven't experienced it, but it's undeniable for many who have worked on well-tested codebases. In short, having tests gives you freedom to make bigger, bolder changes to the code, especially __refactoring__. A great deep dive on this is Matthew Parker's [Why TDD](https://blogs.vmware.com/tanzu/why-tdd/).
 
-## Why Test First?
+## Test First
 
 One of the biggest arguments against TDD is that the whole idea of 'writing the test first' is unnecessary. But I think when you drill down on what makes a good test, the idea of writing them first naturally follows.
 
