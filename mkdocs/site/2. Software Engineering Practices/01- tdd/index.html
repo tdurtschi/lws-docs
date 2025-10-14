@@ -45,7 +45,7 @@
               </ul>
               <p class="caption"><span class="caption-text">1. Lake Wingra Software</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../1.%20Lake%20Wingra%20Software/01%20-%20whoAreWe/">About Us</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1.%20Lake%20Wingra%20Software/01%20-%20whoAreWe/">About</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../1.%20Lake%20Wingra%20Software/02%20-%20projects/">Open Source Projects</a>
                   </li>
@@ -56,9 +56,17 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#what-is-it">What is it?</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#why-tdd">Why TDD?</a>
+    <li class="toctree-l2"><a class="reference internal" href="#why-test">Why Test?</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#why-test-first">Why test first?</a>
+    <li class="toctree-l2"><a class="reference internal" href="#invest-in-tests">Invest in Tests</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#why-test-first">Why Test First?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#learn-more-about-tdd">Learn more about TDD</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#resources">Resources</a>
+    </li>
+        </ul>
     </li>
     </ul>
                   </li>
@@ -103,42 +111,48 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="test-driven-development">Test Driven Development</h1>
-<p>I have found no technique that with a higher impact on software quality than <strong>Test Driven Development</strong>, or "<strong>TDD</strong>". I'm a huge fan, possibly bordering on fanatic, so just know you will get a very biased view of TDD here. Most software teams do not practice TDD, and since most software engineers are very bright people, I assume their reasoning is sound! But to me the results are so clear and so valuable, I just can't imagine going without.</p>
+<p>I have found no technique that with a higher impact on software quality than <strong>Test Driven Development</strong>, or <strong>TDD</strong>. I'm a huge fan, possibly bordering on fanatic, so just know you will get a very biased view of TDD here. Most teams do not practice TDD, and since most software engineers are very bright people, I assume their reasoning is sound! But to me the results are so clear and so valuable, I just can't imagine going without.</p>
 <h2 id="what-is-it">What is it?</h2>
-<p>TDD, or Test Driven Development, is a simple software development practice: First, a developer creates a new automated test that describes some expected behavior in the code. </p>
+<p>TDD, or Test Driven Development, is a simple, 3-step software development practice. </p>
+<p>First, a developer creates a new automated test that describes some expected behavior of the code. Behaviors are just the various ways your software behaves given different inputs. Here's an example: <em>"If the user types an invalid character in the field, it should indicate an error by applying a red outline"</em>. </p>
 <p>At this point, the developer runs the test. However, the expected behavior doesn't exist, so the test will fail. </p>
-<p><em>Fig 1 - Failing Test</em></p>
-<p><img alt="1 - Failing Test" src="img/tdd-1.png" /></p>
-<p>Only after the test runs and fails, an implementation is written that makes the test pass.</p>
-<p><img alt="2 - Passing Test" src="img/tdd-2.png" /></p>
-<p><em>Fig 2 - Passing Test</em></p>
+<p><img alt="1 - Failing Test" src="../../img/tdd-1.png" /></p>
+<p>After running the test and watching it fail, the developer writes some code that makes the test pass.</p>
+<p><img alt="2 - Passing Test" src="../../img/tdd-2.png" /></p>
 <p>When every automated test passes, this provides an opportunity to refactor the code.</p>
+<p><img alt="3 - Refactor!" src="../../img/tdd-3.png" /></p>
 <p>After the developer has (optionally) refactored the code, it is time to work on the next incremental feature by writing a new test.</p>
-<p>As you can see, each of the 3 steps follows one of the others, forming a cycle. A common refrain among TDD practitioners is "Red-Green-Refactor". When developing an application, applying TDD means to repeat these three steps over and over and over again.</p>
-<h2 id="why-tdd">Why TDD?</h2>
-<p>The purpose of TDD is to ensure that test coverage remains high as possible. But test coverage isn't just a metric for its own sake. Let's step back and think about why test coverage is important.</p>
-<h2 id="why-test-first">Why test first?</h2>
-<p>Although TDD can provide a lot of value, arguments against TDD are out there. I'd like to address just one here, which is the idea that writing the test <em>first</em> is unnecessary.</p>
-<p>Consider the following XUnit test:</p>
-<pre><code class="language-csharp">public async Task New_ThrowsErrorIfDuplicateItem()
-{
-    var service = new ItemService(new InMemoryItemRepository());
-
-    var createItemDto = () =&gt; new CreateItemDto()
-    {
-        Value = &quot;false&quot;,
-        ItemHref = &quot;https://example.com/item&quot;,
-    };
-
-    Assert.ThrowsAsync&lt;DuplicateItemException&gt;(async () =&gt;
-        await service.New([createItemDto(), createItemDto()]));
-}
-</code></pre>
-<p>In this case, I first wrote the function <code>ItemService.New</code> which throws the duplicate error, then wrote the test which creates duplicates. The test passed. Nice!</p>
-<p>Then I removed the duplicate check from the service under test. I re-ran the test expecting it to fail, because now it can't throw the expected error. However, when I ran the test, I was surprised to see that it passed! </p>
-<p>But how? In this case, <code>ThrowsAsync()</code> is asynchronous, so it must be awaited. Currently, the test exits with no failures, because the test finishes before the asynchronous operation throws the exception.</p>
-<p>Here is the point... if you don't observe the test failing for the expected reason when the implementation is missing, then you don't actually know if your test tests the code you think it does.</p>
-<p>To put it another way, in order to have confidence in the test suite, you must test the test. When the functionality is not correct, we must observe the test failing for the expected reason.</p>
+<p><img alt="4 - Loop is completed" src="../../img/tdd-4.png" /></p>
+<p>As you can see, each of the 3 steps follows one of the others, forming a <strong>cycle</strong>. When developing an application, applying TDD means to repeat the cycle over and over and over again. A concise way to remember this is "<strong>Red-Green-Refactor</strong>".</p>
+<h2 id="why-test">Why Test?</h2>
+<p>The purpose of TDD is to ensure that test coverage remains as high as possible. But test coverage isn't just a metric for its own sake. Let’s step back and ask: why is test coverage important?</p>
+<p>What really matters at the end of the day is good software. In other words, the app should work! To make sure it works, we test it out. If the code is complete and it has been manually tested, we can confently deliver the app and call it a day. </p>
+<p><img alt="5 - Overly Simple diagram" src="../../img/tdd-5.png" /></p>
+<p>If only it was so simple!</p>
+<p>The reality for nearly all software is that it is never done; it is always being tweaked and improved. Top software companies like Amazon and Google push new updates to their major products daily or even multiple times a day. There is a term for this: <a href="https://martinfowler.com/books/continuousDelivery.html"><strong>Continuous Delivery</strong></a>.</p>
+<p><img alt="6 - Another cycle" src="../../img/tdd-6.png" /></p>
+<p>So a tension is born. We want frequent changes to the code, and we want to deliver quickly, but we also want the app to work. Some teams accept the risk of breaking things, and simply don't test. Other teams pay some error-prone humans to test each version of the app before it gets shipped. The third option is comprehensive <strong>automated tests</strong>. Having good test coverage is about delivering <strong>quickly and confidently</strong>.</p>
+<h2 id="invest-in-tests">Invest in Tests</h2>
+<p>One argument against TDD is that writing automated tests takes too long, or it is too hard. I won't argue that it takes time and can be difficult, especially at first. But the other side of this equation deserves exploring. When we invest in tests, what do we get for our efforts?</p>
+<p>First, as I mentioned earlier, your automated tests replace testing by hand. In many cases <strong>manual testing can be eliminated</strong> by comprehensive tests. That's probably reason enough to write automated tests.</p>
+<p>However, beyond that lies another big return on investment in the form of <strong>developer confidence</strong>. This is somewhat hard to convey if you haven't experienced it, but it's undeniable for many who have worked on well-tested codebases. In short, having tests gives you freedom to make bigger, bolder changes to the code, especially <strong>refactoring</strong>. A great deep dive on this is Matthew Parker's <a href="https://blogs.vmware.com/tanzu/why-tdd/">Why TDD</a>.</p>
+<h2 id="why-test-first">Why Test First?</h2>
+<p>One of the biggest arguments against TDD is that the whole idea of 'writing the test first' is unnecessary. But I think when you drill down on what makes a good test, the idea of writing them first naturally follows.</p>
+<p>The main thing a good test should do is pass when things work as expected, and fail when they don't work as expected. It sounds obvious but it's worth saying. As the author of a good test, a developer needs to verify both of these scenarios. In other words, they must try the test on 2 different versions of the code and see that the test passes under the expected condition, and fails under incorrect conditions.</p>
+<p>I really want to drive this point: <strong>if a test has never failed, it's not a good test</strong>. I have encountered many tests that look correct at first glance but never fail due to some bug in the test. </p>
+<p>So a test should fail. The only remaining question is, at what point in development should the test fail? </p>
+<ul>
+<li>The test fails <strong>first</strong>. Congratulations, you're doing TDD! </li>
+<li>The implementation comes first, then a test which passes. Then <strong>at the end</strong>, the implementation is temporarily removed to verify the test will fail. This is still effective, but it does add an extra step.</li>
+</ul>
+<p>For me, the choice is clear. Only writing the test <strong>first</strong> gives me the confidence I need while avoiding extra work. That's why I TDD!</p>
+<h2 id="learn-more-about-tdd">Learn more about TDD</h2>
+<p>Let's chat about TDD or discuss how adopting TDD could improve outcomes for your team! </p>
+<h3 id="resources">Resources</h3>
+<ul>
+<li><a href="https://martinfowler.com/bliki/TestDrivenDevelopment.html">Test Driven Development - Martin Fowler</a></li>
+<li><a href="https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530">Test Driven Development By Example - Kent Beck (Amazon)</a></li>
+</ul>
               
             </div>
           </div><footer>
