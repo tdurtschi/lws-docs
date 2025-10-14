@@ -1,6 +1,6 @@
 # Test Driven Development
 
-I have found no technique that with a higher impact on software quality than __Test Driven Development__, or __TDD__. I'm a huge fan, possibly bordering on fanatic, so just know you will get a very biased view of TDD here. Most teams do not practice TDD, and since most software engineers are very bright people, I assume their reasoning is sound! But to me the results are so clear and so valuable, I just can't imagine going without.
+I have found no technique with a higher impact on software quality than __Test Driven Development__, or __TDD__. I'm a huge fan, possibly bordering on fanatic, so just know you will get a very biased view of TDD here. Most teams do not practice TDD, and since most software engineers are very bright people, I assume their reasoning is sound! But to me the results are so clear and so valuable, I just can't imagine going without.
 
 ## What is it?
 
