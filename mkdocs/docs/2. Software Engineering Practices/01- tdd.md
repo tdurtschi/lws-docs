@@ -40,7 +40,7 @@ The reality for nearly all software is that it's never done; it is always being 
 
 ![6 - Another cycle](../img/tdd-6.png)
 
-So a tension is born. We want frequent changes to the code, and we want to deliver quickly, but we also want the app to work. Some teams accept the risk of breaking things, and simply don't test. Other teams pay some error-prone humans to test each version of the app before it gets shipped. The third option is comprehensive __automated tests__. Having good test coverage is about __delivering quickly _and_ confidently__.
+By completing the cycle, some tension is created. We want frequent changes to the code, and we want to deliver quickly, but we also want the app to work. Some teams accept the risk of breaking things, and simply don't test. Other teams pay some slow, error-prone humans to test each version of the app before it gets shipped. The third option is comprehensive __automated tests__. If the goal is __delivering quickly _and_ confidently__, the best way to achieve this is with automated test coverage.
 
 ## Invest in Tests
 
