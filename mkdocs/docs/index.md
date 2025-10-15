@@ -1,5 +1,5 @@
-Return to [Home Page](https://lakewingrasoftware.azureedge.net).
+# Lake Wingra Software - Knowledge Base
 
-# LWS Knowledge Base
+Return to the [Home Page](https://lakewingrasoftware.azureedge.net).
 
-Welcome to the LWS Knowledge Base. Use the navigation pane to browse content.
+Use the navigation pane to browse content.

@@ -4,11 +4,13 @@
 
 ![PFP](../img/profile.jpeg)
 
-Hello, I'm Teagan Durtschi. I created Lake Wingra Software with the goal of connecting with great people to work on interesting projects. 
+Hello, I'm Teagan Durtschi. I created Lake Wingra Software with the goal of connecting with great people to work on awesome software. 
 
-Since 2022, I've been lucky to collaborate with a diverse set of different teams in different industries, including healthcare, manufacturing, retail, and agriculture. I enjoy hitting the ground running and identifying high-impact areas to help teams improve their software products.
+Since 2022, I've enjoyed collaborations with teams in various industries including healthcare, manufacturing, retail, and agriculture. I like to hit the ground running and help teams identify high-impact ways to improve their products.
 
-Do you need help building or refining your product? Let's connect! Send me an email `lakewingrasoftware@gmail.com` or DM me on [LinkedIn](https://www.linkedin.com/in/teagandurtschi/).
+Do you need help building or improving your software? __Let's connect!__ Send me an email [lakewingrasoftware@gmail.com](mailto:lakewingrasoftware@gmail.com) or DM me on [LinkedIn](https://www.linkedin.com/in/teagandurtschi/).
+
+## Resumes
 
 Looking for a [Software Engineering resume](https://lakewingrasoftware.azureedge.net/Teagan_Durtschi_Resume.pdf)?
 
