@@ -10,7 +10,9 @@ Since 2022, I've collaborated with teams in various industries including healthc
 
 ## Let's Connect!
 
-Do you need help building something new or improving your existing software? __Let's connect!__ Send me an email [lakewingrasoftware@gmail.com](mailto:lakewingrasoftware@gmail.com) or DM me on [LinkedIn](https://www.linkedin.com/in/teagandurtschi/).
+Do you need help building something new or improving your existing software?
+
+__Let's connect!__ Send me an email [lakewingrasoftware@gmail.com](mailto:lakewingrasoftware@gmail.com) or DM me on [LinkedIn](https://www.linkedin.com/in/teagandurtschi/).
 
 ## Resumes
 
