@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://tdurtschi.github.io/lws-docs/2.%20Software%20Engineering%20Practices/refactoring/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://tdurtschi.github.io/lws-docs/2.%20Software%20Engineering%20Practices/02-%20refactoring/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
     <title>Refactoring - Lake Wingra Software Knowledge Base</title>
     <link rel="stylesheet" href="../../css/theme.css" />
@@ -13,8 +13,8 @@
       <script>
         // Current page data
         var mkdocs_page_name = "Refactoring";
-        var mkdocs_page_input_path = "2. Software Engineering Practices/refactoring.md";
-        var mkdocs_page_url = "/lws-docs/2.%20Software%20Engineering%20Practices/refactoring/";
+        var mkdocs_page_input_path = "2. Software Engineering Practices/02- refactoring.md";
+        var mkdocs_page_url = "/lws-docs/2.%20Software%20Engineering%20Practices/02-%20refactoring/";
       </script>
     
     <!--[if lt IE 9]>
@@ -64,7 +64,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#refactoring-confidently">Refactoring Confidently</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#its-getting-late">It's Getting Late</a>
+    <li class="toctree-l2"><a class="reference internal" href="#when-is-it-too-late">When is it Too Late?</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#learn-more-about-refactoring">Learn More About Refactoring</a>
     </li>
@@ -111,21 +111,24 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="refactoring">Refactoring</h1>
-<p>To explain why refactoring is important, let me first begin with a cautionary tale...</p>
+<p><a href="https://en.wikipedia.org/wiki/Code_refactoring">Wikipedia</a> defines refactoring as "restructuring existing source code—changing the factoring—without changing its external behavior." I like this definition, but it is a bit technical. A simple way to think of refactoring is cleaning or re-organizing code.</p>
+<p>To explain why regular refactoring is important, consider this example drawn from personal experience...</p>
 <h2 id="a-cautionary-tale">A Cautionary Tale</h2>
 <p>A new project begins with a clean slate and developers start hammering away on new features. The codebase is small, so it is easy to see the various pieces and how they fit together. Updating the code is a breeze because there isn't much that can go wrong, and if something breaks it will be easy to notice. Stakeholders are happy with the team's velocity. The team is generally small at this stage and everyone has an intuitive sense of what's going on.</p>
-<p>Time goes by, and the complexity gradually and steadily increases. After a while, there are dozens of components interacting with each other, and hundreds of individual features supporting several critical user workflows. Individual contributors only a partial understanding of the whole system. The cost of breaking something is much higher since the app is so much more useful. At the same time, it's harder for any single person to grasp how everything fits together. Developers begin to lose their self-confidence and become anxious about making changes to the code. Delivery slows down, and bugs find their way into the system.</p>
-<p>Eventually, the complexity of the app becomes overwhelming. The speed of delivery tapers off, deadlines are missed, outages happen. If this continues, progress could grind to a halt. The codebase starts to resemble a Jenga tower at risk of collapse.</p>
+<p>Time goes by, and the complexity gradually and steadily increases. After a while, there are dozens of components interacting with each other, and hundreds of individual features supporting several critical user workflows. Each individual contributor only has a partial understanding of the whole system. </p>
+<p>At this point, the stakeholders are still expecting fast delivery of features. The delivery pressure means things are shipped as soon as they work. Components are added haphazardly without taking time to consider the design of the whole system, code snippets are copy/pasted, and features are shipped without tests.</p>
+<p>At this point in development, the cost of breaking things is much higher because real users may experience outages. At the same time, it's harder for any single person to grasp how everything fits together. Reviewing code changes becomes difficult. Developers begin to lose their self-confidence and become anxious about making changes to the code. Delivery slows down, and bugs find their way into the system.</p>
+<p>Time goes on and complexity keeps increasing. At a certain point, it becomes overwhelming. The speed of delivery tapers. Deadlines are missed. Outages happen. If this continues, progress can even grind to a halt.  Eventually, someone brings up the idea of rewriting the app. The codebase resembles a Jenga tower on the verge of collapse.</p>
 <p><img alt="Jenga" src="../../img/Jenga_tower_1.JPG" /></p>
-<p>Unfortunately, this cautionary tale is based on several real-world experiences. Without taking proactive steps to manage the complexity, software projects often follow a trajectory similar to the one in this story. The question is, what can be done to prevent this situation for new projects, and how can we recover from this situation in existing projects?</p>
+<p>Unfortunately, this cautionary tale is based on my own real-world experience on a few different teams. Without taking <strong>proactive</strong> steps to manage the complexity, software projects often follow a trajectory similar to the one in this story. What can be done to prevent this situation for new projects? And how can we recover from this situation in existing projects?</p>
 <h2 id="on-complexity">On Complexity</h2>
-<p>One important point about complexity is that it can be broken down into two categories: <strong>necessary</strong> and <strong>unnecessary</strong> complexity. What I mean is that certain complexity is baked in, or <strong>necessary</strong>. Put another way, this is "business logic". For example, an double-entry accounting app must record each entry in two accounts, a social media app must store relationships between users, and a game must keep track of the player's state.</p>
-<p>Sometimes complexity is <strong>unnecessary</strong>. A simple example of unnecessary complexity is duplicated code. Another example is a confusing data model. I'd put over-engineered code and duct-tape fixes into this category as well.</p>
-<p>I like visual aids, so here is a graph showing the typical progression of necessary and unnecessary complexity in a codebase without refactoring:
+<p>One important point about complexity is that it can be broken down into two categories: <strong>necessary</strong> and <strong>unnecessary</strong> complexity. </p>
+<p>For any given application, certain complexity is baked in, or <strong>necessary</strong>. Put another way, this is "business logic". For example, an double-entry accounting app must record each entry in two accounts, a social media app must store relationships between users, and a game must keep track of the player's state.</p>
+<p>Sometimes complexity is <strong>unnecessary</strong>. For example, a double-entry accounting app uses the term 'entry' in some places but refers to entries as 'transactions' in other places. Unnecessary complexity is a natural side effect of programming. I'd put over-engineered code and duct-tape fixes into this category as well.</p>
+<p>Here is a conceptual graph showing the typical progression of necessary and unnecessary complexity in a codebase without refactoring:
 <img alt="1 - No Refactoring" src="../../img/refactor1%20Medium.jpeg" /></p>
 <h2 id="why-refactor">Why Refactor?</h2>
-<p><a href="https://en.wikipedia.org/wiki/Code_refactoring">Wikipedia</a> defines refactoring as "restructuring existing source code—changing the factoring—without changing its external behavior." </p>
-<p>By distinguishing necessary and unnecessary complexity, it's easy to see that the only way to bring down the <strong>total</strong> complexity is to tackle <strong>unnecessary</strong> complexity. If we want to deliver with high speed and confidence over a long time period, we must refactor. </p>
+<p>By distinguishing necessary and unnecessary complexity, it's easy to see that the only way to bring down the <strong>total</strong> complexity is to tackle <strong>unnecessary</strong> complexity. The mechanism we use to do this is refactoring, meaning, that we update the code to simplify it without changing the underlying behavior of the app. If we want to deliver with high speed and confidence over a long time period, we must refactor. </p>
 <p>When refactoring becomes a regular part of development, it can make a <strong>significant impact</strong> on the overall complexity:</p>
 <p><img alt="2 - With Regular Refactoring" src="../../img/refactor2%20Medium.jpeg" /></p>
 <h2 id="refactoring-confidently">Refactoring Confidently</h2>
@@ -133,12 +136,12 @@
 <p>To refactor successfully, we need to avoid becoming overwhelmed, and this is mainly a preventative effort. Refactoring should begin early on in the project, and be a regular part of development. It's routine maintenance.</p>
 <p><em>"A stitch in time saves nine."</em></p>
 <p>We also need to make sure the developers have confidence that their changes are correct. This is primarily done through automated testing. <a href="../01-%20tdd/">Test-Driven Development</a> is <strong>the best way</strong> to achieve good test coverage. Like refactoring, this is most effective when started early and made a regular part of development.</p>
-<h2 id="its-getting-late">It's Getting Late</h2>
+<h2 id="when-is-it-too-late">When is it Too Late?</h2>
 <p>In an ideal world, all codebases would get the necessary regular maintenance. But in the real world, this doesn't always happen. What can be done about applications that are already facing significant challenges, like the one I described in my cautionary tale?</p>
-<p>Unfortunately, this is a very challenging situation and teams can spend a lot of time digging themselves out of this hole! </p>
-<p>The hole may be deeper, but the basic approach is the same. Validating the expected app behavior with automated tests is paramount, as this creates the confidence needed for major code changes. More often than not, collaboration with users &amp; business stakeholders will be necessay to even define the expected program behavior.</p>
-<p>Next, possible refactors should be identified and the team should consider the cost/benefit of each. A <a href="https://labspractices.com/practices/2x2/">2x2 prioritization</a> exercise can be useful to identify the highest priority changes.</p>
-<p>In extreme cases, a rewrite may be the best option. However, this carries major costs and should be considered only as a last resort (in my opinion).</p>
+<p>Unfortunately, this is a very challenging situation and teams can spend a lot of resources digging themselves out of this hole! </p>
+<p>The hole may be deep, but the basic approach is the same. Validating the expected app behavior with automated tests is paramount, as this creates the confidence needed for major code changes. More often than not, collaboration with users &amp; business stakeholders will be necessay to even define the expected program behavior.</p>
+<p>Next, refactoring tasks should be identified and the team should consider the cost/benefit of each. A <a href="https://labspractices.com/practices/2x2/">2x2 prioritization</a> exercise can be useful to identify the highest priority changes.</p>
+<p>In extreme cases, a rewrite may be the best option. However, this carries major costs and should be considered only as a last resort (in my opinion). A lite variant of this would be a targeted rewrite of certain components, which can provide some benefit without the effort of recreating the entire application from scratch.</p>
 <h2 id="learn-more-about-refactoring">Learn More About Refactoring</h2>
 <p>Would you like to learn more about how regular refactoring can improve your team's software delivery? Are you struggling with slow progress and buggy software updates? <a href="../../1.%20Lake%20Wingra%20Software/01%20-%20whoAreWe/#lets-connect">Let's chat</a>!</p>
               
