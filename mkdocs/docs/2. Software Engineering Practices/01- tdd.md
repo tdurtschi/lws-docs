@@ -48,7 +48,7 @@ One argument against TDD is that writing automated tests takes too long, or it i
 
 First, as I mentioned earlier, your automated tests replace testing by hand. In many cases __manual testing can be eliminated__ by comprehensive tests. That's probably reason enough to write automated tests.
 
-However, beyond that lies another big return on investment in the form of __developer confidence__. This is somewhat hard to convey if you haven't experienced it, but it's undeniable for many who have worked on well-tested codebases. In short, having tests gives you freedom to make bigger, bolder changes to the code, especially [refactoring](/2.%20Software%20Engineering%20Practices/refactoring/). A great deep dive on this is Matthew Parker's [Why TDD](https://blogs.vmware.com/tanzu/why-tdd/).
+However, beyond that lies another big return on investment in the form of __developer confidence__. This is somewhat hard to convey if you haven't experienced it, but it's undeniable for many who have worked on well-tested codebases. In short, having tests gives you freedom to make bigger, bolder changes to the code, especially [refactoring](../refactoring/). A great deep dive on this is Matthew Parker's [Why TDD](https://blogs.vmware.com/tanzu/why-tdd/).
 
 ## Test First
 
@@ -66,7 +66,7 @@ So a test should fail. The only remaining question is, at what point in developm
 For me, the choice is clear. Only writing the test __first__ gives me the confidence I need while avoiding extra work. That's why I TDD!
 
 ## Learn More About TDD
-[Let's chat](/1.%20Lake%20Wingra%20Software/01%20-%20whoAreWe/#lets-connect) about TDD or discuss how adopting TDD could improve outcomes for your team! 
+[Let's chat](../../1.%20Lake%20Wingra%20Software/01%20-%20whoAreWe/#lets-connect) about TDD or discuss how adopting TDD could improve outcomes for your team! 
 
 ### Resources
 

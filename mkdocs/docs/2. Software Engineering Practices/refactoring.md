@@ -41,7 +41,7 @@ To refactor successfully, we need to avoid becoming overwhelmed, and this is mai
 
 _"A stitch in time saves nine."_
 
-We also need to make sure the developers have confidence that their changes are correct. This is primarily done through automated testing. [Test-Driven Development](/2.%20Software%20Engineering%20Practices/01-%20tdd/) is __the best way__ to achieve good test coverage. Like refactoring, this is most effective when started early and made a regular part of development.
+We also need to make sure the developers have confidence that their changes are correct. This is primarily done through automated testing. [Test-Driven Development](../01-%20tdd/) is __the best way__ to achieve good test coverage. Like refactoring, this is most effective when started early and made a regular part of development.
 
 ## It's Getting Late
 
@@ -57,4 +57,4 @@ In extreme cases, a rewrite may be the best option. However, this carries major 
 
 ## Learn More About Refactoring
 
-Would you like to learn more about how regular refactoring can improve your team's software delivery? Are you struggling with slow progress and buggy software updates? [Let's chat](/1.%20Lake%20Wingra%20Software/01%20-%20whoAreWe/#lets-connect)!
+Would you like to learn more about how regular refactoring can improve your team's software delivery? Are you struggling with slow progress and buggy software updates? [Let's chat](../../1.%20Lake%20Wingra%20Software/01%20-%20whoAreWe/#lets-connect)!
