@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HEADING MANIA - The Ultimate Geocities Heading Showcase!</title>
+    <style>
+        body {
+            background-color: #000000;
+            background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 5px solid #ff00ff;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #111133 0%, #330033 100%);
+            box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #ff00ff, #00ffff, #ffff00);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            animation: rainbow 3s infinite;
+        }
+        
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        h1.main-title {
+            font-size: 48px;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 30px #ffff00;
+            margin: 0;
+            letter-spacing: 3px;
+            font-family: 'Impact', 'Arial Black';
+        }
+        
+        .blink {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+        .heading-section {
+            background-color: rgba(0, 0, 51, 0.7);
+            border: 3px dashed #00ffff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+        
+        /* HEADING STYLE 1 */
+        h1.style1 {
+            color: #ff00ff;
+            text-shadow: 3px 3px 0 #00ffff, 6px 6px 0 #ffff00;
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 36px;
+            text-align: center;
+            transform: rotate(-2deg);
+        }
+        
+        /* HEADING STYLE 2 */
+        h2.style2 {
+            background: linear-gradient(45deg, #ff0000, #ffff00, #00ff00, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 32px;
+            text-align: center;
+            font-family: 'Arial Black';
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        /* HEADING STYLE 3 */
+        h3.style3 {
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            border: 3px double #ff00ff;
+            padding: 10px;
+            background-color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 28px;
+        }
+        
+        /* HEADING STYLE 4 */
+        h4.style4 {
+            color: #ffff00;
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+            font-size: 30px;
+            text-shadow: 0 0 10px #ff0000;
+            position: relative;
+        }
+        
+        h4.style4:before {
+            content: "★ ";
+            color: #ff00ff;
+        }
+        
+        h4.style4:after {
+            content: " ★";
+            color: #ff00ff;
+        }
+        
+        /* HEADING STYLE 5 */
+        h5.style5 {
+            background-color: #ff6600;
+            color: #ffffff;
+            font-family: 'Verdana', sans-serif;
+            text-align: center;
+            padding: 15px;
+            border: 5px ridge #ffff00;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        
+        /* HEADING STYLE 6 */
+        h6.style6 {
+            color: #00ffff;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            font-size: 26px;
+            text-shadow: 2px 2px 4px #ff00ff;
+            border-bottom: 3px dotted #ffff00;
+            padding-bottom: 10px;
+        }
+        
+        /* HEADING STYLE 7 */
+        .style7 {
+            color: #ff0000;
+            font-family: 'Impact', sans-serif;
+            text-align: center;
+            font-size: 34px;
+            background: repeating-linear-gradient(
+                45deg,
+                #ff00ff,
+                #ff00ff 10px,
+                #00ffff 10px,
+                #00ffff 20px
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+        
+        /* HEADING STYLE 8 */
+        .style8 {
+            color: #ffffff;
+            font-family: 'Arial Black', sans-serif;
+            text-align: center;
+            font-size: 32px;
+            text-shadow: 
+                0 0 5px #ff0000,
+                0 0 10px #ff0000,
+                0 0 15px #ff0000,
+                0 0 20px #0000ff,
+                0 0 25px #0000ff,
+                0 0 30px #0000ff;
+            letter-spacing: 2px;
+        }
+        
+        /* HEADING STYLE 9 */
+        .style9 {
+            color: #00ff00;
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+            font-size: 30px;
+            background: radial-gradient(circle, #ff00ff 0%, #000000 70%);
+            padding: 10px;
+            border: 3px solid #ffff00;
+            border-radius: 20px;
+            transform: rotate(1deg);
+        }
+        
+        /* HEADING STYLE 10 */
+        .style10 {
+            color: #ffff00;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            border: 4px double #00ffff;
+            padding: 15px;
+            background: linear-gradient(90deg, #ff0000, #000000, #ff0000);
+        }
+        
+        .marquee {
+            background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #ff00ff);
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+            font-weight: bold;
+            animation: marquee-bg 2s infinite;
+        }
+        
+        @keyframes marquee-bg {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 2px dashed #ff00ff;
+            font-size: 14px;
+        }
+        
+        .star {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: twinkle 2s infinite;
+        }
+        
+        @keyframes twinkle {
+            0% { opacity: 0.2; }
+            50% { opacity: 1; }
+            100% { opacity: 0.2; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="main-title">HEADING <span class="blink">MANIA</span></h1>
+            <p style="font-size: 20px; margin-top: 10px;">The Most RADICAL Heading Styles on the WEB!</p>
+        </div>
+        
+        <div class="marquee">
+            <marquee behavior="scroll" direction="left">★★★ HOTTEST HEADING STYLES ON THE INTERNET! ★★★ UPDATED DAILY! ★★★ COPY THESE FOR YOUR OWN SITE! ★★★</marquee>
+        </div>
+        
+        <div class="heading-section">
+            <h1 class="style1">STYLE #1 - COMIC CHAOS</h1>
+            <p>This heading uses comic sans with crazy shadow effects and a slight rotation!</p>
+        </div>
+        
+        <div class="heading-section">
+            <h2 class="style2">Style #2 - Rainbow Magic</h2>
+            <p>Gradient text effect with uppercase transformation and letter spacing!</p>
+        </div>
+        
+        <div class="heading-section">
+            <h3 class="style3">style #3 - terminal elite</h3>
+            <p>Monospace font with double borders and uppercase letters!</p>
+        </div>
+        
+        <div class="heading-section">
+            <h4 class="style4">Style #4 - Star Power</h4>
+            <p>Purple stars with red glow effect and classic typography!</p>
+        </div>
+        
+        <div class="heading-section">
+            <h5 class="style5">Style #5 - Orange Explosion</h5>
+            <p>Bright orange background with yellow ridged border and uppercase!</p>
+        </div>
+        
+        <div class="heading-section">
+            <h6 class="style6">Style #6 - Cyan Dreams</h6>
+            <p>Aqua text with pink shadow and dotted underline!</p>
+        </div>
+        
+        <div class="heading-section">
+            <h1 class="style7">Style #7 - Zigzag Zone</h1>
+            <p>Zebra stripe gradient effect clipped to text!</p>
+        </div>
+        
+        <div class="heading-section">
+            <h2 class="style8">Style #8 - Neon Burn</h2>
+            <p>Intense glowing effect with multiple color layers!</p>
+        </div>
+        
+        <div class="heading-section">
+            <h3 class="style9">Style #9 - Radial Rave</h3>
+            <p>Radial gradient background with rounded corners!</p>
+        </div>
+        
+        <div class="heading-section">
+            <h4 class="style10">style #10 - retro terminal</h4>
+            <p>Monospace font with red/black gradient and wide letter spacing!</p>
+        </div>
+        
+        <div class="marquee">
+            <marquee behavior="scroll" direction="right">💡 TIP: Copy these styles to make your own Geocities masterpiece! 💡 More styles coming soon! 💡 Don't forget to sign my guestbook! 💡</marquee>
+        </div>
+        
+        <div class="footer">
+            <p>Best viewed with Internet Explorer 5.0 at 800x600 resolution</p>
+            <p>© 1999 HEADING MANIA. All styles copyrighted. Please copy freely!</p>
+            <p>Email: headings@geocities.com | ICQ: 987654321</p>
+            <p>
+                <img src="https://images-na.ssl-images-amazon.com/images/I/41ZtPcvYJIL._AC_SY400_.jpg" alt="Geocities Button" width="80">
+                <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/511/175/1d2.jpg" alt="Best Viewed" width="80">
+                <img src="https://www.animatedimages.org/data/media/562/animated-star-image-0048.gif" alt="Star" width="40">
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Create twinkling stars
+        function createStars() {
+            const container = document.querySelector('.container');
+            for (let i = 0; i < 50; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.width = Math.random() * 3 + 1 + 'px';
+                star.style.height = star.style.width;
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 5 + 's';
+                container.appendChild(star);
+            }
+        }
+        
+        // Initialize when page loads
+        window.onload = function() {
+            createStars();
+            
+            console.log("%c⭐ WELCOME TO HEADING MANIA ⭐", "color: cyan; font-size: 20px; text-shadow: 0 0 10px #00ffff;");
+            console.log("%cCopy these styles for your own Geocities site!", "color: magenta;");
+        };
+    </script>
+</body>
+</html>

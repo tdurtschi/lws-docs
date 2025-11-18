@@ -2,46 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://tdurtschi.github.io/lws-docs/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://tdurtschi.github.io/lws-docs/1.%20Lake%20Wingra%20Software/01%20-%20whoAreWe/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://tdurtschi.github.io/lws-docs/1.%20Lake%20Wingra%20Software/02%20-%20projects/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://tdurtschi.github.io/lws-docs/2.%20Software%20Engineering%20Practices/01-%20tdd/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>https://tdurtschi.github.io/lws-docs/2.%20Software%20Engineering%20Practices/02-%20refactoring/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
-         <loc>https://tdurtschi.github.io/lws-docs/3.%20Miscellaneous/01%20-%20goodStuff/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://tdurtschi.github.io/lws-docs/3.%20AI%20Resources/01%20-%20journal/</loc>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
-         <loc>https://tdurtschi.github.io/lws-docs/3.%20Miscellaneous/02%20-%20devExperience/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://tdurtschi.github.io/lws-docs/3.%20AI%20Resources/02%20-%20generativeAIArtifacts/</loc>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
-         <loc>https://tdurtschi.github.io/lws-docs/3.%20Miscellaneous/03%20-%20docker/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://tdurtschi.github.io/lws-docs/4.%20Miscellaneous/01%20-%20goodStuff/</loc>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
-         <loc>https://tdurtschi.github.io/lws-docs/3.%20Miscellaneous/04%20-%20dotnet/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://tdurtschi.github.io/lws-docs/4.%20Miscellaneous/02%20-%20devExperience/</loc>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
-         <loc>https://tdurtschi.github.io/lws-docs/3.%20Miscellaneous/05%20-%20git/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://tdurtschi.github.io/lws-docs/4.%20Miscellaneous/03%20-%20docker/</loc>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
-         <loc>https://tdurtschi.github.io/lws-docs/3.%20Miscellaneous/06%20-%20kuberenetes/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://tdurtschi.github.io/lws-docs/4.%20Miscellaneous/04%20-%20dotnet/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>https://tdurtschi.github.io/lws-docs/4.%20Miscellaneous/05%20-%20git/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>https://tdurtschi.github.io/lws-docs/4.%20Miscellaneous/06%20-%20kuberenetes/</loc>
+         <lastmod>2025-11-18</lastmod>
     </url>
 </urlset>

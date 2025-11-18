@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON COSMOS - Retro Space Portal</title>
+    <style>
+        body {
+            background-color: #000000;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 100, 200, 0.1) 0%, transparent 2px),
+                radial-gradient(circle at 90% 80%, rgba(200, 0, 100, 0.1) 0%, transparent 2px),
+                radial-gradient(circle at 50% 50%, rgba(0, 200, 100, 0.05) 0%, transparent 3px);
+            background-size: 50px 50px, 70px 70px, 100px 100px;
+            color: #00ffff;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 20px;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 4px solid #ff00ff;
+            background: linear-gradient(135deg, #0a0a2a 0%, #000011 100%);
+            padding: 25px;
+            position: relative;
+            box-shadow: 0 0 30px rgba(255, 0, 255, 0.3);
+        }
+        
+        .header {
+            text-align: center;
+            background: linear-gradient(to right, #000033, #330033, #003333);
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 3px solid #00ffff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        h1 {
+            font-size: 42px;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+            margin: 0;
+            color: #ffff00;
+            letter-spacing: 3px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; }
+            to { text-shadow: 0 0 15px #00ffff, 0 0 25px #00ffff, 0 0 35px #00ffff, 0 0 45px #00ffff; }
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #ff00ff;
+            text-decoration: underline;
+            margin-top: 10px;
+        }
+        
+        .neon-divider {
+            height: 3px;
+            background: linear-gradient(90deg, 
+                transparent, 
+                #ff00ff, 
+                #00ffff, 
+                #ffff00, 
+                #00ff00, 
+                transparent);
+            margin: 25px 0;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+        }
+        
+        .section {
+            background: rgba(0, 20, 40, 0.7);
+            border: 2px solid #00ffff;
+            padding: 20px;
+            margin: 20px 0;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+        }
+        
+        .section-title {
+            color: #ff00ff;
+            font-size: 24px;
+            border-bottom: 2px dashed #00ffff;
+            padding-bottom: 10px;
+            margin-top: 0;
+            text-shadow: 0 0 5px #ff00ff;
+        }
+        
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .link-card {
+            background: rgba(0, 30, 60, 0.8);
+            border: 1px solid #00ffff;
+            padding: 15px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .link-card:hover {
+            background: rgba(30, 0, 60, 0.8);
+            border-color: #ff00ff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 0, 255, 0.3);
+        }
+        
+        .link-card h3 {
+            color: #ffff00;
+            margin-top: 0;
+            font-size: 18px;
+        }
+        
+        .link-card a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+        
+        .link-card a:hover {
+            text-decoration: underline;
+            color: #ff00ff;
+        }
+        
+        .blink {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px dotted #00ffff;
+            font-size: 14px;
+            color: #00ffff;
+        }
+        
+        .warning {
+            background: rgba(255, 0, 0, 0.2);
+            border: 2px solid #ff0000;
+            padding: 15px;
+            text-align: center;
+            margin: 20px 0;
+            color: #ff6666;
+        }
+        
+        .counter {
+            text-align: center;
+            font-size: 16px;
+            margin: 20px 0;
+            color: #ffffff;
+        }
+        
+        .hit-counter {
+            display: inline-block;
+            background-color: #000000;
+            color: #00ff00;
+            padding: 5px 10px;
+            font-family: 'Courier New', monospace;
+            border: 2px inset #ffffff;
+        }
+        
+        .animated-element {
+            position: absolute;
+            z-index: 100;
+            pointer-events: none;
+        }
+        
+        .space-object {
+            font-size: 30px;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        .scanline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: rgba(0, 255, 255, 0.1);
+            animation: scan 4s linear infinite;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        
+        @keyframes scan {
+            0% { top: 0; }
+            100% { top: 100%; }
+        }
+        
+        .matrix-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.1;
+        }
+        
+        .terminal {
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid #00ff00;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            color: #00ff00;
+            margin: 20px 0;
+            overflow: hidden;
+            height: 150px;
+        }
+        
+        .terminal-text {
+            white-space: pre-wrap;
+            font-size: 14px;
+        }
+        
+        .glitch-text {
+            position: relative;
+        }
+        
+        .glitch-text::before,
+        .glitch-text::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .glitch-text::before {
+            left: 2px;
+            text-shadow: -2px 0 #ff00ff;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 5s infinite linear alternate-reverse;
+        }
+        
+        .glitch-text::after {
+            left: -2px;
+            text-shadow: -2px 0 #00ffff;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim2 5s infinite linear alternate-reverse;
+        }
+        
+        @keyframes glitch-anim {
+            0% { clip: rect(42px, 9999px, 44px, 0); }
+            5% { clip: rect(12px, 9999px, 59px, 0); }
+            10% { clip: rect(48px, 9999px, 29px, 0); }
+            15% { clip: rect(42px, 9999px, 73px, 0); }
+            20% { clip: rect(63px, 9999px, 27px, 0); }
+            25% { clip: rect(34px, 9999px, 55px, 0); }
+            30% { clip: rect(86px, 9999px, 73px, 0); }
+            35% { clip: rect(20px, 9999px, 20px, 0); }
+            40% { clip: rect(26px, 9999px, 60px, 0); }
+            45% { clip: rect(25px, 9999px, 66px, 0); }
+            50% { clip: rect(57px, 9999px, 98px, 0); }
+            55% { clip: rect(5px, 9999px, 46px, 0); }
+            60% { clip: rect(82px, 9999px, 31px, 0); }
+            65% { clip: rect(54px, 9999px, 27px, 0); }
+            70% { clip: rect(28px, 9999px, 99px, 0); }
+            75% { clip: rect(45px, 9999px, 69px, 0); }
+            80% { clip: rect(23px, 9999px, 85px, 0); }
+            85% { clip: rect(54px, 9999px, 84px, 0); }
+            90% { clip: rect(45px, 9999px, 47px, 0); }
+            95% { clip: rect(37px, 9999px, 20px, 0); }
+            100% { clip: rect(73px, 9999px, 99px, 0); }
+        }
+        
+        @keyframes glitch-anim2 {
+            0% { clip: rect(65px, 9999px, 100px, 0); }
+            5% { clip: rect(52px, 9999px, 74px, 0); }
+            10% { clip: rect(79px, 9999px, 85px, 0); }
+            15% { clip: rect(75px, 9999px, 5px, 0); }
+            20% { clip: rect(67px, 9999px, 61px, 0); }
+            25% { clip: rect(14px, 9999px, 79px, 0); }
+            30% { clip: rect(1px, 9999px, 66px, 0); }
+            35% { clip: rect(86px, 9999px, 30px, 0); }
+            40% { clip: rect(23px, 9999px, 98px, 0); }
+            45% { clip: rect(85px, 9999px, 72px, 0); }
+            50% { clip: rect(71px, 9999px, 75px, 0); }
+            55% { clip: rect(2px, 9999px, 48px, 0); }
+            60% { clip: rect(30px, 9999px, 16px, 0); }
+            65% { clip: rect(59px, 9999px, 50px, 0); }
+            70% { clip: rect(41px, 9999px, 62px, 0); }
+            75% { clip: rect(2px, 9999px, 82px, 0); }
+            80% { clip: rect(47px, 9999px, 73px, 0); }
+            85% { clip: rect(3px, 9999px, 27px, 0); }
+            90% { clip: rect(26px, 9999px, 55px, 0); }
+            95% { clip: rect(42px, 9999px, 97px, 0); }
+            100% { clip: rect(38px, 9999px, 49px, 0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="scanline"></div>
+    <div class="matrix-rain" id="matrix-rain"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="glitch-text" data-text="NEON COSMOS">NEON COSMOS</h1>
+            <div class="subtitle">YOUR PORTAL TO THE DIGITAL UNIVERSE</div>
+        </div>
+        
+        <div class="terminal">
+            <div class="terminal-text" id="terminal-text">
+> INITIALIZING NEON COSMOS v2.1...
+> LOADING RETRO SPACE PORTAL...
+> CONNECTING TO INTERGALACTIC NETWORK...
+> ACCESS GRANTED
+> WELCOME USER: COSMIC_TRAVELER
+> SYSTEM STATUS: ALL SYSTEMS NOMINAL
+> READY FOR HYPERSPACE NAVIGATION
+            </div>
+        </div>
+        
+        <div class="warning">
+            <strong>CYBER WARNING!</strong><br>
+            This site contains high levels of nostalgia and may cause uncontrollable urges to download MIDI files.<br>
+            Viewer discretion is advised.
+        </div>
+        
+        <div class="counter">
+            <span class="blink">⚡</span> VISITORS: 
+            <span class="hit-counter">00<span id="visitor-count">847</span>3</span>
+            <span class="blink">⚡</span>
+        </div>
+        
+        <div class="neon-divider"></div>
+        
+        <div class="section">
+            <h2 class="section-title">🌌 COSMIC LINKS 🌌</h2>
+            
+            <div class="link-grid">
+                <div class="link-card">
+                    <h3>🚀 SPACE EXPLORATION</h3>
+                    <p>NASA's official portal to the final frontier. Contains actual photos of space!</p>
+                    <a href="https://www.nasa.gov" target="_blank">ENTER HYPERLINK →</a>
+                </div>
+                
+                <div class="link-card">
+                    <h3>👽 ALIEN DATABASE</h3>
+                    <p>Comprehensive collection of extraterrestrial encounters and UFO sightings.</p>
+                    <a href="https://www.seti.org" target="_blank">ACCESS FILES →</a>
+                </div>
+                
+                <div class="link-card">
+                    <h3>🌠 STAR MAPS</h3>
+                    <p>Interactive celestial navigation tools for amateur astronomers.</p>
+                    <a href="https://stellarium.org" target="_blank">LAUNCH TELESCOPE →</a>
+                </div>
+                
+                <div class="link-card">
+                    <h3>👾 RETRO GAMES</h3>
+                    <p>Classic arcade games featuring space themes and pixelated adventures.</p>
+                    <a href="https://archive.org/details/games" target="_blank">INSERT COIN →</a>
+                </div>
+                
+                <div class="link-card">
+                    <h3>🛰️ SATELLITE TRACKER</h3>
+                    <p>Real-time tracking of objects orbiting Earth including the ISS.</p>
+                    <a href="https://www.n2yo.com" target="_blank">TRACK OBJECTS →</a>
+                </div>
+                
+                <div class="link-card">
+                    <h3>🔭 ASTRONOMY PODCASTS</h3>
+                    <p>Audio journeys through the cosmos with leading astrophysicists.</p>
+                    <a href="https://www.astronomycast.com" target="_blank">TUNE IN →</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="neon-divider"></div>
+        
+        <div class="section">
+            <h2 class="section-title">💾 DOWNLOAD ZONE 💾</h2>
+            
+            <div class="link-grid">
+                <div class="link-card">
+                    <h3>🎵 SPACE AMBIENCE</h3>
+                    <p>High-quality MP3 loops of cosmic sounds for your webpage.</p>
+                    <a href="#">DOWNLOAD NOW →</a>
+                </div>
+                
+                <div class="link-card">
+                    <h3>🖼️ WALLPAPERS</h3>
+                    <p>1024x768 JPEG images of nebulae, planets, and spacecraft.</p>
+                    <a href="#">GET THEM ALL →</a>
+                </div>
+                
+                <div class="link-card">
+                    <h3>🎮 JAVA GAMES</h3>
+                    <p>Browser-based space shooters requiring Java plugin.</p>
+                    <a href="#">PLAY NOW →</a>
+                </div>
+                
+                <div class="link-card">
+                    <h3>📄 WEB RING</h3>
+                    <p>Join our network of fellow space enthusiasts.</p>
+                    <a href="#">JOIN US →</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="neon-divider"></div>
+        
+        <div class="section">
+            <h2 class="section-title">📡 GUESTBOOK 📡</h2>
+            <p>Sign my guestbook and leave your mark on the digital cosmos!</p>
+            <p>Contact: <span style="color: #00ff00;">cosmos-admin@geocities.neon</span></p>
+            <p>Last updated: <span class="blink">06/15/2023 14:37:22 GMT</span></p>
+        </div>
+        
+        <div class="footer">
+            <p>Best viewed in Netscape Navigator 4.0 at 800x600 resolution with maximum color depth</p>
+            <p>This page is © 2023 Neon Cosmos. All rights reserved. Powered by Geocities Pro Hosting.</p>
+            <p>
+                <a href="#">HOME</a> | 
+                <a href="#">LINKS</a> | 
+                <a href="#">GUESTBOOK</a> | 
+                <a href="#">EMAIL</a> | 
+                <a href="#">WEB RING</a>
+            </p>
+            <p style="margin-top: 15px;">
+                <span class="blink">★</span> AWARDS: 
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBmaWxsPSIjZmZmZjAwIiBkPSJNNi41IDEuNSA4IDQgOS41IDEuNSA4IDAgNi41IDEuNXptMi41IDMuNWgtMS41bC0uNSAxLS41LTFIMTJsLTEuNSAyIDEuNSAySDExbC41IDEgLjUtMUgxMmwzIDEuNS0xLjUgMS41SDEybC0uNSAxIC41IDFINTEzbDEuNS0xLjUtMS41LTEuNUgxNGwtLjUtMSAuNS0xaC0xbDEuNS0xLjUtMS41LTEuNUgxMmwuNS0xLS41LTFoMXoiLz48L3N2Zz4=" alt="Cool Site Award"> 
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBmaWxsPSIjZmYwMDAwIiBkPSJNOC41IDIuNWwyLjUgMi41LTIuNSAyLjUtMi41LTIuNXptMi41IDIuNWgtMi41di0yLjVoMi41djIuNXptLTMgMi41aDIuNXYyLjVoLTIuNXYtMi41eiIvPjwvc3ZnPg==" alt="Hot Site Award">
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Matrix rain effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const matrixRain = document.getElementById('matrix-rain');
+            const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$#@%&*";
+            const fontSize = 14;
+            const columns = Math.floor(window.innerWidth / fontSize);
+            
+            // Create character columns
+            for (let i = 0; i < columns; i++) {
+                const column = document.createElement('div');
+                column.style.position = 'absolute';
+                column.style.top = '-20px';
+                column.style.left = (i * fontSize) + 'px';
+                column.style.width = fontSize + 'px';
+                column.style.color = '#00ff00';
+                column.style.fontFamily = 'monospace';
+                column.style.fontSize = fontSize + 'px';
+                column.style.textAlign = 'center';
+                column.style.writingMode = 'vertical-rl';
+                column.style.textOrientation = 'mixed';
+                matrixRain.appendChild(column);
+                
+                // Animate each column
+                let position = 0;
+                const speed = 2 + Math.random() * 5;
+                const length = 10 + Math.floor(Math.random() * 20);
+                
+                setInterval(() => {
+                    let text = '';
+                    for (let j = 0; j < length; j++) {
+                        text += chars.charAt(Math.floor(Math.random() * chars.length));
+                    }
+                    column.textContent = text;
+                    position += speed;
+                    if (position > window.innerHeight + 100) {
+                        position = -100;
+                    }
+                    column.style.top = position + 'px';
+                }, 100);
+            }
+            
+            // Visitor counter animation
+            const countElement = document.getElementById('visitor-count');
+            let count = 8473;
+            
+            setInterval(() => {
+                count++;
+                countElement.textContent = count.toString().padStart(4, '0');
+            }, 45000);
+            
+            // Terminal text animation
+            const terminalText = document.getElementById('terminal-text');
+            const messages = [
+                "> INITIALIZING NEON COSMOS v2.1...",
+                "> LOADING RETRO SPACE PORTAL...",
+                "> CONNECTING TO INTERGALACTIC NETWORK...",
+                "> ACCESS GRANTED",
+                "> WELCOME USER: COSMIC_TRAVELER",
+                "> SYSTEM STATUS: ALL SYSTEMS NOMINAL",
+                "> READY FOR HYPERSPACE NAVIGATION",
+                "> SCANNING FOR ALIEN SIGNALS...",
+                "> DETECTING QUANTUM FLUCTUATIONS...",
+                "> SYNCHRONIZING WITH SOLAR WIND...",
+                "> TRANSMITTING DATA VIA SUBSPACE...",
+                "> CALIBRATING PHOTON TORPEDOES...",
+                "> ALIGNING DEFLECTOR SHIELDS...",
+                "> ENGAGING WARP DRIVE...",
+                "> ESTABLISHING HOLOGRAPHIC CONTACT...",
+                "> ANALYZING SPECTRAL SIGNATURES...",
+                "> MONITORING GRAVITATIONAL WAVES...",
+                "> RECEIVING TRANSMISSION FROM TITAN...",
+                "> UPDATING GALACTIC POSITION DATABASE...",
+                "> SCANNING FOR UNAUTHORIZED INTRUDERS..."
+            ];
+            
+            let messageIndex = 0;
+            setInterval(() => {
+                messageIndex = (messageIndex + 1) % messages.length;
+                terminalText.textContent = messages[messageIndex];
+            }, 3000);
+            
+            // Animated space objects
+            function createSpaceObject() {
+                const objects = ['🛸', '🚀', '🌟', '🌙', '🪐', '☄️', '🛰️'];
+                const object = document.createElement('div');
+                object.className = 'space-object animated-element';
+                object.textContent = objects[Math.floor(Math.random() * objects.length)];
+                
+                const startX = Math.random() * window.innerWidth;
+                const startY = -50;
+                const endY = window.innerHeight + 100;
+                const duration = 5000 + Math.random() * 10000;
+                
+                object.style.left = startX + 'px';
+                object.style.top = startY + 'px';
+                
+                document.body.appendChild(object);
+                
+                // Animate the object
+                const animation = object.animate([
+                    { transform: `translate(0, 0)` },
+                    { transform: `translate(${Math.random() * 200 - 100}px, ${endY}px)` }
+                ], {
+                    duration: duration,
+                    easing: 'linear'
+                });
+                
+                animation.onfinish = () => {
+                    object.remove();
+                };
+            }
+            
+            // Create space objects periodically
+            setInterval(createSpaceObject, 2000);
+            
+            // Add hover effects to link cards
+            const linkCards = document.querySelectorAll('.link-card');
+            linkCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 0 20px rgba(0, 255, 255, 0.5)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = '0 0 15px rgba(0, 255, 255, 0.2)';
+                });
+            });
+            
+            // Glitch effect on header periodically
+            const glitchText = document.querySelector('.glitch-text');
+            setInterval(() => {
+                glitchText.style.animation = 'none';
+                setTimeout(() => {
+                    glitchText.style.animation = '';
+                }, 10);
+            }, 8000);
+        });
+    </script>
+</body>
+</html>

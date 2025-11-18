@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Whispering Woods Poetry - Nature's Verse Archive</title>
+    <style>
+        body {
+            background-color: #003300;
+            background-image: url('https://www.transparenttextures.com/patterns/tree-bark.png');
+            font-family: 'Times New Roman', serif;
+            color: #336633;
+            margin: 0;
+            padding: 20px;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            border: 8px ridge #66cc66;
+            background: linear-gradient(135deg, #f0fff0 0%, #e0f0e0 100%);
+            box-shadow: 0 0 15px #339933, inset 0 0 20px rgba(0, 100, 0, 0.3);
+            padding: 25px;
+            position: relative;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #228B22, #32CD32, #228B22);
+            border: 3px double #006400;
+            margin-bottom: 25px;
+            border-radius: 15px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #006400;
+            margin: 0;
+            font-family: 'Brush Script MT', cursive;
+        }
+        
+        .subtitle {
+            font-size: 22px;
+            color: #f5f5dc;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        
+        .poem-section {
+            background-color: rgba(255, 255, 240, 0.9);
+            border: 3px inset #90EE90;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        
+        .poem-title {
+            color: #006400;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .poem-text {
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+            text-align: center;
+            white-space: pre-line;
+            color: #228B22;
+        }
+        
+        .nav-bar {
+            background: linear-gradient(180deg, #90EE90, #32CD32);
+            padding: 15px;
+            text-align: center;
+            border: 2px outset #228B22;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .nav-link {
+            color: #006400;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border: 2px outset #32CD32;
+            background: linear-gradient(180deg, #f5f5dc, #e6e6c5);
+            margin: 0 5px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        
+        .nav-link:hover {
+            background: linear-gradient(180deg, #e6e6c5, #d8d8b0);
+            border-style: inset;
+        }
+        
+        .counter {
+            background: linear-gradient(90deg, #228B22, #32CD32);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border: 2px ridge #006400;
+            font-weight: bold;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .guestbook {
+            background-color: rgba(245, 245, 220, 0.9);
+            border: 3px groove #90EE90;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 10px;
+        }
+        
+        .guestbook h3 {
+            color: #006400;
+            text-align: center;
+            margin-top: 0;
+        }
+        
+        input, textarea {
+            background-color: #f5f5dc;
+            border: 2px inset #90EE90;
+            padding: 5px;
+            width: 100%;
+            margin: 5px 0;
+        }
+        
+        .submit-button {
+            background: linear-gradient(180deg, #32CD32, #228B22);
+            color: white;
+            border: 2px outset #006400;
+            padding: 8px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .submit-button:hover {
+            background: linear-gradient(180deg, #228B22, #006400);
+            border-style: inset;
+        }
+        
+        .divider {
+            text-align: center;
+            margin: 25px 0;
+            color: #228B22;
+            font-weight: bold;
+        }
+        
+        .divider hr {
+            border: 1px dashed #32CD32;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 2px ridge #90EE90;
+            font-size: 14px;
+            color: #228B22;
+        }
+        
+        .leaf-decoration {
+            position: absolute;
+            font-size: 30px;
+            opacity: 0.3;
+        }
+        
+        .blink {
+            animation: blink 1.5s infinite;
+        }
+        
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+        
+        marquee {
+            color: #006400;
+            font-weight: bold;
+            background: linear-gradient(90deg, #f0fff0, #e0f0e0, #f0fff0);
+            padding: 8px;
+            border: 1px solid #90EE90;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Whispering Woods Poetry</h1>
+            <div class="subtitle">A Digital Grove of Natural Verses</div>
+        </div>
+        
+        <marquee behavior="scroll" direction="left">
+            🌿 Welcome to the most peaceful corner of the internet! 🌸 New poems added weekly! 🍃 Share your nature-inspired verses! 🌻
+        </marquee>
+        
+        <div class="nav-bar">
+            <a href="#" class="nav-link">HOME</a>
+            <a href="#" class="nav-link">SEASONAL POEMS</a>
+            <a href="#" class="nav-link">ANIMAL VERSES</a>
+            <a href="#" class="nav-link">GARDEN POETRY</a>
+            <a href="#" class="nav-link">SUBMIT YOUR WORK</a>
+        </div>
+        
+        <div class="counter">
+            🌱 Visitors Since Spring Equinox: <span style="font-family: 'Courier New';">00001284</span> 🌱
+        </div>
+        
+        <div class="poem-section">
+            <div class="poem-title">Morning Dew</div>
+            <div class="poem-text">
+                Upon each blade of grass so green,
+                Diamonds catch the early light,
+                Nature's jewels, fresh and keen,
+                Sparkling in the morning bright.
+                
+                Each droplet holds the rising sun,
+                A prism dancing in the breeze,
+                Until the day has just begun,
+                And melts away among the trees.
+            </div>
+        </div>
+        
+        <div class="divider">
+            <hr>
+            <span>❧</span>
+            <hr>
+        </div>
+        
+        <div class="poem-section">
+            <div class="poem-title">The Ancient Oak</div>
+            <div class="poem-text">
+                Standing tall through centuries gone,
+                Witness to both joy and strife,
+                Its branches reaching toward the dawn,
+                A testament to timeless life.
+                
+                In its shade the children play,
+                Birds make homes within its bark,
+                Through storm and drought it finds a way,
+                A monarch of the woodland park.
+            </div>
+        </div>
+        
+        <div class="divider">
+            <hr>
+            <span>❦</span>
+            <hr>
+        </div>
+        
+        <div class="poem-section">
+            <div class="poem-title">Autumn's Promise</div>
+            <div class="poem-text">
+                The maples blush in crimson fire,
+                The oaks turn gold in evening light,
+                While leaves dance high upon the wire
+                Of wind that whispers through the night.
+                
+                Though summer's green has faded now,
+                And frost will soon adorn the ground,
+                These trees have made a sacred vow—
+                To wake when springtime comes around.
+            </div>
+        </div>
+        
+        <div class="guestbook">
+            <h3>🌿 Sign My Digital Guestbook 🌿</h3>
+            <p>
+                <label>Your Name:</label>
+                <input type="text" placeholder="Nature Lover...">
+            </p>
+            <p>
+                <label>Your Favorite Season:</label>
+                <input type="text" placeholder="Spring, Summer, Fall, or Winter?">
+            </p>
+            <p>
+                <label>Your Nature Poem (optional):</label>
+                <textarea rows="5" placeholder="Share your verse about trees, flowers, animals, or seasons..."></textarea>
+            </p>
+            <p style="text-align: center;">
+                <button class="submit-button">ADD YOUR VOICE TO THE GROVE</button>
+            </p>
+        </div>
+        
+        <div class="divider">
+            <hr>
+            <span>✿</span>
+            <hr>
+        </div>
+        
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="https://media.giphy.com/media/3o7TKTDn976rHFkT60/giphy.gif" alt="Animated Butterfly" width="100">
+        </div>
+        
+        <div class="footer">
+            <p>Made with love for Mother Earth ☀️ Best viewed in 800x600 resolution</p>
+            <p>© 1998 Whispering Woods Poetry Collective. All poems copyrighted by their respective authors.</p>
+            <p>Contact: poetess@whisperingwoods.geocities.com | AOL IM: NatureLover98</p>
+            <p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Geocities_logo.svg/1200px-Geocities_logo.svg.png" alt="Geocities" width="80">
+                <img src="https://www.internetbadges.com/bestviewed.gif" alt="Best Viewed" width="80">
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Add leaf decorations
+        function addLeafDecorations() {
+            const container = document.querySelector('.container');
+            const leaves = ['🍃', '🍂', '🍁', '🍀', '🌿', '☘️', '🌸', '🌼'];
+            
+            for (let i = 0; i < 20; i++) {
+                const leaf = document.createElement('div');
+                leaf.classList.add('leaf-decoration');
+                leaf.innerHTML = leaves[Math.floor(Math.random() * leaves.length)];
+                leaf.style.left = Math.random() * 100 + '%';
+                leaf.style.top = Math.random() * 100 + '%';
+                leaf.style.fontSize = (Math.random() * 20 + 20) + 'px';
+                leaf.style.opacity = Math.random() * 0.4 + 0.1;
+                container.appendChild(leaf);
+            }
+        }
+        
+        // Initialize when page loads
+        window.onload = function() {
+            addLeafDecorations();
+            
+            console.log("%c🌿 Welcome to Whispering Woods Poetry! 🌿", "color: green; font-size: 18px;");
+            console.log("%cMay these verses bring peace to your soul...", "color: forestgreen;");
+        };
+    </script>
+</body>
+</html>

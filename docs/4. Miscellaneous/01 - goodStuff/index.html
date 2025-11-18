@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://tdurtschi.github.io/lws-docs/3.%20Miscellaneous/06%20-%20kuberenetes/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://tdurtschi.github.io/lws-docs/4.%20Miscellaneous/01%20-%20goodStuff/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Kubernetes - Lake Wingra Software Knowledge Base</title>
+    <title>Good Stuff / External Resources - Lake Wingra Software Knowledge Base</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Kubernetes";
-        var mkdocs_page_input_path = "3. Miscellaneous/06 - kuberenetes.md";
-        var mkdocs_page_url = "/lws-docs/3.%20Miscellaneous/06%20-%20kuberenetes/";
+        var mkdocs_page_name = "Good Stuff / External Resources";
+        var mkdocs_page_input_path = "4. Miscellaneous/01 - goodStuff.md";
+        var mkdocs_page_url = "/lws-docs/4.%20Miscellaneous/01%20-%20goodStuff/";
       </script>
     
     <!--[if lt IE 9]>
@@ -57,9 +57,24 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../2.%20Software%20Engineering%20Practices/02-%20refactoring/">Refactoring</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">3. Miscellaneous</span></p>
+              <p class="caption"><span class="caption-text">3. AI Resources</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3.%20AI%20Resources/01%20-%20journal/">01   journal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3.%20AI%20Resources/02%20-%20generativeAIArtifacts/">Generative AI Artifacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Miscellaneous</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../01%20-%20goodStuff/">Good Stuff / External Resources</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Good Stuff / External Resources</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#consulting-resources">Consulting resources</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#learning-resources">Learning resources</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fun">Fun</a>
+    </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../02%20-%20devExperience/">Developer Experience Tips</a>
                   </li>
@@ -69,13 +84,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../05%20-%20git/">Git</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Kubernetes</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#custom-kubectl-shortcuts">Custom kubectl shortcuts</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#k9s">k9s</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../06%20-%20kuberenetes/">Kubernetes</a>
                   </li>
               </ul>
       </div>
@@ -92,8 +101,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">3. Miscellaneous</li>
-      <li class="breadcrumb-item active">Kubernetes</li>
+          <li class="breadcrumb-item">4. Miscellaneous</li>
+      <li class="breadcrumb-item active">Good Stuff / External Resources</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -102,48 +111,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="kubernetes">Kubernetes</h1>
-<h2 id="custom-kubectl-shortcuts">Custom kubectl shortcuts</h2>
-<p>These examples use zsh, but could be easily adapted to bash.</p>
-<p>To edit the zsh config file:</p>
-<pre><code class="language-bash">vim ~/.zshrc
-</code></pre>
-<p>Note: make sure you restart the terminal after making these updates, or run <code>zsh</code> to create a new session.</p>
-<p>Here are the aliases I use today:</p>
-<pre><code class="language-bash">alias k=kubectl
-alias kdev=&quot;kubectl config set-context --current --namespace=dev&quot;
-alias kqa=&quot;kubectl config set-context --current --namespace=qa&quot;
-alias kuat=&quot;kubectl config set-context --current --namespace=uat&quot;
-alias kgp=&quot;kubectl get pods&quot;
-
-kenv() { kubectl config set-context --current --namespace=$1; }
-kbash() { kubectl exec --stdin --tty $1 -- /bin/bash; }
-</code></pre>
-<p>As you can see, I use alias to create shortcuts for very common commands. If a shortcut requires an argument, you can create a function.</p>
-<p>Example usage:</p>
-<pre><code class="language-bash">&gt; kqa
-Context &quot;k8s-context&quot; modified.
-
-&gt; kgp
-NAME                                  READY   STATUS      RESTARTS   AGE
-my-service-99bcfcdf5-9vvkl            1/1     Running     0          25d
-
-&gt; kbash my-service-99bcfcdf5-9vvkl 
-root@my-service-99bcfcdf5-9vvkl:/&gt; 
-</code></pre>
-<h2 id="k9s">k9s</h2>
-<p>Consider <a href="https://k9scli.io/">k9s</a> to simplify kubernetes management tasks including:</p>
-<ul>
-<li>Describing pods</li>
-<li>Executing shell on a pod</li>
-<li>Port forwarding</li>
-<li>Vewing Logs</li>
-</ul>
+                <h1 id="good-stuff-external-resources">Good Stuff / External Resources</h1>
+<h2 id="consulting-resources">Consulting resources</h2>
+<p><a href="https://labspractices.com/">Labs Practices</a></p>
+<p><a href="https://blogs.vmware.com/tanzu/why-tdd/">Go Fast Forever</a></p>
+<h2 id="learning-resources">Learning resources</h2>
+<p><a href="https://flexboxfroggy.com/">Flexbox Froggy</a></p>
+<h2 id="fun">Fun</h2>
+<p><a href="https://internetcheckpoint.page/">Internet Checkpoint</a></p>
+<p><a href="https://www.decisionproblem.com/paperclips/index2.html">Universal Paperclips</a></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../05%20-%20git/" class="btn btn-neutral float-left" title="Git"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../3.%20AI%20Resources/02%20-%20generativeAIArtifacts/" class="btn btn-neutral float-left" title="Generative AI Artifacts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../02%20-%20devExperience/" class="btn btn-neutral float-right" title="Developer Experience Tips">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -166,8 +148,10 @@ root@my-service-99bcfcdf5-9vvkl:/&gt;
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../05%20-%20git/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../3.%20AI%20Resources/02%20-%20generativeAIArtifacts/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../02%20-%20devExperience/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

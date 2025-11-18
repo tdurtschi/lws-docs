@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Terminal Emulator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000;
+            font-family: 'Courier New', monospace;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        #terminal {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            color: #00ff41;
+            padding: 20px;
+            overflow-y: auto;
+            font-size: 16px;
+            line-height: 1.4;
+            position: relative;
+            box-shadow: inset 0 0 20px rgba(0, 255, 65, 0.3);
+        }
+        
+        .scan-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(to bottom, 
+                rgba(0, 255, 65, 0) 0%, 
+                rgba(0, 255, 65, 0.4) 50%, 
+                rgba(0, 255, 65, 0) 100%);
+            animation: scan 8s linear infinite;
+            pointer-events: none;
+            z-index: 10;
+        }
+        
+        @keyframes scan {
+            0% { top: 0; }
+            100% { top: 100%; }
+        }
+        
+        .glow {
+            text-shadow: 0 0 5px #00ff41, 0 0 10px #00ff41, 0 0 15px #00ff41;
+        }
+        
+        .command {
+            color: #00ffff;
+            text-shadow: 0 0 5px #00ffff;
+        }
+        
+        .output {
+            color: #ff00ff;
+            text-shadow: 0 0 5px #ff00ff;
+        }
+        
+        .error {
+            color: #ff0066;
+            text-shadow: 0 0 5px #ff0066;
+        }
+        
+        .warning {
+            color: #ffff00;
+            text-shadow: 0 0 5px #ffff00;
+        }
+        
+        .matrix-rain {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.1;
+            z-index: 1;
+        }
+        
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 16px;
+            background-color: #00ff41;
+            animation: blink 1s infinite;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        .prompt {
+            color: #00ff41;
+            display: flex;
+            align-items: center;
+        }
+        
+        .prompt-symbol {
+            color: #ff00ff;
+            margin-right: 10px;
+            text-shadow: 0 0 5px #ff00ff;
+        }
+        
+        .terminal-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: rgba(0, 255, 65, 0.1);
+            border-bottom: 1px solid #00ff41;
+            font-size: 14px;
+        }
+        
+        .terminal-title {
+            color: #00ff41;
+            text-shadow: 0 0 5px #00ff41;
+        }
+        
+        .terminal-controls {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .control-btn {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .close-btn { background: #ff5555; }
+        .minimize-btn { background: #ffcc00; }
+        .maximize-btn { background: #00cc44; }
+        
+        .neon-border {
+            position: absolute;
+            pointer-events: none;
+            z-index: 5;
+        }
+        
+        .border-top {
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ff41, transparent);
+            box-shadow: 0 0 10px #00ff41;
+        }
+        
+        .border-bottom {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ff41, transparent);
+            box-shadow: 0 0 10px #00ff41;
+        }
+        
+        .border-left {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, transparent, #00ff41, transparent);
+            box-shadow: 0 0 10px #00ff41;
+        }
+        
+        .border-right {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, transparent, #00ff41, transparent);
+            box-shadow: 0 0 10px #00ff41;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal-header">
+        <div class="terminal-title">NEON TERMINAL v2.3.1</div>
+        <div class="terminal-controls">
+            <div class="control-btn minimize-btn"></div>
+            <div class="control-btn maximize-btn"></div>
+            <div class="control-btn close-btn"></div>
+        </div>
+    </div>
+    
+    <div class="neon-border border-top"></div>
+    <div class="neon-border border-bottom"></div>
+    <div class="neon-border border-left"></div>
+    <div class="neon-border border-right"></div>
+    
+    <div id="terminal"></div>
+    <div class="scan-line"></div>
+    <canvas id="matrix-rain" class="matrix-rain"></canvas>
+
+    <script>
+        const terminal = document.getElementById('terminal');
+        const matrixCanvas = document.getElementById('matrix-rain');
+        const ctx = matrixCanvas.getContext('2d');
+        
+        // Set canvas size
+        matrixCanvas.width = window.innerWidth;
+        matrixCanvas.height = window.innerHeight;
+        
+        // Matrix rain characters
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$#@%&*";
+        const fontSize = 14;
+        const columns = matrixCanvas.width / fontSize;
+        const drops = [];
+        
+        // Initialize drops
+        for (let i = 0; i < columns; i++) {
+            drops[i] = Math.floor(Math.random() * matrixCanvas.height / fontSize);
+        }
+        
+        // Matrix rain animation
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, matrixCanvas.width, matrixCanvas.height);
+            
+            ctx.fillStyle = '#00ff41';
+            ctx.font = `${fontSize}px monospace`;
+            
+            for (let i = 0; i < drops.length; i++) {
+                const text = chars[Math.floor(Math.random() * chars.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                
+                if (drops[i] * fontSize > matrixCanvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                
+                drops[i]++;
+            }
+        }
+        
+        // Commands and outputs
+        const commands = [
+            "neural_scan --deep --verbose",
+            "quantum_encrypt data_core.bin",
+            "ai_analyze --pattern recognition",
+            "cyber_security --firewall update",
+            "system_diagnostics --full_scan",
+            "data_mining --extract insights",
+            "network_monitor --real_time",
+            "virtual_reality --immersion level=maximum",
+            "bio_interface --sync neural_pathways",
+            "hologram_project --3d_rendering",
+            "satellite_uplink --establish connection",
+            "cloud_sync --secure_transfer",
+            "algorithm_optimize --performance boost",
+            "machine_learning --train new_model",
+            "robotics_control --autonomous mode",
+            "neural_network --activate deep_learning",
+            "augmented_reality --overlay data",
+            "quantum_computing --solve complex_equations",
+            "cyber_attack --simulate penetration_test",
+            "digital_forensics --analyze evidence"
+        ];
+        
+        const outputs = [
+            "[INFO] Neural scan initiated...",
+            "[SUCCESS] Quantum encryption completed successfully",
+            "[WARNING] Pattern recognition anomaly detected",
+            "[ERROR] Firewall update failed - retrying...",
+            "[INFO] System diagnostics: 98% operational",
+            "[SUCCESS] Data insights extracted: 1.2TB",
+            "[MONITOR] Network traffic: 45.7 Gbps",
+            "[VR] Immersion level set to MAXIMUM",
+            "[BIO] Neural pathways synchronized",
+            "[HOLO] 3D projection active",
+            "[SATELLITE] Connection established - 99.7% signal",
+            "[CLOUD] Secure transfer complete",
+            "[OPTIMIZE] Performance boost: +340%",
+            "[ML] Model training accuracy: 97.3%",
+            "[ROBOTICS] Autonomous mode activated",
+            "[NEURAL] Deep learning network online",
+            "[AR] Data overlay enabled",
+            "[QUANTUM] Complex equations solved in 0.003s",
+            "[CYBER] Penetration test: Vulnerabilities found",
+            "[FORENSICS] Evidence analysis complete"
+        ];
+        
+        const errors = [
+            "[ERROR] Memory overflow in sector 7",
+            "[CRITICAL] Core temperature exceeding limits",
+            "[FATAL] Quantum coherence degradation",
+            "[WARNING] Power fluctuation detected",
+            "[ALERT] Unauthorized access attempt blocked",
+            "[ERROR] Data corruption in node 42",
+            "[CRITICAL] Network latency spike: 450ms",
+            "[FATAL] Processor overheating - throttling",
+            "[WARNING] Backup system failure",
+            "[ALERT] Security breach attempt detected"
+        ];
+        
+        // Add text to terminal
+        function addText(text, className = '') {
+            const line = document.createElement('div');
+            line.className = className;
+            line.innerHTML = text;
+            terminal.appendChild(line);
+            terminal.scrollTop = terminal.scrollHeight;
+        }
+        
+        // Simulate typing effect
+        function typeText(text, className = '', callback) {
+            const line = document.createElement('div');
+            line.className = className;
+            terminal.appendChild(line);
+            
+            let i = 0;
+            const typeInterval = setInterval(() => {
+                if (i < text.length) {
+                    line.innerHTML += text.charAt(i);
+                    terminal.scrollTop = terminal.scrollHeight;
+                    i++;
+                } else {
+                    clearInterval(typeInterval);
+                    if (callback) callback();
+                }
+            }, Math.random() * 50 + 10);
+        }
+        
+        // Execute a random command
+        function executeCommand() {
+            const command = commands[Math.floor(Math.random() * commands.length)];
+            const outputCount = Math.floor(Math.random() * 5) + 1;
+            
+            // Show command prompt
+            const promptLine = document.createElement('div');
+            promptLine.className = 'prompt';
+            promptLine.innerHTML = '<span class="prompt-symbol">></span> ';
+            terminal.appendChild(promptLine);
+            
+            // Type the command
+            typeText(command, 'command', () => {
+                // Add some output lines
+                for (let i = 0; i < outputCount; i++) {
+                    setTimeout(() => {
+                        const rand = Math.random();
+                        if (rand < 0.7) {
+                            addText(outputs[Math.floor(Math.random() * outputs.length)], 'output');
+                        } else if (rand < 0.9) {
+                            addText(errors[Math.floor(Math.random() * errors.length)], 'error');
+                        } else {
+                            addText('[WARNING] System resources at 89%', 'warning');
+                        }
+                    }, i * 300);
+                }
+                
+                // Add blank line after output
+                setTimeout(() => {
+                    addText('');
+                }, outputCount * 300 + 200);
+            });
+        }
+        
+        // Initialize terminal
+        function initTerminal() {
+            addText('NEON TERMINAL v2.3.1 - CYBER SYSTEMS INITIALIZED', 'glow');
+            addText('==================================================', 'glow');
+            addText('');
+            addText('[SYSTEM] Boot sequence complete');
+            addText('[SECURITY] Firewall v4.2 active');
+            addText('[NETWORK] Connection established');
+            addText('[AI] Neural engine online');
+            addText('');
+            
+            // Start executing commands periodically
+            setInterval(() => {
+                executeCommand();
+            }, Math.random() * 3000 + 2000);
+            
+            // Occasionally show system messages
+            setInterval(() => {
+                if (Math.random() > 0.7) {
+                    const messages = [
+                        '[SYSTEM] Memory usage: 45%',
+                        '[NETWORK] Bandwidth: 23.4 Gbps',
+                        '[SECURITY] Threat level: LOW',
+                        '[AI] Processing 1.4 million requests/sec',
+                        '[QUANTUM] Coherence stability: 99.8%',
+                        '[POWER] Energy consumption: 1.2 MW'
+                    ];
+                    addText(messages[Math.floor(Math.random() * messages.length)], 'output');
+                }
+            }, 5000);
+            
+            // Occasionally show errors
+            setInterval(() => {
+                if (Math.random() > 0.85) {
+                    addText(errors[Math.floor(Math.random() * errors.length)], 'error');
+                }
+            }, 8000);
+        }
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            matrixCanvas.width = window.innerWidth;
+            matrixCanvas.height = window.innerHeight;
+        });
+        
+        // Start everything
+        window.addEventListener('load', () => {
+            initTerminal();
+            
+            // Start matrix rain
+            setInterval(drawMatrix, 50);
+        });
+    </script>
+</body>
+</html>

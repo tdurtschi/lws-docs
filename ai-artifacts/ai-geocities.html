@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Learning Resources - GeoCities Style</title>
+    <style>
+        body {
+            background-color: #000080;
+            background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+            color: #ffff00;
+            font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', cursive;
+            margin: 0;
+            padding: 20px;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 8px ridge #ff00ff;
+            background-color: #000000;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .header {
+            text-align: center;
+            background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #ff00ff);
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 4px double #ffffff;
+            animation: rainbow 3s infinite;
+        }
+        
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        
+        h1 {
+            font-size: 36px;
+            text-shadow: 3px 3px 0 #ff0000, 6px 6px 0 #00ff00;
+            margin: 0;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            color: #00ffff;
+            text-decoration: underline;
+        }
+        
+        .construction {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .construction img {
+            width: 100px;
+            height: auto;
+        }
+        
+        .links-section {
+            background-color: #800080;
+            border: 4px outset #ff00ff;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        h2 {
+            color: #ffff00;
+            text-align: center;
+            font-size: 24px;
+            text-decoration: underline;
+            margin-top: 0;
+        }
+        
+        .link-list {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        
+        .link-list li {
+            margin: 10px 0;
+        }
+        
+        a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            color: #ff00ff;
+            text-decoration: underline;
+        }
+        
+        .counter {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 0;
+            color: #ffffff;
+        }
+        
+        .guestbook {
+            background-color: #008000;
+            border: 4px inset #00ff00;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .blink {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        
+        .marquee {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 10px;
+            margin: 20px 0;
+            border: 2px dashed #ffff00;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 2px dotted #ffff00;
+            font-size: 14px;
+        }
+        
+        .web-ring {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        
+        .web-ring a {
+            font-size: 18px;
+            padding: 5px 10px;
+            background-color: #ff0000;
+            border: 2px outset #ffff00;
+        }
+        
+        .hit-counter {
+            display: inline-block;
+            background-color: #000000;
+            color: #00ff00;
+            padding: 5px 10px;
+            font-family: 'Courier New', monospace;
+            border: 2px inset #ffffff;
+        }
+        
+        .divider {
+            height: 20px;
+            background: repeating-linear-gradient(
+                45deg,
+                #ff0000,
+                #ff0000 10px,
+                #ffff00 10px,
+                #ffff00 20px,
+                #00ff00 20px,
+                #00ff00 30px,
+                #00ffff 30px,
+                #00ffff 40px,
+                #ff00ff 40px,
+                #ff00ff 50px
+            );
+            margin: 20px 0;
+        }
+        
+        .email-link {
+            color: #00ffff;
+            font-weight: bold;
+        }
+        
+        .under-construction {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transform: rotate(15deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌟 AI LEARNING RESOURCES 🌟</h1>
+            <div class="subtitle">The Ultimate Collection of Artificial Intelligence Learning Links!</div>
+        </div>
+        
+        <div class="under-construction">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZjAwMDAiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkNPTlNUUlVDVElPTjwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkNPTUlORyBTT09OITwvdGV4dD48L3N2Zz4=" alt="Under Construction">
+        </div>
+        
+        <div class="construction">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDAiIGZpbGw9InllbGxvdyIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+V09SSyBJTiBQUk9HUkVTUzwvdGV4dD48L3N2Zz4=" alt="Work in Progress">
+        </div>
+        
+        <div class="marquee">
+            <marquee behavior="scroll" direction="left">🔥 HOT NEW AI COURSES ADDED DAILY! 🔥 CHECK OUT THE LATEST DEEP LEARNING TUTORIALS! 🔥</marquee>
+        </div>
+        
+        <div class="links-section">
+            <h2>🤖 BEST AI LEARNING SITES 🤖</h2>
+            <ul class="link-list">
+                <li><a href="https://www.coursera.org/specializations/deep-learning" target="_blank">Deep Learning Specialization by Andrew Ng</a> - The gold standard for deep learning education</li>
+                <li><a href="https://cs229.stanford.edu/" target="_blank">Stanford CS229: Machine Learning</a> - Classic machine learning course by Andrew Ng</li>
+                <li><a href="https://www.fast.ai/" target="_blank">Fast.ai Courses</a> - Practical deep learning for coders</li>
+                <li><a href="https://course.fast.ai/part2" target="_blank">Practical Deep Learning Part 2</a> - Advanced practical techniques</li>
+                <li><a href="https://www.deeplearning.ai/" target="_blank">DeepLearning.AI</a> - Cutting-edge AI education platform</li>
+                <li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-s091-introduction-to-deep-learning-january-iap-2019/" target="_blank">MIT Intro to Deep Learning</a> - Free MIT course materials</li>
+            </ul>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="links-section">
+            <h2>🧠 MACHINE LEARNING FUNDAMENTALS 🧠</h2>
+            <ul class="link-list">
+                <li><a href="https://see.stanford.edu/Course/CS229" target="_blank">Stanford CS229 Lectures</a> - Full video lectures on ML</li>
+                <li><a href="https://www.kaggle.com/learn" target="_blank">Kaggle Learn Micro-Courses</a> - Hands-on ML tutorials</li>
+                <li><a href="https://developers.google.com/machine-learning/crash-course" target="_blank">Google ML Crash Course</a> - Google's free ML introduction</li>
+                <li><a href="https://www.edx.org/course/introduction-to-machine-learning-with-python" target="_blank">edX ML with Python</a> - University-level course</li>
+                <li><a href="https://www.udacity.com/course/intro-to-machine-learning--ud120" target="_blank">Udacity Intro to ML</a> - Beginner-friendly approach</li>
+                <li><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" target="_blank">3Blue1Brown Neural Networks</a> - Visual math explanations</li>
+            </ul>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="links-section">
+            <h2>💻 PROGRAMMING & TOOLS 💻</h2>
+            <ul class="link-list">
+                <li><a href="https://pytorch.org/tutorials/" target="_blank">PyTorch Tutorials</a> - Official PyTorch learning resources</li>
+                <li><a href="https://www.tensorflow.org/tutorials" target="_blank">TensorFlow Tutorials</a> - Google's ML framework guides</li>
+                <li><a href="https://scikit-learn.org/stable/tutorial/index.html" target="_blank">Scikit-learn Tutorial</a> - Python ML library tutorial</li>
+                <li><a href="https://colab.research.google.com/" target="_blank">Google Colab</a> - Free Jupyter notebook environment</li>
+                <li><a href="https://www.kaggle.com/code" target="_blank">Kaggle Notebooks</a> - Community-shared ML notebooks</li>
+                <li><a href="https://github.com/" target="_blank">GitHub AI Projects</a> - Open source AI repositories</li>
+            </ul>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="links-section">
+            <h2>📰 NEWS & RESEARCH 📰</h2>
+            <ul class="link-list">
+                <li><a href="https://arxiv.org/list/cs.LG/recent" target="_blank">arXiv ML Papers</a> - Latest research papers</li>
+                <li><a href="https://www.technologyreview.com/topic/artificial-intelligence/" target="_blank">MIT Tech Review AI</a> - AI news and analysis</li>
+                <li><a href="https://ai.googleblog.com/" target="_blank">Google AI Blog</a> - Industry research updates</li>
+                <li><a href="https://openai.com/research" target="_blank">OpenAI Research</a> - Cutting-edge AI research</li>
+                <li><a href="https://deepmind.com/research" target="_blank">DeepMind Publications</a> - State-of-the-art research</li>
+                <li><a href="https://www.reddit.com/r/MachineLearning/" target="_blank">r/MachineLearning</a> - Active AI community</li>
+            </ul>
+        </div>
+        
+        <div class="counter">
+            <span class="blink">🔥</span> YOU ARE VISITOR NUMBER: 
+            <span class="hit-counter">00000<span id="visitor-count">1337</span></span>
+            <span class="blink">🔥</span>
+        </div>
+        
+        <div class="web-ring">
+            <a href="#">« Previous Site</a>
+            <a href="#">Web Ring Index</a>
+            <a href="#">Next Site »</a>
+        </div>
+        
+        <div class="guestbook">
+            <h2>📝 SIGN MY GUESTBOOK! 📝</h2>
+            <p>Email me at: <span class="email-link">ai-learner@geocities.com</span></p>
+            <p>Don't forget to add this site to your favorites! <span class="blink">⭐</span></p>
+        </div>
+        
+        <div class="footer">
+            <p>Best viewed in Netscape Navigator 4.0 at 800x600 resolution</p>
+            <p>This page is © 2023 AI Learning Resources. All rights reserved.</p>
+            <p>
+                <a href="#">Home</a> | 
+                <a href="#">Links</a> | 
+                <a href="#">Guestbook</a> | 
+                <a href="#">Email Me</a>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Simple visitor counter animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const countElement = document.getElementById('visitor-count');
+            let count = 1337;
+            
+            setInterval(() => {
+                count++;
+                countElement.textContent = count.toString().padStart(4, '0');
+            }, 30000); // Update every 30 seconds
+            
+            // Add some retro animations
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('mouseover', function() {
+                    this.style.transform = 'scale(1.1)';
+                });
+                
+                link.addEventListener('mouseout', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
