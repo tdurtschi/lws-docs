@@ -10,4 +10,4 @@
 ## Tools
 
 - [Qwen3-Coder-WebDev](https://huggingface.co/spaces/Qwen/Qwen3-Coder-WebDev) (HuggingFace, as of 11/25)
-- 
+- [SDXL Turbo Image to Image/Text to Image](https://huggingface.co/spaces/diffusers/unofficial-SDXL-Turbo-i2i-t2i) (_Fast_ image gen)
