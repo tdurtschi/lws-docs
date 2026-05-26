@@ -14,21 +14,21 @@ Here's an example of an expected behavior: _"When the user types an invalid char
 
 At this point, the developer runs the test. However, the expected behavior doesn't exist, so the test will fail. In TDD a failing tests is often called a "red" test. 
 
-![1 - Failing Test](../img/tdd-1.png)
+![1 - Failing Test](img/tdd-1.png)
 
 After seeing the test fail as expected, the developer writes some code to implement the function, for example adding an error state to a text field. 
 
 Then the developer runs the test again to verify it passes. A passing test is often called "green".
 
-![2 - Passing Test](../img/tdd-2.png)
+![2 - Passing Test](img/tdd-2.png)
 
 Finally, when every automated test passes, there is an opportunity to refactor the code. Some common ways to refactor the code include replacing duplicated code with a function call, or renaming a variable to be more descriptive.
 
-![3 - Refactor!](../img/tdd-3.png)
+![3 - Refactor!](img/tdd-3.png)
 
 After the developer has (optionally) refactored the code, it is time to work on the next incremental feature by writing a new test.
 
-![4 - Loop is completed](../img/tdd-4.png)
+![4 - Loop is completed](img/tdd-4.png)
 
 As you can see, each of the 3 steps follows one of the others, forming a __cycle__. When developing an application, applying TDD means to repeat the cycle over and over and over again. 
 
@@ -42,13 +42,13 @@ What really matters at the end of the day is good software. In other words, the 
 
 A long time ago, the lifecycle of a software project generally resembled this diagram. A team would build a piece of software, test it out, then ship it.
 
-![5 - Overly Simple diagram](../img/tdd-5.png)
+![5 - Overly Simple diagram](img/tdd-5.png)
 
 Unfortunately, modern software delivery is not so simple!
 
 The reality for nearly all software is that it's never done; it is always being tweaked and improved. Development is an iterative process. Top software companies like Amazon and Google push new updates to their flagship products daily or even multiple times a day. There is a term for this: [__Continuous Delivery__](https://martinfowler.com/books/continuousDelivery.html).
 
-![6 - Another cycle](../img/tdd-6.png)
+![6 - Another cycle](img/tdd-6.png)
 
 When developing iteratively, tension is created. We want frequent changes to the code, and we want to deliver quickly, but we also want the app to work. Some teams accept the risk of breaking things, and simply don't test. Other teams pay some slow, error-prone humans to test each version of the app before it gets shipped. The third option is comprehensive __automated tests__. If the goal is __delivering quickly _and_ confidently__, the best way to achieve this is with automated test coverage.
 
@@ -58,7 +58,7 @@ One argument against TDD is that writing automated tests takes too long, or it i
 
 First, as I mentioned earlier, your automated tests replace testing by hand. In many cases __manual testing can be eliminated__ by comprehensive tests. That's probably reason enough to write automated tests.
 
-Another major return on investment comes in the form of __developer confidence__. This is somewhat hard to convey if you haven't experienced it, but it's undeniable for many who have first-hand experience on well-tested codebases. In short, having tests gives you freedom to [refactor](../02-%20refactoring/) the code. A great deep dive on this subject is Matthew Parker's [Why TDD](https://blogs.vmware.com/tanzu/why-tdd/).
+Another major return on investment comes in the form of __developer confidence__. This is somewhat hard to convey if you haven't experienced it, but it's undeniable for many who have first-hand experience on well-tested codebases. In short, having tests gives you freedom to [refactor](refactoring.md) the code. A great deep dive on this subject is Matthew Parker's [Why TDD](https://blogs.vmware.com/tanzu/why-tdd/).
 
 ## Test First
 
@@ -76,7 +76,6 @@ So a test should fail. The only remaining question is, at what point in developm
 For me, the choice is clear. Only writing the test __first__ gives me the confidence I need while avoiding extra work. That's why I TDD!
 
 ## Learn More About TDD
-[Let's chat](../../#worth-with-lake-wingra-software) about TDD or discuss how adopting TDD could improve outcomes for your team! 
 
 ### Resources
 

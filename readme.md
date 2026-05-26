@@ -1,28 +1,47 @@
 # Lake Wingra Software Knowledge Base
 
-[Click Here](https://tdurtschi.github.io/lws-docs/site/) to browse knowledge base.
+Published at: https://tdurtschi.github.io/lws-docs/site/
 
-## Local setup 
+## Structure
 
-First, install mkdocs:
+```
+mkdocs/
+  mkdocs.yml       # Site config and nav
+  docs/
+    index.md       # Home page
+    *.md           # All content pages (flat)
+    img/           # Images used by content pages
+docs/              # Built output (served by GitHub Pages)
+```
+
+## Local setup
+
+Install MkDocs (one time):
+
 ```sh
+python3 -m venv .venv
+source .venv/bin/activate
 pip install mkdocs
 ```
 
-To install / activate a virtual env:
-```sh
-# install (only required once)
-python3 -m venv .venv
+Activate the virtualenv in future sessions:
 
-# activate (required whenever starting a new session)
+```sh
 source .venv/bin/activate
 ```
 
-Also see https://www.mkdocs.org/getting-started/
+## Build
 
-## Quick build
+```sh
+pushd mkdocs; mkdocs build -d ../docs; popd
+```
 
-`pushd mkdocs; mkdocs build -d ../docs; popd;`
+## Dev server
 
-## Dev Mode
-`mkdocs serve`
+```sh
+cd mkdocs && mkdocs serve
+```
+
+## Deploy
+
+The `docs/` directory is served by GitHub Pages. After building, commit and push the updated `docs/` directory.

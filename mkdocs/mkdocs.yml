@@ -1,3 +1,14 @@
-site_name: Lake Wingra Software
+site_name: Lake Wingra Software Knowledge Base
 theme: readthedocs
 site_url: https://tdurtschi.github.io/lws-docs/
+nav:
+  - Home: index.md
+  - TDD: tdd.md
+  - Refactoring: refactoring.md
+  - AI Links: ai-links.md
+  - External Resources: good-stuff.md
+  - Developer Experience: dev-experience.md
+  - Docker: docker.md
+  - .NET: dotnet.md
+  - Git: git.md
+  - Kubernetes: kubernetes.md
