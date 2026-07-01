@@ -13,5 +13,6 @@ nav:
   - Git: git.md
   - Kubernetes: kubernetes.md
   - AI Art:
-      - Birds on Bicycles: birds-on-bicycles.md
-      - Birds on Bicycles II: birds-on-bicycles-ii.md
+      - Birds on Bicycles - Sonnet 4.6: birds-on-bicycles.md
+      - Birds on Bicycles II - Haiku 4.5: birds-on-bicycles-ii.md
+      - Birds on Bicycles III - Opus 4.7: birds-on-bicycles-iii.md

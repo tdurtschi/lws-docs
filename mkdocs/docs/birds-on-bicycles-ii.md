@@ -1,6 +1,6 @@
 # Birds on Bicycles II
 
-A second collection of 20 birds and their favorite bicycles. All artwork created with ✨ Claude Haiku 4.5 ✨.
+A second collection of 20 birds and their favorite bicycles. All artwork created with Claude Code using ✨ Claude Haiku 4.5 ✨.
 
 ```markdown
 Generate 20 SVGs of various waterfowl riding various bicycles. 

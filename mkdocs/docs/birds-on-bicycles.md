@@ -1,6 +1,6 @@
 # Birds on Bicycles
 
-A photo diary of 20 birds and their favorite bicycles. All artwork created with ✨ Claude Sonnet 4.6 ✨.
+A photo diary of 20 birds and their favorite bicycles. All artwork created with Claude Code using ✨ Claude Sonnet 4.6 ✨.
 
 ```markdown
 Generate 20 SVGs of various waterfowl riding various bicycles. 

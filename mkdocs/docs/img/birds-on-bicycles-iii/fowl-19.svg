@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Common Merganser on Gravel Bike</title>
+  <rect width="400" height="300" fill="#E5D4B1"/>
+  <rect y="252" width="400" height="48" fill="#8B7355"/>
+  <circle cx="30" cy="270" r="4" fill="#5a4a30"/>
+  <circle cx="80" cy="275" r="3" fill="#5a4a30"/>
+  <circle cx="150" cy="272" r="5" fill="#5a4a30"/>
+  <circle cx="220" cy="278" r="3" fill="#5a4a30"/>
+  <circle cx="290" cy="274" r="4" fill="#5a4a30"/>
+  <circle cx="360" cy="270" r="3" fill="#5a4a30"/>
+  <!-- Gravel bike: drop bars, wider clearance -->
+  <circle cx="100" cy="220" r="36" fill="none" stroke="#111" stroke-width="3"/>
+  <circle cx="100" cy="220" r="32" fill="none" stroke="#444" stroke-width="1" stroke-dasharray="2 2"/>
+  <circle cx="300" cy="220" r="36" fill="none" stroke="#111" stroke-width="3"/>
+  <circle cx="300" cy="220" r="32" fill="none" stroke="#444" stroke-width="1" stroke-dasharray="2 2"/>
+  <g stroke="#111" stroke-width="1">
+    <line x1="100" y1="184" x2="100" y2="256"/>
+    <line x1="64" y1="220" x2="136" y2="220"/>
+    <line x1="300" y1="184" x2="300" y2="256"/>
+    <line x1="264" y1="220" x2="336" y2="220"/>
+  </g>
+  <path d="M 100 220 L 205 160 L 300 220 L 200 220 Z" stroke="#2c8c5a" stroke-width="5" fill="none"/>
+  <line x1="100" y1="220" x2="140" y2="145" stroke="#2c8c5a" stroke-width="5"/>
+  <path d="M 140 145 Q 125 143 122 155 Q 126 165 140 168" stroke="#111" stroke-width="3" fill="none"/>
+  <path d="M 140 145 Q 155 143 158 155 Q 154 165 140 168" stroke="#111" stroke-width="3" fill="none"/>
+  <rect x="197" y="152" width="18" height="6" fill="#111" rx="1"/>
+  <!-- Common Merganser: dark green head, red beak, white body, crest -->
+  <ellipse cx="210" cy="135" rx="42" ry="22" fill="#fff"/>
+  <ellipse cx="215" cy="145" rx="30" ry="10" fill="#3a3a3a"/>
+  <circle cx="180" cy="108" r="20" fill="#1a4d30"/>
+  <!-- Shaggy crest -->
+  <path d="M 165 100 L 158 88 L 168 95 Z" fill="#0f3320"/>
+  <path d="M 175 92 L 172 78 L 180 90 Z" fill="#0f3320"/>
+  <path d="M 185 90 L 188 76 L 192 88 Z" fill="#0f3320"/>
+  <path d="M 195 95 L 202 82 L 200 96 Z" fill="#0f3320"/>
+  <!-- Red serrated bill -->
+  <polygon points="162,112 138,115 162,120" fill="#c0392b"/>
+  <path d="M 138 115 L 148 116 M 150 117 L 158 118" stroke="#f5c451" stroke-width="0.8"/>
+  <path d="M 138 115 L 145 117 L 148 115 L 152 118 L 155 116 L 158 118" stroke="#8b1a0f" stroke-width="1" fill="none"/>
+  <circle cx="182" cy="106" r="2.4" fill="#c0392b"/>
+  <circle cx="182" cy="106" r="1.1" fill="#000"/>
+  <line x1="210" y1="157" x2="200" y2="215" stroke="#c0392b" stroke-width="3"/>
+</svg>
