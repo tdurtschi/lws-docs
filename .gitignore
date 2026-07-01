@@ -2,4 +2,5 @@ clients/
 drafts/
 .venv/
 notes/docs/
+/docs/
 .DS_Store
