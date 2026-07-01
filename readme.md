@@ -43,5 +43,26 @@ cd mkdocs && mkdocs serve
 ```
 
 ## Deploy
+Note: Build the application before deploying to either environment.
 
-The `docs/` directory is served by GitHub Pages. After building, commit and push the updated `docs/` directory.
+### Staging (GitHub Pages)
+
+Commit and push the updated `docs/` directory to deploy to GitHub Pages:
+
+```sh
+git add docs/
+git commit -m "Update docs"
+git push
+```
+
+The site will be available at: https://tdurtschi.github.io/lws-docs/site/
+
+### Production (Azure)
+
+To deploy to production Azure Blob Storage:
+
+```sh
+az storage blob upload-batch -s docs/ -d '$web' --account-name $ACCOUNT_NAME --overwrite
+```
+
+Use `--overwrite` to ensure all files (including `index.html`) are updated.

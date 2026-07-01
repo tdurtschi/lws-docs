@@ -12,3 +12,4 @@ nav:
   - .NET: dotnet.md
   - Git: git.md
   - Kubernetes: kubernetes.md
+  - Birds on Bicycles: birds-on-bicycles.md

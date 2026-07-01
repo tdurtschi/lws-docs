@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="roadsky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B3E5FC"/>
+      <stop offset="100%" stop-color="#E1F5FE"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="265" fill="url(#roadsky)"/>
+  <!-- Subtle road -->
+  <rect y="250" width="400" height="50" fill="#BDBDBD"/>
+  <rect y="248" width="400" height="5" fill="#9E9E9E"/>
+  <rect y="258" x="50" width="80" height="4" fill="#E0E0E0" rx="2"/>
+  <rect y="258" x="175" width="80" height="4" fill="#E0E0E0" rx="2"/>
+  <rect y="258" x="300" width="80" height="4" fill="#E0E0E0" rx="2"/>
+  <!-- Trees -->
+  <rect x="30" y="190" width="8" height="60" fill="#5D4037"/>
+  <ellipse cx="34" cy="185" rx="22" ry="28" fill="#2E7D32"/>
+  <rect x="350" y="195" width="8" height="55" fill="#5D4037"/>
+  <ellipse cx="354" cy="188" rx="22" ry="28" fill="#388E3C"/>
+
+  <!-- Road Bike -->
+  <!-- Rear wheel (thin tire) -->
+  <circle cx="140" cy="220" r="42" fill="none" stroke="#212121" stroke-width="5"/>
+  <circle cx="140" cy="220" r="37" fill="none" stroke="#444" stroke-width="1"/>
+  <g stroke="#555" stroke-width="1.5">
+    <line x1="140" y1="178" x2="140" y2="262"/>
+    <line x1="98" y1="220" x2="182" y2="220"/>
+    <line x1="110" y1="190" x2="170" y2="250"/>
+    <line x1="170" y1="190" x2="110" y2="250"/>
+    <line x1="100" y1="205" x2="180" y2="235"/>
+    <line x1="180" y1="205" x2="100" y2="235"/>
+    <line x1="125" y1="180" x2="155" y2="260"/>
+    <line x1="155" y1="180" x2="125" y2="260"/>
+  </g>
+  <circle cx="140" cy="220" r="6" fill="#212121"/>
+
+  <!-- Front wheel -->
+  <circle cx="285" cy="220" r="42" fill="none" stroke="#212121" stroke-width="5"/>
+  <circle cx="285" cy="220" r="37" fill="none" stroke="#444" stroke-width="1"/>
+  <g stroke="#555" stroke-width="1.5">
+    <line x1="285" y1="178" x2="285" y2="262"/>
+    <line x1="243" y1="220" x2="327" y2="220"/>
+    <line x1="255" y1="190" x2="315" y2="250"/>
+    <line x1="315" y1="190" x2="255" y2="250"/>
+    <line x1="245" y1="205" x2="325" y2="235"/>
+    <line x1="325" y1="205" x2="245" y2="235"/>
+    <line x1="270" y1="180" x2="300" y2="260"/>
+    <line x1="300" y1="180" x2="270" y2="260"/>
+  </g>
+  <circle cx="285" cy="220" r="6" fill="#212121"/>
+
+  <!-- Frame (sleek road geometry) -->
+  <line x1="140" y1="220" x2="198" y2="158" stroke="#E53935" stroke-width="5"/>
+  <line x1="198" y1="158" x2="285" y2="220" stroke="#E53935" stroke-width="5"/>
+  <line x1="198" y1="158" x2="222" y2="156" stroke="#E53935" stroke-width="5"/>
+  <line x1="222" y1="156" x2="140" y2="220" stroke="#E53935" stroke-width="4"/>
+
+  <!-- Seat post and saddle -->
+  <line x1="222" y1="156" x2="222" y2="136" stroke="#333" stroke-width="4"/>
+  <path d="M208,135 Q222,128 236,135" stroke="#333" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="222" cy="134" rx="16" ry="6" fill="#212121"/>
+
+  <!-- Drop handlebars -->
+  <line x1="198" y1="158" x2="198" y2="138" stroke="#333" stroke-width="4"/>
+  <path d="M183,136 Q198,130 213,136 Q215,144 208,148 Q201,152 196,147" stroke="#333" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="196" cy="147" r="4" fill="#111"/>
+  <circle cx="183" cy="136" r="4" fill="#111"/>
+
+  <!-- SWAN -->
+  <!-- Body (large white ellipse) -->
+  <ellipse cx="215" cy="118" rx="48" ry="28" fill="white" stroke="#E0E0E0" stroke-width="1.5"/>
+  <!-- Wing folded on body -->
+  <ellipse cx="210" cy="125" rx="40" ry="17" fill="#F5F5F5"/>
+  <path d="M176,122 Q200,130 220,128 Q215,138 190,136" fill="#EEEEEE"/>
+  <!-- Long graceful neck -->
+  <path d="M253,106 Q278,90 282,72 Q285,58 278,50" stroke="white" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M253,106 Q278,90 282,72 Q285,58 278,50" stroke="#F5F5F5" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- Head -->
+  <circle cx="278" cy="46" r="18" fill="white"/>
+  <!-- Bill -->
+  <path d="M292,48 L312,50 L292,54" fill="#FF6F00"/>
+  <path d="M291,47 L292,48 L292,54 L291,55" fill="#1A1A1A" stroke="none"/>
+  <!-- Eye -->
+  <circle cx="286" cy="43" r="3" fill="#1A1A1A"/>
+  <circle cx="287" cy="42" r="1" fill="white"/>
+  <!-- Tail feathers -->
+  <path d="M170,114 Q152,108 148,116 Q157,122 152,130 Q165,124 162,132 Q172,125 168,133" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  <!-- Legs -->
+  <line x1="210" y1="143" x2="205" y2="168" stroke="#FF6F00" stroke-width="4"/>
+  <line x1="228" y1="145" x2="233" y2="170" stroke="#FF6F00" stroke-width="4"/>
+  <line x1="198" y1="167" x2="213" y2="167" stroke="#FF6F00" stroke-width="3"/>
+  <line x1="228" y1="169" x2="243" y2="169" stroke="#FF6F00" stroke-width="3"/>
+
+  <text x="8" y="292" font-family="Georgia,serif" font-size="13" fill="#01579B" font-style="italic">Mute Swan · Road Bike</text>
+</svg>

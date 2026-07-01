@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="racesky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3E0"/>
+      <stop offset="100%" stop-color="#FFE0B2"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="265" fill="url(#racesky)"/>
+  <!-- Race track feel -->
+  <rect y="248" width="400" height="52" fill="#9E9E9E"/>
+  <rect y="245" width="400" height="6" fill="#757575"/>
+  <!-- Speed lines in background -->
+  <g stroke="#FF6F00" stroke-width="2" opacity="0.15">
+    <line x1="0" y1="80" x2="400" y2="80"/>
+    <line x1="0" y1="110" x2="400" y2="110"/>
+    <line x1="0" y1="140" x2="400" y2="140"/>
+    <line x1="0" y1="170" x2="400" y2="170"/>
+  </g>
+  <!-- Checkered flag pattern corner -->
+  <g>
+    <rect x="360" y="0" width="20" height="20" fill="#1A1A1A"/>
+    <rect x="380" y="0" width="20" height="20" fill="white"/>
+    <rect x="360" y="20" width="20" height="20" fill="white"/>
+    <rect x="380" y="20" width="20" height="20" fill="#1A1A1A"/>
+    <rect x="360" y="40" width="20" height="20" fill="#1A1A1A"/>
+    <rect x="380" y="40" width="20" height="20" fill="white"/>
+  </g>
+
+  <!-- Racing Bike (aggressive, aero, drop bars) -->
+  <!-- Rear wheel (thin, deep section) -->
+  <circle cx="132" cy="218" r="42" fill="none" stroke="#111" stroke-width="5"/>
+  <circle cx="132" cy="218" r="36" fill="none" stroke="#333" stroke-width="1"/>
+  <g stroke="#444" stroke-width="1.5">
+    <line x1="132" y1="176" x2="132" y2="260"/>
+    <line x1="90" y1="218" x2="174" y2="218"/>
+    <line x1="103" y1="188" x2="161" y2="248"/>
+    <line x1="161" y1="188" x2="103" y2="248"/>
+    <line x1="92" y1="203" x2="172" y2="233"/>
+    <line x1="172" y1="203" x2="92" y2="233"/>
+    <line x1="117" y1="178" x2="147" y2="258"/>
+    <line x1="147" y1="178" x2="117" y2="258"/>
+  </g>
+  <circle cx="132" cy="218" r="8" fill="#111"/>
+
+  <!-- Front wheel -->
+  <circle cx="288" cy="218" r="42" fill="none" stroke="#111" stroke-width="5"/>
+  <circle cx="288" cy="218" r="36" fill="none" stroke="#333" stroke-width="1"/>
+  <g stroke="#444" stroke-width="1.5">
+    <line x1="288" y1="176" x2="288" y2="260"/>
+    <line x1="246" y1="218" x2="330" y2="218"/>
+    <line x1="259" y1="188" x2="317" y2="248"/>
+    <line x1="317" y1="188" x2="259" y2="248"/>
+    <line x1="248" y1="203" x2="328" y2="233"/>
+    <line x1="328" y1="203" x2="248" y2="233"/>
+    <line x1="273" y1="178" x2="303" y2="258"/>
+    <line x1="303" y1="178" x2="273" y2="258"/>
+  </g>
+  <circle cx="288" cy="218" r="8" fill="#111"/>
+
+  <!-- Racing frame (aggressive geometry, very forward) -->
+  <line x1="132" y1="218" x2="188" y2="150" stroke="#E53935" stroke-width="6"/>
+  <line x1="188" y1="150" x2="288" y2="218" stroke="#E53935" stroke-width="6"/>
+  <line x1="188" y1="150" x2="218" y2="148" stroke="#E53935" stroke-width="6"/>
+  <line x1="218" y1="148" x2="132" y2="218" stroke="#E53935" stroke-width="5"/>
+
+  <!-- Saddle (very forward, slammed) -->
+  <line x1="218" y1="148" x2="225" y2="130" stroke="#333" stroke-width="4"/>
+  <path d="M213,129 Q225,122 237,129" stroke="#111" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Deep drop handlebars -->
+  <line x1="188" y1="150" x2="195" y2="128" stroke="#333" stroke-width="4"/>
+  <path d="M178,125 Q195,118 212,125 Q214,134 204,140 Q196,144 192,137" stroke="#333" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="192" cy="137" r="4" fill="#111"/>
+  <circle cx="178" cy="125" r="4" fill="#111"/>
+  <!-- Rider hands on drops -->
+
+  <!-- RED-BREASTED MERGANSER -->
+  <!-- Body (white/grey) -->
+  <ellipse cx="218" cy="112" rx="40" ry="21" fill="#ECEFF1" transform="rotate(-10 218 112)"/>
+  <!-- Green/dark back -->
+  <ellipse cx="208" cy="118" rx="34" ry="13" fill="#1B5E20" transform="rotate(-8 208 118)"/>
+  <!-- White flanks -->
+  <ellipse cx="230" cy="120" rx="20" ry="10" fill="white" transform="rotate(-10 230 120)"/>
+  <!-- Rusty chest band -->
+  <ellipse cx="242" cy="108" rx="15" ry="13" fill="#BF360C" transform="rotate(20 242 108)"/>
+  <!-- Black/green head (iridescent) with shaggy crest! -->
+  <circle cx="258" cy="94" r="20" fill="#1B5E20"/>
+  <!-- Shaggy crest (key feature) -->
+  <path d="M244,82 Q238,70 234,64" stroke="#1B5E20" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M250,80 Q246,68 244,60" stroke="#1B5E20" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M256,79 Q254,66 253,58" stroke="#1B5E20" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M262,80 Q262,68 263,60" stroke="#1B5E20" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Red serrated bill -->
+  <path d="M274,96 L300,99 L274,103" fill="#D32F2F"/>
+  <!-- Bill hook at tip -->
+  <path d="M298,99 Q304,104 300,108" stroke="#B71C1C" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Eye (red) -->
+  <circle cx="270" cy="91" r="3.5" fill="#D32F2F"/>
+  <circle cx="270" cy="91" r="2" fill="#1A1A1A"/>
+  <circle cx="271" cy="90" r="1" fill="white"/>
+  <!-- White cheek patch -->
+  <ellipse cx="260" cy="100" rx="8" ry="6" fill="white" opacity="0.9" transform="rotate(-20 260 100)"/>
+  <!-- Speed lines from bird -->
+  <g stroke="#FF6F00" stroke-width="1.5" opacity="0.5">
+    <line x1="175" y1="105" x2="140" y2="105"/>
+    <line x1="170" y1="115" x2="130" y2="118"/>
+    <line x1="172" y1="95" x2="138" y2="92"/>
+  </g>
+  <!-- Feet -->
+  <line x1="212" y1="130" x2="207" y2="157" stroke="#D32F2F" stroke-width="3"/>
+  <line x1="226" y1="132" x2="230" y2="159" stroke="#D32F2F" stroke-width="3"/>
+  <path d="M200,157 L212,157 L206,162" fill="#D32F2F"/>
+  <path d="M224,159 L236,159 L230,164" fill="#D32F2F"/>
+
+  <text x="8" y="292" font-family="Georgia,serif" font-size="13" fill="#B71C1C" font-style="italic">Red-breasted Merganser · Racing Bike</text>
+</svg>

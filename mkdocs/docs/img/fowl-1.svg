@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4FC3F7"/>
+      <stop offset="100%" stop-color="#B3E5FC"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="265" fill="url(#sky)"/>
+  <rect y="258" width="400" height="42" fill="#66BB6A"/>
+  <rect y="255" width="400" height="6" fill="#388E3C"/>
+  <ellipse cx="70" cy="60" rx="45" ry="18" fill="white" opacity="0.85"/>
+  <ellipse cx="100" cy="55" rx="30" ry="16" fill="white" opacity="0.85"/>
+  <ellipse cx="320" cy="45" rx="38" ry="15" fill="white" opacity="0.85"/>
+
+  <!-- Penny-Farthing: large front wheel -->
+  <circle cx="258" cy="193" r="68" fill="none" stroke="#3E2723" stroke-width="6"/>
+  <g stroke="#5D4037" stroke-width="1.5">
+    <line x1="258" y1="125" x2="258" y2="261"/>
+    <line x1="190" y1="193" x2="326" y2="193"/>
+    <line x1="210" y1="145" x2="306" y2="241"/>
+    <line x1="306" y1="145" x2="210" y2="241"/>
+    <line x1="191" y1="165" x2="325" y2="221"/>
+    <line x1="325" y1="165" x2="191" y2="221"/>
+    <line x1="232" y1="127" x2="284" y2="259"/>
+    <line x1="284" y1="127" x2="232" y2="259"/>
+  </g>
+  <circle cx="258" cy="193" r="9" fill="#3E2723"/>
+
+  <!-- Small rear wheel -->
+  <circle cx="118" cy="240" r="22" fill="none" stroke="#3E2723" stroke-width="5"/>
+  <g stroke="#5D4037" stroke-width="1.5">
+    <line x1="118" y1="218" x2="118" y2="262"/>
+    <line x1="96" y1="240" x2="140" y2="240"/>
+    <line x1="102" y1="224" x2="134" y2="256"/>
+    <line x1="134" y1="224" x2="102" y2="256"/>
+  </g>
+  <circle cx="118" cy="240" r="5" fill="#3E2723"/>
+
+  <!-- Connecting frame -->
+  <line x1="258" y1="193" x2="118" y2="240" stroke="#3E2723" stroke-width="5"/>
+  <!-- Seat post -->
+  <line x1="250" y1="193" x2="244" y2="126" stroke="#3E2723" stroke-width="5"/>
+  <!-- Seat -->
+  <ellipse cx="244" cy="124" rx="22" ry="8" fill="#6D4C41"/>
+  <!-- Handlebars -->
+  <line x1="250" y1="145" x2="290" y2="132" stroke="#3E2723" stroke-width="4"/>
+  <line x1="283" y1="122" x2="297" y2="140" stroke="#3E2723" stroke-width="4"/>
+
+  <!-- MALLARD DUCK -->
+  <!-- Body -->
+  <ellipse cx="238" cy="107" rx="40" ry="23" fill="#BCAAA4" transform="rotate(-8 238 107)"/>
+  <!-- Wing -->
+  <ellipse cx="228" cy="114" rx="34" ry="14" fill="#A1887F" transform="rotate(-5 228 114)"/>
+  <!-- Neck white collar -->
+  <ellipse cx="260" cy="96" rx="10" ry="7" fill="white" transform="rotate(-25 260 96)"/>
+  <!-- Head (iridescent green) -->
+  <circle cx="275" cy="83" r="22" fill="#2E7D32"/>
+  <circle cx="275" cy="83" r="22" fill="none" stroke="#1B5E20" stroke-width="1" opacity="0.5"/>
+  <!-- Beak -->
+  <path d="M292,86 L312,89 L292,93" fill="#F9A825"/>
+  <!-- Nostril -->
+  <ellipse cx="300" cy="88" rx="3" ry="1.5" fill="#E65100" opacity="0.6"/>
+  <!-- Eye -->
+  <circle cx="284" cy="79" r="3.5" fill="#0D1A3E"/>
+  <circle cx="285" cy="78" r="1.2" fill="white"/>
+  <!-- Tail curl -->
+  <path d="M200,104 Q184,96 172,103 Q180,111 175,120 Q188,113 185,121" fill="#455A64"/>
+  <!-- Feet -->
+  <line x1="233" y1="127" x2="228" y2="157" stroke="#F9A825" stroke-width="3"/>
+  <line x1="248" y1="128" x2="253" y2="158" stroke="#F9A825" stroke-width="3"/>
+  <line x1="221" y1="156" x2="236" y2="156" stroke="#F9A825" stroke-width="3"/>
+  <line x1="246" y1="157" x2="261" y2="157" stroke="#F9A825" stroke-width="3"/>
+
+  <text x="8" y="292" font-family="Georgia,serif" font-size="13" fill="#1B5E20" font-style="italic">Mallard · Penny-Farthing</text>
+</svg>
