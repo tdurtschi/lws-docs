@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Whooper swan on a beach cruiser</title>
+  <line x1="20" y1="262" x2="380" y2="262" stroke="#ffe082" stroke-width="6" stroke-linecap="round"/>
+  <!-- balloon-tire wheels with fenders -->
+  <g stroke="#37474f" fill="none">
+    <circle cx="105" cy="218" r="44" stroke-width="9"/>
+    <circle cx="295" cy="218" r="44" stroke-width="9"/>
+    <g stroke-width="1.5">
+      <path d="M105 174v88M61 218h88M74 187l62 62M74 249l62-62"/>
+      <path d="M295 174v88M251 218h88M264 187l62 62M264 249l62-62"/>
+    </g>
+  </g>
+  <path d="M55 214 A52 52 0 0 1 155 214" fill="none" stroke="#26c6da" stroke-width="7"/>
+  <path d="M245 214 A52 52 0 0 1 345 214" fill="none" stroke="#26c6da" stroke-width="7"/>
+  <!-- swoopy cruiser frame -->
+  <g stroke="#00bcd4" stroke-width="7" fill="none" stroke-linecap="round">
+    <path d="M195 220L165 140"/>
+    <path d="M165 146 C205 168 240 168 266 146"/>
+    <path d="M195 220 C225 196 250 176 266 150"/>
+    <path d="M165 143L105 218"/>
+    <path d="M195 220L105 218"/>
+    <path d="M270 143L295 218"/>
+  </g>
+  <!-- wide swept bars -->
+  <path d="M266 148 L270 120 C258 112 244 116 238 126" fill="none" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+  <!-- big sprung saddle -->
+  <path d="M144 136h40" stroke="#4e342e" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="195" cy="220" r="10" fill="none" stroke="#37474f" stroke-width="4"/>
+  <line x1="195" y1="220" x2="212" y2="243" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M204 244h18" stroke="#212121" stroke-width="6" stroke-linecap="round"/>
+  <!-- whooper swan: white, wedge-shaped yellow-and-black bill -->
+  <path d="M126 94 l-24 -12 5 14 -7 12 19 0z" fill="#eceff1"/>
+  <ellipse cx="164" cy="106" rx="43" ry="28" fill="#fafafa" stroke="#cfd8dc" stroke-width="2"/>
+  <path d="M190 92 C208 86 218 70 217 50" stroke="#fafafa" stroke-width="13" fill="none" stroke-linecap="round"/>
+  <circle cx="218" cy="44" r="13" fill="#fafafa"/>
+  <path d="M229 41 L252 47 L229 51 Z" fill="#212121"/>
+  <path d="M229 41 L241 44 L229 48 Z" fill="#fdd835"/>
+  <circle cx="222" cy="40" r="2.2" fill="#111"/>
+  <path d="M152 96 C178 96 222 110 256 126 C222 126 182 122 156 116 Z" fill="#eceff1"/>
+  <polyline points="178,132 195,190 211,241" fill="none" stroke="#455a64" stroke-width="6" stroke-linecap="round"/>
+  <path d="M203 242h17" stroke="#455a64" stroke-width="5" stroke-linecap="round"/>
+  <!-- sun -->
+  <circle cx="352" cy="42" r="18" fill="#ffca28"/>
+</svg>

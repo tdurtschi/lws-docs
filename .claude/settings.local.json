@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep -E \"\\(mkdocs\\\\.yml|\\\\.md$\\)\")"
+      "Bash(grep -E \"\\(mkdocs\\\\.yml|\\\\.md$\\)\")",
+      "Bash(rsvg-convert *)"
     ]
   }
 }

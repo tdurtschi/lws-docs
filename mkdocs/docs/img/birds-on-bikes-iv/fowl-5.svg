@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Common loon on a mountain bike</title>
+  <line x1="20" y1="262" x2="380" y2="262" stroke="#795548" stroke-width="3" stroke-linecap="round" stroke-dasharray="14 8"/>
+  <!-- knobby wheels -->
+  <g fill="none">
+    <circle cx="105" cy="218" r="44" stroke="#212121" stroke-width="9" stroke-dasharray="5 4"/>
+    <circle cx="295" cy="218" r="44" stroke="#212121" stroke-width="9" stroke-dasharray="5 4"/>
+    <g stroke="#455a64" stroke-width="1.5">
+      <path d="M105 174v88M61 218h88M74 187l62 62M74 249l62-62"/>
+      <path d="M295 174v88M251 218h88M264 187l62 62M264 249l62-62"/>
+    </g>
+  </g>
+  <!-- frame with sloping top tube -->
+  <g stroke="#f57f17" stroke-width="7" fill="none" stroke-linecap="round">
+    <path d="M195 220L166 148"/>
+    <path d="M195 220L262 142"/>
+    <path d="M168 154L262 142"/>
+    <path d="M166 151L105 218"/>
+    <path d="M195 220L105 218"/>
+  </g>
+  <!-- suspension fork -->
+  <g stroke="#37474f" stroke-linecap="round">
+    <path d="M266 138L295 218" stroke-width="9"/>
+    <path d="M268 142L284 186" stroke-width="12" stroke="#90a4ae"/>
+  </g>
+  <!-- flat bar -->
+  <path d="M262 142L258 124h-26" fill="none" stroke="#212121" stroke-width="5" stroke-linecap="round"/>
+  <path d="M150 146h32" stroke="#212121" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="195" cy="220" r="11" fill="none" stroke="#37474f" stroke-width="4"/>
+  <line x1="195" y1="220" x2="212" y2="243" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M204 244h18" stroke="#212121" stroke-width="6" stroke-linecap="round"/>
+  <!-- loon -->
+  <path d="M136 106 l-26 -12 6 14 -8 12 20 0z" fill="#212121"/>
+  <ellipse cx="170" cy="116" rx="42" ry="27" fill="#263238"/>
+  <!-- checkerboard back -->
+  <g fill="#fafafa">
+    <rect x="146" y="104" width="7" height="7"/>
+    <rect x="160" y="100" width="7" height="7"/>
+    <rect x="174" y="100" width="7" height="7"/>
+    <rect x="153" y="112" width="7" height="7"/>
+    <rect x="167" y="110" width="7" height="7"/>
+    <rect x="181" y="108" width="7" height="7"/>
+  </g>
+  <path d="M196 104 C212 98 226 88 232 74" stroke="#1b2a30" stroke-width="13" fill="none" stroke-linecap="round"/>
+  <path d="M206 96 l4 8 M214 90 l4 8" stroke="#fafafa" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="236" cy="66" r="16" fill="#1b2a30"/>
+  <path d="M250 64 L274 66 L250 71 Z" fill="#37474f"/>
+  <circle cx="240" cy="61" r="3" fill="#b71c1c"/>
+  <path d="M160 108 C186 108 226 124 258 138 C226 136 190 132 164 128 Z" fill="#37474f"/>
+  <polyline points="182,138 196,192 211,241" fill="none" stroke="#455a64" stroke-width="6" stroke-linecap="round"/>
+  <path d="M203 242h17" stroke="#455a64" stroke-width="5" stroke-linecap="round"/>
+</svg>
