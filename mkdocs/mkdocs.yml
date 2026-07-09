@@ -3,8 +3,6 @@ theme: readthedocs
 site_url: https://tdurtschi.github.io/lws-docs/
 nav:
   - Home: index.md
-  - TDD: tdd.md
-  - Refactoring: refactoring.md
   - AI Links: ai-links.md
   - External Resources: good-stuff.md
   - Developer Experience: dev-experience.md
@@ -12,6 +10,10 @@ nav:
   - .NET: dotnet.md
   - Git: git.md
   - Kubernetes: kubernetes.md
+  - Articles:
+      - TDD: tdd.md
+      - Refactoring: refactoring.md
+      - AI Agents on a Software Team: ai-agents-experience-report.md
   - AI Art:
       - Birds on Bikes - Sonnet 4.6: birds-on-bikes.md
       - Birds on Bikes II - Haiku 4.5: birds-on-bikes-ii.md
