@@ -15,6 +15,7 @@ nav:
       - Refactoring: refactoring.md
       - AI Agents on a Software Team: ai-agents-experience-report.md
   - AI Art:
+      - AI Images (SDXL): ai-images-sdxl.md
       - Birds on Bikes - Sonnet 4.6: birds-on-bikes.md
       - Birds on Bikes II - Haiku 4.5: birds-on-bikes-ii.md
       - Birds on Bikes III - Opus 4.7: birds-on-bikes-iii.md
