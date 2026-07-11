@@ -1,0 +1,54 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Penny-Farthing Merganser -->
+  <defs>
+    <style>
+      .bird { fill: #4a3a2a; stroke: #2a1a0a; stroke-width: 2; }
+      .eye { fill: #000; }
+      .bike { stroke: #888; stroke-width: 2; fill: none; }
+      .metal { fill: #999; stroke: #666; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#9a8a7a"/>
+
+  <!-- Large front wheel -->
+  <circle cx="200" cy="200" r="55" class="bike" stroke-width="3"/>
+  <circle cx="200" cy="200" r="3" class="metal"/>
+  <!-- Spokes -->
+  <line x1="200" y1="145" x2="200" y2="255" class="bike" opacity="0.5" stroke-width="1"/>
+  <line x1="145" y1="200" x2="255" y2="200" class="bike" opacity="0.5" stroke-width="1"/>
+  <line x1="162" y1="162" x2="238" y2="238" class="bike" opacity="0.5" stroke-width="1"/>
+  <line x1="238" y1="162" x2="162" y2="238" class="bike" opacity="0.5" stroke-width="1"/>
+
+  <!-- Small back wheel -->
+  <circle cx="80" cy="200" r="25" class="bike"/>
+  <circle cx="80" cy="200" r="3" class="metal"/>
+
+  <!-- Frame (connecting small wheel to large) -->
+  <line x1="80" y1="150" x2="145" y2="150" class="bike"/>
+  <line x1="145" y1="150" x2="200" y2="200" class="bike"/>
+  <line x1="80" y1="200" x2="80" y2="150" class="bike" stroke-width="3"/>
+
+  <!-- Seat (high up) -->
+  <ellipse cx="130" cy="130" rx="12" ry="8" class="metal"/>
+
+  <!-- Handlebars (high) -->
+  <line x1="145" y1="150" x2="145" y2="100" class="bike" stroke-width="2"/>
+  <line x1="130" y1="95" x2="160" y2="95" class="bike" stroke-width="2"/>
+
+  <!-- Merganser body -->
+  <ellipse cx="150" cy="110" rx="32" ry="35" class="bird"/>
+
+  <!-- Merganser head (crest) -->
+  <path d="M 165 75 Q 175 55 170 35" stroke="#4a3a2a" stroke-width="10" fill="none"/>
+
+  <!-- Merganser head shape -->
+  <circle cx="172" cy="33" r="13" class="bird"/>
+
+  <!-- Merganser eye -->
+  <circle cx="179" cy="31" r="2" class="eye"/>
+
+  <!-- Merganser beak -->
+  <polygon points="188,32 208,30 188,34" fill="#ff6b35"/>
+</svg>

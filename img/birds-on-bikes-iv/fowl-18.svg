@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300">
+  <title>Muscovy duck on a cargo bike with ducklings in the box</title>
+  <line x1="20" y1="262" x2="500" y2="262" stroke="#9e9e9e" stroke-width="3" stroke-linecap="round"/>
+  <!-- rear wheel normal, front wheel small (long-john style) -->
+  <g stroke="#37474f" fill="none">
+    <circle cx="120" cy="220" r="42" stroke-width="6"/>
+    <circle cx="452" cy="238" r="26" stroke-width="6"/>
+    <g stroke-width="1.5">
+      <path d="M120 178v84M78 220h84M90 190l60 60M90 250l60-60"/>
+      <path d="M452 212v52M426 238h52"/>
+    </g>
+  </g>
+  <!-- frame with long cargo deck -->
+  <g stroke="#37474f" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M210 222 L178 140"/>
+    <path d="M210 222 L268 210 L370 226"/>
+    <path d="M178 143 L120 220"/>
+    <path d="M210 222 L120 220"/>
+    <path d="M370 226 L452 238"/>
+    <path d="M370 226 L382 158"/>
+  </g>
+  <!-- cargo box with ducklings -->
+  <path d="M270 212 L364 220 L360 158 L280 152 Z" fill="#8d6e63" stroke="#5d4037" stroke-width="3"/>
+  <path d="M282 172 l76 6 M280 192 l78 7" stroke="#5d4037" stroke-width="2"/>
+  <!-- three ducklings peeking out -->
+  <g>
+    <circle cx="296" cy="148" r="10" fill="#ffe082"/>
+    <path d="M305 147 l10 3 -10 3z" fill="#fb8c00"/>
+    <circle cx="299" cy="145" r="1.8" fill="#111"/>
+    <circle cx="322" cy="144" r="10" fill="#ffd54f"/>
+    <path d="M331 143 l10 3 -10 3z" fill="#fb8c00"/>
+    <circle cx="325" cy="141" r="1.8" fill="#111"/>
+    <circle cx="346" cy="150" r="10" fill="#ffe082"/>
+    <path d="M355 149 l10 3 -10 3z" fill="#fb8c00"/>
+    <circle cx="349" cy="147" r="1.8" fill="#111"/>
+  </g>
+  <!-- linkage steering + bars -->
+  <path d="M382 158 h-96" stroke="#616161" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 5"/>
+  <path d="M286 158 L280 140 h-22" fill="none" stroke="#212121" stroke-width="5" stroke-linecap="round"/>
+  <path d="M160 136h34" stroke="#212121" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="210" cy="222" r="10" fill="none" stroke="#212121" stroke-width="4"/>
+  <line x1="210" y1="222" x2="227" y2="245" stroke="#212121" stroke-width="5" stroke-linecap="round"/>
+  <path d="M219 246h18" stroke="#424242" stroke-width="6" stroke-linecap="round"/>
+  <!-- muscovy: black-and-white, red caruncled face -->
+  <path d="M142 96 l-26 -12 6 14 -8 12 20 0z" fill="#212121"/>
+  <ellipse cx="180" cy="108" rx="42" ry="27" fill="#263238"/>
+  <path d="M156 96 C168 92 182 92 194 96 L192 110 C180 106 166 106 158 108 Z" fill="#fafafa"/>
+  <path d="M206 96 C220 90 232 80 238 66" stroke="#263238" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <circle cx="242" cy="58" r="15" fill="#fafafa"/>
+  <path d="M232 52 C236 44 246 42 252 48 C250 54 244 56 238 56 Z" fill="#d32f2f"/>
+  <circle cx="252" cy="50" r="3.5" fill="#d32f2f"/>
+  <path d="M255 56 L274 60 L255 65 Z" fill="#f8bbd0"/>
+  <circle cx="246" cy="54" r="2.4" fill="#111"/>
+  <path d="M168 98 C194 98 234 112 266 128 C234 128 198 122 172 116 Z" fill="#455a64"/>
+  <path d="M186 104 l20 6 -22 3z" fill="#fafafa"/>
+  <polyline points="194,132 210,192 226,243" fill="none" stroke="#5d4037" stroke-width="6" stroke-linecap="round"/>
+  <path d="M218 244h17" stroke="#5d4037" stroke-width="5" stroke-linecap="round"/>
+</svg>

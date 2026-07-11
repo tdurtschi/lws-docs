@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="lakesky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A237E"/>
+      <stop offset="50%" stop-color="#283593"/>
+      <stop offset="100%" stop-color="#3949AB"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1565C0"/>
+      <stop offset="100%" stop-color="#0D47A1"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="265" fill="url(#lakesky)"/>
+  <!-- Stars -->
+  <circle cx="40" cy="30" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="100" cy="15" r="1" fill="white" opacity="0.8"/>
+  <circle cx="180" cy="25" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="250" cy="10" r="1" fill="white" opacity="0.8"/>
+  <circle cx="340" cy="30" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="380" cy="18" r="1" fill="white" opacity="0.8"/>
+  <!-- Moon -->
+  <circle cx="320" cy="50" r="22" fill="#FFF9C4" opacity="0.9"/>
+  <circle cx="330" cy="45" r="17" fill="#283593"/>
+  <!-- Lake -->
+  <rect y="230" width="400" height="30" fill="url(#lake)" opacity="0.9"/>
+  <!-- Moon reflection -->
+  <ellipse cx="320" cy="240" rx="12" ry="5" fill="#FFF9C4" opacity="0.4"/>
+  <!-- Road/path -->
+  <rect y="252" width="400" height="48" fill="#263238"/>
+  <rect y="249" width="400" height="6" fill="#37474F"/>
+
+  <!-- Recumbent Bike (low, rider leaned back) -->
+  <!-- Rear wheel (smaller on recumbent) -->
+  <circle cx="120" cy="230" r="36" fill="none" stroke="#CFD8DC" stroke-width="5"/>
+  <circle cx="120" cy="230" r="29" fill="none" stroke="#90A4AE" stroke-width="1"/>
+  <g stroke="#90A4AE" stroke-width="1.5">
+    <line x1="120" y1="194" x2="120" y2="266"/>
+    <line x1="84" y1="230" x2="156" y2="230"/>
+    <line x1="95" y1="205" x2="145" y2="255"/>
+    <line x1="145" y1="205" x2="95" y2="255"/>
+    <line x1="86" y1="218" x2="154" y2="242"/>
+    <line x1="154" y1="218" x2="86" y2="242"/>
+  </g>
+  <circle cx="120" cy="230" r="7" fill="#CFD8DC"/>
+
+  <!-- Front wheel (larger on recumbent) -->
+  <circle cx="300" cy="222" r="44" fill="none" stroke="#CFD8DC" stroke-width="5"/>
+  <circle cx="300" cy="222" r="37" fill="none" stroke="#90A4AE" stroke-width="1"/>
+  <g stroke="#90A4AE" stroke-width="1.5">
+    <line x1="300" y1="178" x2="300" y2="266"/>
+    <line x1="256" y1="222" x2="344" y2="222"/>
+    <line x1="269" y1="191" x2="331" y2="253"/>
+    <line x1="331" y1="191" x2="269" y2="253"/>
+    <line x1="258" y1="207" x2="342" y2="237"/>
+    <line x1="342" y1="207" x2="258" y2="237"/>
+    <line x1="285" y1="179" x2="315" y2="265"/>
+    <line x1="315" y1="179" x2="285" y2="265"/>
+  </g>
+  <circle cx="300" cy="222" r="8" fill="#CFD8DC"/>
+
+  <!-- Low recumbent frame -->
+  <line x1="120" y1="230" x2="300" y2="222" stroke="#546E7A" stroke-width="7"/>
+  <line x1="300" y1="222" x2="280" y2="195" stroke="#546E7A" stroke-width="6"/>
+  <!-- Seat back (reclined) -->
+  <path d="M175,230 Q185,205 200,198" stroke="#546E7A" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- Seat bottom -->
+  <line x1="175" y1="230" x2="215" y2="230" stroke="#546E7A" stroke-width="6"/>
+
+  <!-- Long handlebars (under-seat steering) -->
+  <line x1="280" y1="195" x2="265" y2="195" stroke="#546E7A" stroke-width="5"/>
+  <line x1="265" y1="185" x2="265" y2="208" stroke="#546E7A" stroke-width="4"/>
+  <circle cx="265" cy="185" r="5" fill="#90A4AE"/>
+  <circle cx="265" cy="208" r="5" fill="#90A4AE"/>
+
+  <!-- COMMON LOON (leaned back on recumbent) -->
+  <!-- Body (black/white checkered) -->
+  <ellipse cx="200" cy="215" rx="50" ry="18" fill="#1A1A1A" transform="rotate(-5 200 215)"/>
+  <!-- White checker pattern on back -->
+  <g fill="white" opacity="0.9">
+    <rect x="175" y="205" width="8" height="8" rx="1" transform="rotate(-5 175 205)"/>
+    <rect x="191" y="205" width="8" height="8" rx="1" transform="rotate(-5 191 205)"/>
+    <rect x="207" y="205" width="8" height="8" rx="1" transform="rotate(-5 207 205)"/>
+    <rect x="223" y="205" width="8" height="8" rx="1" transform="rotate(-5 223 205)"/>
+    <rect x="183" y="215" width="8" height="8" rx="1" transform="rotate(-5 183 215)"/>
+    <rect x="199" y="215" width="8" height="8" rx="1" transform="rotate(-5 199 215)"/>
+    <rect x="215" y="215" width="8" height="8" rx="1" transform="rotate(-5 215 215)"/>
+  </g>
+  <!-- White belly/underside -->
+  <ellipse cx="195" cy="223" rx="40" ry="9" fill="white" opacity="0.9"/>
+  <!-- Neck (black with necklace ring) -->
+  <path d="M230,208 Q248,198 255,182" stroke="#1A1A1A" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- White necklace -->
+  <path d="M241,200 Q250,195 258,198" stroke="white" stroke-width="3" fill="none" opacity="0.9"/>
+  <!-- Head (black glossy) -->
+  <circle cx="258" cy="175" r="20" fill="#1A1A1A"/>
+  <!-- Dagger bill -->
+  <line x1="274" y1="177" x2="302" y2="182" stroke="#424242" stroke-width="6" stroke-linecap="round"/>
+  <!-- Red eye (loon's signature) -->
+  <circle cx="270" cy="172" r="5" fill="#D32F2F"/>
+  <circle cx="270" cy="172" r="3" fill="#1A1A1A"/>
+  <circle cx="271" cy="171" r="1.5" fill="white"/>
+  <!-- Wing on seat -->
+  <ellipse cx="192" cy="220" rx="38" ry="10" fill="#212121"/>
+
+  <text x="8" y="292" font-family="Georgia,serif" font-size="13" fill="#90CAF9" font-style="italic">Common Loon · Recumbent Bike</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Muscovy Duck on Fat Tire Bike</title>
+  <rect width="400" height="300" fill="#E8DCC8"/>
+  <rect y="250" width="400" height="50" fill="#D6BE94"/>
+  <!-- Fat tire bike: extra wide tires -->
+  <circle cx="105" cy="215" r="42" fill="#111"/>
+  <circle cx="105" cy="215" r="30" fill="none" stroke="#e0e0e0" stroke-width="2"/>
+  <circle cx="105" cy="215" r="4" fill="#e0e0e0"/>
+  <circle cx="295" cy="215" r="42" fill="#111"/>
+  <circle cx="295" cy="215" r="30" fill="none" stroke="#e0e0e0" stroke-width="2"/>
+  <circle cx="295" cy="215" r="4" fill="#e0e0e0"/>
+  <g stroke="#333" stroke-width="1">
+    <line x1="90" y1="180" x2="120" y2="250"/>
+    <line x1="75" y1="200" x2="135" y2="230"/>
+    <line x1="280" y1="180" x2="310" y2="250"/>
+    <line x1="265" y1="200" x2="325" y2="230"/>
+  </g>
+  <path d="M 105 215 L 205 155 L 295 215 L 195 215 Z" stroke="#2c3e50" stroke-width="7" fill="none"/>
+  <line x1="105" y1="215" x2="140" y2="135" stroke="#2c3e50" stroke-width="7"/>
+  <path d="M 140 135 L 120 122 M 140 135 L 165 122" stroke="#111" stroke-width="5"/>
+  <rect x="197" y="147" width="20" height="8" fill="#111" rx="2"/>
+  <!-- Muscovy Duck -->
+  <ellipse cx="210" cy="125" rx="42" ry="24" fill="#111"/>
+  <ellipse cx="185" cy="128" rx="20" ry="12" fill="#f5f5f5"/>
+  <circle cx="248" cy="105" r="20" fill="#111"/>
+  <!-- Red facial caruncles -->
+  <ellipse cx="255" cy="102" rx="14" ry="10" fill="#c0392b"/>
+  <circle cx="248" cy="95" r="4" fill="#e74c3c"/>
+  <circle cx="262" cy="98" r="3" fill="#e74c3c"/>
+  <circle cx="256" cy="108" r="4" fill="#e74c3c"/>
+  <circle cx="265" cy="105" r="3" fill="#e74c3c"/>
+  <polygon points="270,102 288,101 270,108" fill="#f39c12"/>
+  <circle cx="248" cy="100" r="2.2" fill="#f5f5f5"/>
+  <circle cx="248" cy="100" r="1" fill="#000"/>
+  <ellipse cx="200" cy="127" rx="18" ry="8" fill="#333"/>
+  <line x1="210" y1="147" x2="205" y2="205" stroke="#c0392b" stroke-width="3"/>
+</svg>

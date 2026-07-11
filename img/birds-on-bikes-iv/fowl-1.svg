@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Mallard drake on a road bike</title>
+  <line x1="20" y1="262" x2="380" y2="262" stroke="#9e9e9e" stroke-width="3" stroke-linecap="round"/>
+  <!-- wheels -->
+  <g stroke="#37474f" fill="none">
+    <circle cx="105" cy="220" r="42" stroke-width="6"/>
+    <circle cx="295" cy="220" r="42" stroke-width="6"/>
+    <g stroke-width="1.5">
+      <path d="M105 178v84M63 220h84M75 190l60 60M75 250l60-60"/>
+      <path d="M295 178v84M253 220h84M265 190l60 60M265 250l60-60"/>
+    </g>
+  </g>
+  <!-- frame -->
+  <g stroke="#c62828" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M195 222L160 140"/>
+    <path d="M195 222L268 148"/>
+    <path d="M163 146L268 148"/>
+    <path d="M160 143L105 220"/>
+    <path d="M195 222L105 220"/>
+    <path d="M272 143L295 220"/>
+  </g>
+  <!-- drop handlebars -->
+  <path d="M268 148L272 130h16c11 0 11 16 0 16h-7" fill="none" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+  <!-- saddle -->
+  <path d="M144 138h34" stroke="#212121" stroke-width="8" stroke-linecap="round"/>
+  <!-- drivetrain -->
+  <circle cx="195" cy="222" r="11" fill="none" stroke="#37474f" stroke-width="4"/>
+  <line x1="195" y1="222" x2="213" y2="245" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M205 246h18" stroke="#212121" stroke-width="6" stroke-linecap="round"/>
+  <!-- mallard -->
+  <path d="M132 100l-26-14 6 16-8 12 20 0z" fill="#455a64"/>
+  <ellipse cx="167" cy="110" rx="42" ry="27" fill="#b0bec5"/>
+  <path d="M188 92 C185 118 176 132 168 136 L202 130 C202 112 198 100 195 92 Z" fill="#6d4c41"/>
+  <path d="M194 98 C212 92 228 84 236 70" stroke="#2e7d32" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M198 96 C202 95 206 93 210 91" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="240" cy="62" r="17" fill="#2e7d32"/>
+  <path d="M254 60 L276 64 L254 70 Z" fill="#fdd835"/>
+  <circle cx="243" cy="58" r="2.6" fill="#111"/>
+  <path d="M158 100 C185 96 230 118 262 138 C230 132 190 128 162 122 Z" fill="#90a4ae"/>
+  <polyline points="180,132 194,190 211,242" fill="none" stroke="#fb8c00" stroke-width="6" stroke-linecap="round"/>
+  <path d="M203 244h18" stroke="#fb8c00" stroke-width="5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Ruddy duck on a time-trial bike</title>
+  <line x1="20" y1="262" x2="380" y2="262" stroke="#bdbdbd" stroke-width="3" stroke-linecap="round"/>
+  <!-- rear disc, front tri-spoke -->
+  <circle cx="105" cy="220" r="42" fill="#1a237e" stroke="#111" stroke-width="4"/>
+  <path d="M105 188 A32 32 0 0 1 131 234" fill="none" stroke="#5c6bc0" stroke-width="2"/>
+  <g fill="none" stroke="#212121">
+    <circle cx="295" cy="220" r="42" stroke-width="6"/>
+    <path d="M295 220 L295 182 M295 220 L262 238 M295 220 L328 238" stroke-width="7"/>
+  </g>
+  <!-- aero frame -->
+  <g stroke="#1a237e" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M195 222L166 148"/>
+    <path d="M195 222L268 152"/>
+    <path d="M169 154L268 152"/>
+    <path d="M166 151 C150 176 128 200 105 220"/>
+    <path d="M195 222L105 220"/>
+    <path d="M272 147L295 220"/>
+  </g>
+  <!-- aero bars with extensions -->
+  <g stroke="#212121" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M268 152 L272 134"/>
+    <path d="M258 134 h28"/>
+    <path d="M264 134 l-30 -12 M278 134 l-30 -16"/>
+  </g>
+  <path d="M152 144h30" stroke="#212121" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="195" cy="222" r="12" fill="none" stroke="#212121" stroke-width="4"/>
+  <line x1="195" y1="222" x2="213" y2="245" stroke="#212121" stroke-width="5" stroke-linecap="round"/>
+  <path d="M205 246h18" stroke="#212121" stroke-width="6" stroke-linecap="round"/>
+  <!-- ruddy duck: chestnut body, stiff tail cocked up, white cheek, blue bill; tucked low -->
+  <path d="M140 92 L118 56 L134 74 L148 62 L146 90 Z" fill="#4e342e"/>
+  <ellipse cx="172" cy="112" rx="40" ry="25" fill="#a1502d"/>
+  <path d="M198 102 C216 96 232 92 244 84" stroke="#a1502d" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <circle cx="249" cy="78" r="14" fill="#6d4c41"/>
+  <path d="M240 78 A11 11 0 0 1 256 82 L252 90 A9 9 0 0 1 241 86 Z" fill="#fafafa"/>
+  <path d="M260 74 L280 78 L260 83 Z" fill="#42a5f5"/>
+  <circle cx="252" cy="72" r="2.4" fill="#111"/>
+  <path d="M160 102 C186 102 226 118 258 138 C226 136 190 130 164 124 Z" fill="#8d4426"/>
+  <polyline points="184,134 197,192 212,243" fill="none" stroke="#546e7a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M204 244h17" stroke="#546e7a" stroke-width="5" stroke-linecap="round"/>
+  <!-- speed lines -->
+  <path d="M34 90h40M22 116h32M40 142h40" stroke="#c5cae9" stroke-width="3" stroke-linecap="round"/>
+</svg>
