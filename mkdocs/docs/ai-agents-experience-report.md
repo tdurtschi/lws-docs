@@ -10,6 +10,7 @@ A bit about the team:
 - Pair programming by default
 - Strict adherence to TDD
 - Aggressive refactorers
+- Complex Client/Server application
 
 Our team has been learning how to best utilize these AI tools.
 
@@ -20,7 +21,7 @@ Our team has been learning how to best utilize these AI tools.
 - Deep planning sessions
 - Lots of reading/writing, spending more time in the CLI than IDE
 
-I wanted to see what the tools were capable of, so at first I tried to use agents as the main interface to building features. This usually works with some gentle guidance and vigilance.
+I wanted to see what the tools were capable of, so at first I tried to use agents as the main interface to building features. This usually works with some gentle guidance and vigilance. 
 
 ## Using the agent less
 
@@ -41,7 +42,7 @@ I use the IDE to:
 
 - Agent gets its own repo. 
     - Allows team members to opt-in to hooks, skills, etc without committing to code repos.
-    - Work across many repositories
+    - Works across many repositories
 
 - Shared skills
     - DevOps and debugging
@@ -62,7 +63,6 @@ I use the IDE to:
         - Claude dubbed these compilation failures "Infrastructure red"
     - Updating a test may be more appropriate than writing a new one
 
-
 ## Lessons Learned
 
 - Talk about AI. Share your prompts & techniques.
@@ -71,4 +71,4 @@ I use the IDE to:
 
 ## Conclusion
 
-AI has changed how we work on our team. Most of us use AI every day, although we're not incentivized to use it. We still value pairing with each other. We have a lot of fun!
+AI has changed how our team works. Most of us use AI every day. We still value pairing with each other. We have a lot of fun!
