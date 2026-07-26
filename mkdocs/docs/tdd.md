@@ -1,24 +1,24 @@
 # Test-Driven Development
 
-Code quality is one of the biggest factors contributing to effective software delivery. High quality code is important because it allows engineers to ship new features quicker and more confidently. I have found no technique with a higher impact on software quality than __Test-Driven Development__, or __TDD__. 
+__Test-Driven Development__, or __TDD__ is the most important technique I've learned in software engineering. My personal experience is that codebases created by largely following TDD are simpler, have fewer bugs, and are more pleasant to work in compared to those without TDD. This doesn't mean other aspects of good software craftsmanship aren't also important.
 
-I'm a huge fan of TDD so just know you will see a very biased argument in favor of TDD here. Arguments against TDD can easily be found with a quick Google search! But to me the benefits of TDD are clear. __TDD is simply a really good way to maintain high quality__.
+Code quality is an important factor in effective software delivery. High quality code is important because it allows engineers to add new features quickly and confidently. It allows products to respond to change, to adapt to new user workflows or system integrations.
 
 ## What is it?
 
 TDD is a 3-step software development practice. A simple way to remember the 3 steps is "__Red-Green-Refactor__".
 
-First, a developer creates a new automated test that describes some expected behavior of the code. Behaviors are just the various ways your software behaves given different inputs. 
+First, you create a new automated test that describes some expected behavior of the code. Behaviors are just the various ways your software behaves given different inputs. 
 
 Here's an example of an expected behavior: _"When the user types an invalid character in the field, it should indicate an error by applying a red outline"_. 
 
-At this point, the developer runs the test. However, the expected behavior doesn't exist, so the test will fail. In TDD a failing tests is often called a "red" test. 
+At this point, you run the test. However, the expected behavior doesn't exist, so the test will fail. In TDD a failing tests is often called a "red" test. 
 
 ![1 - Failing Test](img/tdd-1.png)
 
-After seeing the test fail as expected, the developer writes some code to implement the function, for example adding an error state to a text field. 
+After seeing the test fail as expected, you write some code to implement the function, for example adding an error state to a text field. 
 
-Then the developer runs the test again to verify it passes. A passing test is often called "green".
+Then you run the test again to verify it passes. A passing test is often called "green".
 
 ![2 - Passing Test](img/tdd-2.png)
 
@@ -26,7 +26,7 @@ Finally, when every automated test passes, there is an opportunity to refactor t
 
 ![3 - Refactor!](img/tdd-3.png)
 
-After the developer has (optionally) refactored the code, it is time to work on the next incremental feature by writing a new test.
+After you have (optionally) refactored the code, it is time to work on the next incremental feature by writing a new test.
 
 ![4 - Loop is completed](img/tdd-4.png)
 
@@ -62,7 +62,7 @@ Another major return on investment comes in the form of __developer confidence__
 
 ## Test First
 
-One of the biggest arguments against TDD is that the whole idea of writing the test _first_ is unnecessary. But to me, when I think about what makes a test good, the idea of writing them first naturally follows.
+It's possible to write the tests after the code, and I think many people do that. But to me, when I think about what makes a test good, the idea of writing them first naturally follows.
 
 The main thing a good test should do is pass when things work as expected, and fail when they don't work as expected. It sounds obvious but it's worth saying. As the author of a good test, a developer needs to verify both of these scenarios. In other words, they must try the test on 2 different versions of the code and see that the test passes under the expected condition, and fails under incorrect conditions.
 
@@ -74,6 +74,10 @@ So a test should fail. The only remaining question is, at what point in developm
 * The implementation comes first, then a test which passes. Then __at the end__, the implementation is temporarily removed to verify the test will fail. This is still effective, but it does add an extra step.
 
 For me, the choice is clear. Only writing the test __first__ gives me the confidence I need while avoiding extra work. That's why I TDD!
+
+## Test for design
+
+Another benefit of writing a test first is that it forces you to confront domain and design questions upfront. Before you write any code, you __must__ define what exactly it is you're trying to accomplish, and how the code will be invoked. This naturally leads to more user friendly APIs in my experience.
 
 ## Learn More About TDD
 
