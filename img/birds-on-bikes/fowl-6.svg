@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="beachsky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A65"/>
+      <stop offset="60%" stop-color="#FFCCBC"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="265" fill="url(#beachsky)"/>
+  <!-- Sun -->
+  <circle cx="340" cy="55" r="35" fill="#FDD835" opacity="0.9"/>
+  <!-- Ocean -->
+  <rect y="230" width="400" height="25" fill="#29B6F6" opacity="0.7"/>
+  <!-- Sandy beach -->
+  <rect y="252" width="400" height="48" fill="#FFD54F"/>
+  <rect y="250" width="400" height="5" fill="#FFCA28"/>
+  <!-- Waves -->
+  <path d="M0,240 Q40,233 80,240 Q120,247 160,240 Q200,233 240,240 Q280,247 320,240 Q360,233 400,240" stroke="white" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Beach Cruiser Bike -->
+  <!-- Rear wheel (wide comfortable tire) -->
+  <circle cx="132" cy="222" r="42" fill="none" stroke="#3E2723" stroke-width="10"/>
+  <circle cx="132" cy="222" r="30" fill="none" stroke="#5D4037" stroke-width="1.5"/>
+  <g stroke="#5D4037" stroke-width="2">
+    <line x1="132" y1="180" x2="132" y2="264"/>
+    <line x1="90" y1="222" x2="174" y2="222"/>
+    <line x1="103" y1="192" x2="161" y2="252"/>
+    <line x1="161" y1="192" x2="103" y2="252"/>
+    <line x1="92" y1="207" x2="172" y2="237"/>
+    <line x1="172" y1="207" x2="92" y2="237"/>
+  </g>
+  <circle cx="132" cy="222" r="8" fill="#3E2723"/>
+  <!-- Fender rear -->
+  <path d="M95,195 Q112,170 132,180 Q152,170 169,195" stroke="#E91E63" stroke-width="5" fill="none"/>
+
+  <!-- Front wheel -->
+  <circle cx="282" cy="222" r="42" fill="none" stroke="#3E2723" stroke-width="10"/>
+  <circle cx="282" cy="222" r="30" fill="none" stroke="#5D4037" stroke-width="1.5"/>
+  <g stroke="#5D4037" stroke-width="2">
+    <line x1="282" y1="180" x2="282" y2="264"/>
+    <line x1="240" y1="222" x2="324" y2="222"/>
+    <line x1="253" y1="192" x2="311" y2="252"/>
+    <line x1="311" y1="192" x2="253" y2="252"/>
+    <line x1="242" y1="207" x2="322" y2="237"/>
+    <line x1="322" y1="207" x2="242" y2="237"/>
+  </g>
+  <circle cx="282" cy="222" r="8" fill="#3E2723"/>
+  <!-- Fender front -->
+  <path d="M245,195 Q262,170 282,180 Q302,170 319,195" stroke="#E91E63" stroke-width="5" fill="none"/>
+
+  <!-- Cruiser frame (curved top tube) -->
+  <path d="M132,222 Q142,190 172,170" stroke="#E91E63" stroke-width="7" fill="none"/>
+  <line x1="172" y1="170" x2="282" y2="222" stroke="#E91E63" stroke-width="6"/>
+  <line x1="172" y1="170" x2="205" y2="168" stroke="#E91E63" stroke-width="6"/>
+  <path d="M205,168 Q175,178 132,222" stroke="#E91E63" stroke-width="5" fill="none"/>
+
+  <!-- Swept-back handlebars (cruiser style) -->
+  <line x1="172" y1="170" x2="172" y2="148" stroke="#5D4037" stroke-width="5"/>
+  <path d="M148,145 Q172,138 196,145 Q198,155 188,160 Q178,165 172,158" stroke="#5D4037" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="148" cy="145" r="5" fill="#3E2723"/>
+
+  <!-- Wide comfy saddle -->
+  <line x1="205" y1="168" x2="205" y2="148" stroke="#5D4037" stroke-width="4"/>
+  <ellipse cx="205" cy="147" rx="22" ry="9" fill="#E91E63"/>
+  <ellipse cx="205" cy="145" rx="20" ry="7" fill="#F48FB1"/>
+
+  <!-- FLAMINGO -->
+  <!-- Body (pink) -->
+  <ellipse cx="200" cy="122" rx="32" ry="20" fill="#F48FB1" transform="rotate(-8 200 122)"/>
+  <!-- Wing -->
+  <ellipse cx="192" cy="128" rx="26" ry="11" fill="#EC407A" transform="rotate(-5 192 128)"/>
+  <!-- Black wing tips -->
+  <path d="M174,132 Q168,140 172,145" stroke="#1A1A1A" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Very long neck (curved S-shape) -->
+  <path d="M215,108 Q238,92 242,74 Q246,58 238,48" stroke="#F48FB1" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <!-- Head -->
+  <circle cx="238" cy="44" r="15" fill="#F48FB1"/>
+  <!-- Kinked flamingo bill -->
+  <path d="M250,46 Q260,50 258,56 L245,58" fill="#FF8F00"/>
+  <path d="M250,46 Q256,49 255,53" fill="#1A1A1A"/>
+  <!-- Eye -->
+  <circle cx="246" cy="41" r="2.5" fill="#F9A825"/>
+  <circle cx="246" cy="41" r="1.5" fill="#1A1A1A"/>
+  <!-- Tail -->
+  <path d="M172,118 Q158,112 155,120 Q163,126 160,133" fill="#E91E63"/>
+  <!-- Long pink legs -->
+  <line x1="195" y1="140" x2="190" y2="170" stroke="#F48FB1" stroke-width="4"/>
+  <line x1="210" y1="141" x2="215" y2="171" stroke="#F48FB1" stroke-width="4"/>
+  <!-- Knee joint -->
+  <circle cx="191" cy="163" r="4" fill="#EC407A"/>
+  <circle cx="214" cy="164" r="4" fill="#EC407A"/>
+  <line x1="187" y1="163" x2="192" y2="185" stroke="#F48FB1" stroke-width="4"/>
+  <line x1="210" y1="164" x2="216" y2="186" stroke="#F48FB1" stroke-width="4"/>
+  <!-- Webbed feet -->
+  <path d="M186,185 L195,185 L183,188" fill="#FF8F00"/>
+  <path d="M210,186 L220,186 L208,189" fill="#FF8F00"/>
+
+  <text x="8" y="292" font-family="Georgia,serif" font-size="13" fill="#880E4F" font-style="italic">Flamingo · Beach Cruiser</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Northern Pintail on Road Bike</title>
+  <rect width="400" height="300" fill="#F0E6D2"/>
+  <rect y="255" width="400" height="45" fill="#4d5a2a"/>
+  <!-- Road bike: thin wheels, drop bars -->
+  <circle cx="100" cy="225" r="34" fill="none" stroke="#111" stroke-width="2"/>
+  <circle cx="300" cy="225" r="34" fill="none" stroke="#111" stroke-width="2"/>
+  <g stroke="#111" stroke-width="0.8">
+    <line x1="100" y1="191" x2="100" y2="259"/>
+    <line x1="66" y1="225" x2="134" y2="225"/>
+    <line x1="80" y1="200" x2="120" y2="250"/>
+    <line x1="120" y1="200" x2="80" y2="250"/>
+    <line x1="300" y1="191" x2="300" y2="259"/>
+    <line x1="266" y1="225" x2="334" y2="225"/>
+    <line x1="280" y1="200" x2="320" y2="250"/>
+    <line x1="320" y1="200" x2="280" y2="250"/>
+  </g>
+  <path d="M 100 225 L 210 165 L 300 225 L 205 225 Z" stroke="#008b8b" stroke-width="4" fill="none"/>
+  <line x1="100" y1="225" x2="140" y2="150" stroke="#008b8b" stroke-width="4"/>
+  <!-- Drop handlebars -->
+  <path d="M 130 150 Q 118 145 115 155 Q 118 165 130 168" stroke="#111" stroke-width="3" fill="none"/>
+  <path d="M 150 150 Q 162 145 165 155 Q 162 165 150 168" stroke="#111" stroke-width="3" fill="none"/>
+  <rect x="200" y="158" width="20" height="6" fill="#111" rx="1"/>
+  <!-- Northern Pintail: long tail, brown/white body -->
+  <ellipse cx="210" cy="140" rx="42" ry="20" fill="#c4a884"/>
+  <ellipse cx="188" cy="140" rx="18" ry="12" fill="#f5f2e8"/>
+  <!-- Long pointed tail -->
+  <polygon points="250,140 300,120 258,145" fill="#5a4a30"/>
+  <polygon points="250,142 290,138 258,148" fill="#3a3020"/>
+  <!-- Head -->
+  <circle cx="180" cy="118" r="18" fill="#7a5a3a"/>
+  <path d="M 175 108 Q 172 100 178 98 Q 184 105 180 115" fill="#f5f2e8"/>
+  <path d="M 185 105 Q 195 108 190 118" fill="#f5f2e8" stroke="#e0dcc8" stroke-width="1"/>
+  <polygon points="163,118 145,120 163,124" fill="#3a4a5a"/>
+  <line x1="145" y1="121" x2="160" y2="121" stroke="#111" stroke-width="1"/>
+  <circle cx="176" cy="115" r="1.8" fill="#000"/>
+  <line x1="210" y1="160" x2="200" y2="220" stroke="#3a4a5a" stroke-width="3"/>
+</svg>

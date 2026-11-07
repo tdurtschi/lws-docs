@@ -1,0 +1,54 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Touring Bike Shoveler -->
+  <defs>
+    <style>
+      .bird { fill: #5a4a3a; stroke: #3a2a1a; stroke-width: 2; }
+      .eye { fill: #000; }
+      .bike { stroke: #7a6f5a; stroke-width: 2.5; fill: none; }
+      .metal { fill: #999; stroke: #666; stroke-width: 1; }
+      .rack { fill: none; stroke: #999; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#8a8a7a"/>
+
+  <!-- Back wheel -->
+  <circle cx="320" cy="200" r="42" class="bike"/>
+  <circle cx="320" cy="200" r="3" class="metal"/>
+
+  <!-- Front wheel -->
+  <circle cx="110" cy="200" r="42" class="bike"/>
+  <circle cx="110" cy="200" r="3" class="metal"/>
+
+  <!-- Sturdy touring frame -->
+  <line x1="110" y1="138" x2="320" y2="200" class="bike" stroke-width="3"/>
+  <line x1="110" y1="138" x2="70" y2="200" class="bike" stroke-width="2.5"/>
+  <line x1="320" y1="200" x2="70" y2="200" class="bike" stroke-width="2.5"/>
+
+  <!-- Front rack -->
+  <rect x="85" y="100" width="50" height="35" class="rack"/>
+
+  <!-- Handlebar -->
+  <line x1="110" y1="138" x2="110" y2="110" class="bike"/>
+  <line x1="95" y1="105" x2="125" y2="105" class="bike" stroke-width="2"/>
+
+  <!-- Touring seat (comfortable) -->
+  <ellipse cx="200" cy="125" rx="18" ry="11" class="metal"/>
+
+  <!-- Shoveler body (robust) -->
+  <ellipse cx="200" cy="105" rx="35" ry="38" class="bird"/>
+
+  <!-- Shoveler head -->
+  <circle cx="218" cy="68" r="15" class="bird"/>
+
+  <!-- Shoveler distinctive large spatula beak -->
+  <path d="M 233 70 L 260 68 L 255 75 L 260 72 Z" fill="#ff6600"/>
+
+  <!-- Shoveler eye -->
+  <circle cx="226" cy="66" r="2" class="eye"/>
+
+  <!-- Pedals (touring) -->
+  <circle cx="160" cy="160" r="6" class="metal"/>
+  <circle cx="240" cy="160" r="6" class="metal"/>
+</svg>

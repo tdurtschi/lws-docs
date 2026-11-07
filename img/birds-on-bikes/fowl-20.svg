@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="buffsky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E3F2FD"/>
+      <stop offset="60%" stop-color="#BBDEFB"/>
+      <stop offset="100%" stop-color="#90CAF9"/>
+    </linearGradient>
+    <linearGradient id="pond" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4FC3F7"/>
+      <stop offset="100%" stop-color="#0288D1"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="265" fill="url(#buffsky)"/>
+  <!-- Pond in background -->
+  <ellipse cx="200" cy="205" rx="180" ry="45" fill="url(#pond)" opacity="0.5"/>
+  <!-- Lily pads -->
+  <ellipse cx="80" cy="215" rx="18" ry="10" fill="#388E3C" opacity="0.7"/>
+  <ellipse cx="310" cy="210" rx="15" ry="8" fill="#2E7D32" opacity="0.7"/>
+  <!-- Reeds -->
+  <line x1="50" y1="255" x2="50" y2="185" stroke="#558B2F" stroke-width="3"/>
+  <ellipse cx="50" cy="183" rx="4" ry="10" fill="#795548"/>
+  <line x1="62" y1="255" x2="62" y2="190" stroke="#558B2F" stroke-width="3"/>
+  <ellipse cx="62" cy="188" rx="4" ry="10" fill="#6D4C41"/>
+  <line x1="345" y1="255" x2="345" y2="188" stroke="#558B2F" stroke-width="3"/>
+  <ellipse cx="345" cy="186" rx="4" ry="10" fill="#795548"/>
+  <!-- Path -->
+  <rect y="252" width="400" height="48" fill="#D7CCC8"/>
+  <rect y="249" width="400" height="6" fill="#BCAAA4"/>
+
+  <!-- Cruiser / Hybrid Comfort Bike -->
+  <!-- Rear wheel -->
+  <circle cx="138" cy="220" r="42" fill="none" stroke="#1A1A1A" stroke-width="7"/>
+  <circle cx="138" cy="220" r="34" fill="none" stroke="#333" stroke-width="1.5"/>
+  <g stroke="#444" stroke-width="1.5">
+    <line x1="138" y1="178" x2="138" y2="262"/>
+    <line x1="96" y1="220" x2="180" y2="220"/>
+    <line x1="108" y1="190" x2="168" y2="250"/>
+    <line x1="168" y1="190" x2="108" y2="250"/>
+    <line x1="98" y1="205" x2="178" y2="235"/>
+    <line x1="178" y1="205" x2="98" y2="235"/>
+    <line x1="123" y1="179" x2="153" y2="261"/>
+    <line x1="153" y1="179" x2="123" y2="261"/>
+  </g>
+  <circle cx="138" cy="220" r="8" fill="#1A1A1A"/>
+
+  <!-- Front wheel -->
+  <circle cx="285" cy="220" r="42" fill="none" stroke="#1A1A1A" stroke-width="7"/>
+  <circle cx="285" cy="220" r="34" fill="none" stroke="#333" stroke-width="1.5"/>
+  <g stroke="#444" stroke-width="1.5">
+    <line x1="285" y1="178" x2="285" y2="262"/>
+    <line x1="243" y1="220" x2="327" y2="220"/>
+    <line x1="255" y1="190" x2="315" y2="250"/>
+    <line x1="315" y1="190" x2="255" y2="250"/>
+    <line x1="245" y1="205" x2="325" y2="235"/>
+    <line x1="325" y1="205" x2="245" y2="235"/>
+    <line x1="270" y1="179" x2="300" y2="261"/>
+    <line x1="300" y1="179" x2="270" y2="261"/>
+  </g>
+  <circle cx="285" cy="220" r="8" fill="#1A1A1A"/>
+
+  <!-- Cruiser frame -->
+  <path d="M138,220 Q148,190 180,170" stroke="#1565C0" stroke-width="7" fill="none"/>
+  <line x1="180" y1="170" x2="285" y2="220" stroke="#1565C0" stroke-width="7"/>
+  <line x1="180" y1="170" x2="212" y2="168" stroke="#1565C0" stroke-width="6"/>
+  <path d="M212,168 Q182,185 138,220" stroke="#1565C0" stroke-width="5" fill="none"/>
+  <!-- Front fork (gentle curve) -->
+  <path d="M265,185 Q272,195 285,220" stroke="#1565C0" stroke-width="5" fill="none"/>
+  <path d="M180,170 Q218,162 265,185" stroke="#1565C0" stroke-width="5" fill="none"/>
+
+  <!-- Swept-back handlebars -->
+  <line x1="180" y1="170" x2="180" y2="145" stroke="#333" stroke-width="5"/>
+  <path d="M156,142 Q180,135 204,142 Q206,152 194,158 Q184,162 178,155" stroke="#333" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="156" cy="142" r="5" fill="#111"/>
+  <circle cx="178" cy="155" r="5" fill="#111"/>
+
+  <!-- Wide comfort saddle -->
+  <line x1="212" y1="168" x2="212" y2="147" stroke="#333" stroke-width="4"/>
+  <ellipse cx="212" cy="146" rx="24" ry="10" fill="#37474F"/>
+  <ellipse cx="212" cy="144" rx="22" ry="8" fill="#455A64"/>
+
+  <!-- Wicker basket on front (cruiser detail) -->
+  <path d="M155,165 L165,158 L185,158 L195,165 L195,182 L155,182 Z" fill="#8D6E63" stroke="#6D4C41" stroke-width="2"/>
+  <g stroke="#795548" stroke-width="1.5" opacity="0.7">
+    <line x1="160" y1="158" x2="160" y2="182"/>
+    <line x1="168" y1="158" x2="168" y2="182"/>
+    <line x1="176" y1="158" x2="176" y2="182"/>
+    <line x1="184" y1="158" x2="184" y2="182"/>
+    <line x1="155" y1="165" x2="195" y2="165"/>
+    <line x1="155" y1="172" x2="195" y2="172"/>
+  </g>
+  <!-- Flowers in basket -->
+  <circle cx="163" cy="162" r="4" fill="#FF80AB"/>
+  <circle cx="175" cy="160" r="4" fill="#FFCC02"/>
+  <circle cx="186" cy="163" r="4" fill="#FF7043"/>
+
+  <!-- BUFFLEHEAD DUCK (small, striking black/white) -->
+  <!-- Body (white sides, dark back) -->
+  <ellipse cx="208" cy="125" rx="34" ry="19" fill="white" transform="rotate(-6 208 125)"/>
+  <!-- Dark back -->
+  <ellipse cx="198" cy="120" rx="28" ry="11" fill="#1A1A1A" transform="rotate(-5 198 120)"/>
+  <!-- White belly visible -->
+  <ellipse cx="218" cy="128" rx="20" ry="10" fill="white" transform="rotate(-5 218 128)"/>
+  <!-- LARGE puffy iridescent head (bufflehead's namesake!) -->
+  <circle cx="240" cy="107" r="22" fill="#1A1A1A"/>
+  <!-- Iridescent purple-green sheen on head -->
+  <ellipse cx="235" cy="103" rx="14" ry="11" fill="#4A148C" opacity="0.6"/>
+  <ellipse cx="242" cy="104" rx="10" ry="8" fill="#006064" opacity="0.5"/>
+  <!-- LARGE white patch behind eye (most distinctive feature) -->
+  <path d="M228,96 Q232,88 246,88 Q255,90 258,98 Q254,108 244,110 Q232,110 228,102 Z" fill="white"/>
+  <!-- Bill (small, blue-grey) -->
+  <path d="M258,110 L276,113 L258,117" fill="#607D8B"/>
+  <!-- Eye (dark) -->
+  <circle cx="262" cy="108" r="3" fill="#1A1A1A"/>
+  <circle cx="263" cy="107" r="1.2" fill="white"/>
+  <!-- Neck -->
+  <path d="M232,120 Q234,128 232,135" stroke="#1A1A1A" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- Tail (short, dark, slightly elevated) -->
+  <path d="M177,118 Q161,112 158,121 Q166,127 163,135 Q174,128 171,136" fill="#1A1A1A"/>
+  <!-- Feet (pink) -->
+  <line x1="202" y1="140" x2="198" y2="162" stroke="#F48FB1" stroke-width="3"/>
+  <line x1="216" y1="141" x2="220" y2="163" stroke="#F48FB1" stroke-width="3"/>
+  <path d="M192,162 L204,162 L197,166" fill="#F48FB1"/>
+  <path d="M215,163 L227,163 L220,167" fill="#F48FB1"/>
+
+  <text x="8" y="292" font-family="Georgia,serif" font-size="13" fill="#0D47A1" font-style="italic">Bufflehead · Cruiser Bike</text>
+</svg>

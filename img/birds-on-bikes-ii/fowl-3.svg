@@ -1,0 +1,53 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Beach Cruiser Swan -->
+  <defs>
+    <style>
+      .bird { fill: #fff; stroke: #ccc; stroke-width: 2; }
+      .eye { fill: #000; }
+      .bike { stroke: #d4a574; stroke-width: 2; fill: none; }
+      .metal { fill: #c0a080; stroke: #8b7355; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#e6d2b5"/>
+
+  <!-- Back wheel -->
+  <circle cx="310" cy="200" r="45" class="bike"/>
+  <circle cx="310" cy="200" r="3" class="metal"/>
+
+  <!-- Front wheel -->
+  <circle cx="130" cy="200" r="45" class="bike"/>
+  <circle cx="130" cy="200" r="3" class="metal"/>
+
+  <!-- Frame (curved cruiser style) -->
+  <path d="M 130 130 Q 200 100 310 200" class="bike" stroke-width="3"/>
+  <line x1="130" y1="130" x2="90" y2="200" class="bike"/>
+  <line x1="310" y1="200" x2="90" y2="200" class="bike"/>
+
+  <!-- Curved handlebars -->
+  <line x1="130" y1="130" x2="130" y2="100" class="bike"/>
+  <path d="M 110 95 Q 130 80 150 95" class="bike" stroke-width="2"/>
+
+  <!-- Comfortable seat (wide) -->
+  <ellipse cx="200" cy="125" rx="20" ry="12" class="metal"/>
+
+  <!-- Swan body -->
+  <ellipse cx="200" cy="105" rx="45" ry="50" class="bird"/>
+
+  <!-- Swan neck (long and curved) -->
+  <path d="M 215 50 Q 230 25 235 5" stroke="#fff" stroke-width="12" fill="none"/>
+
+  <!-- Swan head -->
+  <circle cx="238" cy="3" r="15" class="bird"/>
+
+  <!-- Swan eye -->
+  <circle cx="245" cy="0" r="2" class="eye"/>
+
+  <!-- Swan beak -->
+  <polygon points="253,2 270,0 253,4" fill="#ff6b00"/>
+
+  <!-- Pedals -->
+  <circle cx="170" cy="160" r="6" class="metal"/>
+  <circle cx="230" cy="160" r="6" class="metal"/>
+</svg>

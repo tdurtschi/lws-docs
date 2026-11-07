@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="vintagesky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E1"/>
+      <stop offset="100%" stop-color="#FFE082"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="265" fill="url(#vintagesky)"/>
+  <!-- Vintage sepia feel - cobblestone street hint -->
+  <rect y="252" width="400" height="48" fill="#8D6E63"/>
+  <rect y="249" width="400" height="6" fill="#6D4C41"/>
+  <!-- Cobblestone pattern -->
+  <g fill="#795548" opacity="0.4">
+    <ellipse cx="25" cy="265" rx="20" ry="8"/>
+    <ellipse cx="75" cy="262" rx="20" ry="8"/>
+    <ellipse cx="125" cy="266" rx="20" ry="8"/>
+    <ellipse cx="175" cy="262" rx="20" ry="8"/>
+    <ellipse cx="225" cy="266" rx="20" ry="8"/>
+    <ellipse cx="275" cy="262" rx="20" ry="8"/>
+    <ellipse cx="325" cy="266" rx="20" ry="8"/>
+    <ellipse cx="375" cy="262" rx="20" ry="8"/>
+  </g>
+  <!-- Old lamp post -->
+  <rect x="355" y="150" width="6" height="100" fill="#5D4037"/>
+  <path d="M361,150 Q380,142 378,160 Q370,162 361,160" fill="#FDD835" stroke="#5D4037" stroke-width="2"/>
+
+  <!-- Vintage Bicycle (classic loop frame) -->
+  <!-- Rear wheel -->
+  <circle cx="140" cy="220" r="42" fill="none" stroke="#3E2723" stroke-width="5"/>
+  <circle cx="140" cy="220" r="36" fill="none" stroke="#5D4037" stroke-width="1"/>
+  <g stroke="#5D4037" stroke-width="1.5">
+    <line x1="140" y1="178" x2="140" y2="262"/>
+    <line x1="98" y1="220" x2="182" y2="220"/>
+    <line x1="110" y1="190" x2="170" y2="250"/>
+    <line x1="170" y1="190" x2="110" y2="250"/>
+    <line x1="100" y1="205" x2="180" y2="235"/>
+    <line x1="180" y1="205" x2="100" y2="235"/>
+    <line x1="125" y1="180" x2="155" y2="260"/>
+    <line x1="155" y1="180" x2="125" y2="260"/>
+  </g>
+  <circle cx="140" cy="220" r="8" fill="#3E2723"/>
+
+  <!-- Front wheel -->
+  <circle cx="285" cy="220" r="42" fill="none" stroke="#3E2723" stroke-width="5"/>
+  <circle cx="285" cy="220" r="36" fill="none" stroke="#5D4037" stroke-width="1"/>
+  <g stroke="#5D4037" stroke-width="1.5">
+    <line x1="285" y1="178" x2="285" y2="262"/>
+    <line x1="243" y1="220" x2="327" y2="220"/>
+    <line x1="255" y1="190" x2="315" y2="250"/>
+    <line x1="315" y1="190" x2="255" y2="250"/>
+    <line x1="245" y1="205" x2="325" y2="235"/>
+    <line x1="325" y1="205" x2="245" y2="235"/>
+    <line x1="270" y1="180" x2="300" y2="260"/>
+    <line x1="300" y1="180" x2="270" y2="260"/>
+  </g>
+  <circle cx="285" cy="220" r="8" fill="#3E2723"/>
+
+  <!-- Vintage frame (curved/loop tubes, mixte-style) -->
+  <path d="M140,220 Q148,188 198,162" stroke="#8D6E63" stroke-width="7" fill="none"/>
+  <path d="M198,162 Q242,160 285,220" stroke="#8D6E63" stroke-width="7" fill="none"/>
+  <path d="M198,162 Q218,160 228,158" stroke="#8D6E63" stroke-width="6" fill="none"/>
+  <path d="M228,158 Q200,185 140,220" stroke="#8D6E63" stroke-width="5" fill="none"/>
+  <!-- Classic curved fork -->
+  <path d="M248,175 Q270,185 285,220" stroke="#8D6E63" stroke-width="5" fill="none"/>
+  <path d="M198,162 Q225,155 248,175" stroke="#8D6E63" stroke-width="5" fill="none"/>
+
+  <!-- Vintage curved handlebars -->
+  <line x1="198" y1="162" x2="198" y2="140" stroke="#5D4037" stroke-width="5"/>
+  <path d="M180,138 Q198,130 216,138 Q218,148 208,153 Q200,157 196,150" stroke="#5D4037" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="196" cy="150" r="4" fill="#3E2723"/>
+  <circle cx="180" cy="138" r="4" fill="#3E2723"/>
+
+  <!-- Saddle (old leather style) -->
+  <line x1="228" y1="158" x2="228" y2="138" stroke="#5D4037" stroke-width="4"/>
+  <path d="M212,138 Q228,130 244,136 Q242,144 236,146 Q228,148 220,146 Z" fill="#8D6E63" stroke="#5D4037" stroke-width="1.5"/>
+
+  <!-- DOUBLE-CRESTED CORMORANT -->
+  <!-- Body (dark iridescent) -->
+  <ellipse cx="222" cy="119" rx="40" ry="22" fill="#1A237E" transform="rotate(-8 222 119)"/>
+  <!-- Iridescent sheen -->
+  <ellipse cx="218" cy="117" rx="32" ry="15" fill="#283593" transform="rotate(-8 218 117)"/>
+  <ellipse cx="214" cy="115" rx="22" ry="9" fill="#1565C0" opacity="0.5" transform="rotate(-8 214 115)"/>
+  <!-- Wing -->
+  <ellipse cx="210" cy="126" rx="34" ry="13" fill="#0D47A1" transform="rotate(-5 210 126)"/>
+  <!-- Neck (long, kinked) -->
+  <path d="M246,106 Q268,92 272,74 Q275,58 268,48" stroke="#212121" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- Orange throat pouch -->
+  <path d="M264,80 Q272,85 268,92 Q262,95 258,90" fill="#E65100"/>
+  <!-- Head -->
+  <circle cx="268" cy="44" r="18" fill="#1A1A1A"/>
+  <!-- White tufts (double crest, breeding) -->
+  <path d="M258,32 Q255,22 252,18" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M264,30 Q262,20 260,15" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Hooked bill -->
+  <path d="M281,46 L300,50 Q302,55 296,57 L280,54" fill="#8D6E63"/>
+  <!-- Hook at tip -->
+  <path d="M296,57 Q302,62 298,65" stroke="#5D4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Eye (turquoise-green) -->
+  <circle cx="280" cy="41" r="3.5" fill="#00BCD4"/>
+  <circle cx="280" cy="41" r="2" fill="#1A1A1A"/>
+  <!-- Tail (stiff) -->
+  <path d="M185,113 Q170,108 168,116 Q175,122 172,130 Q182,124 178,132" fill="#0D47A1"/>
+  <!-- Feet (webbed, dark) -->
+  <line x1="215" y1="138" x2="210" y2="163" stroke="#1A1A1A" stroke-width="4"/>
+  <line x1="230" y1="140" x2="234" y2="165" stroke="#1A1A1A" stroke-width="4"/>
+  <path d="M203,163 L215,163 L208,168" fill="#1A1A1A"/>
+  <path d="M228,165 L240,165 L233,170" fill="#1A1A1A"/>
+
+  <text x="8" y="292" font-family="Georgia,serif" font-size="13" fill="#3E2723" font-style="italic">Cormorant · Vintage Bicycle</text>
+</svg>

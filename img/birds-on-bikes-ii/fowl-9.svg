@@ -1,0 +1,52 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Recumbent Pintail -->
+  <defs>
+    <style>
+      .bird { fill: #5a4a3a; stroke: #3a2a1a; stroke-width: 2; }
+      .eye { fill: #000; }
+      .bike { stroke: #7a6a5a; stroke-width: 2; fill: none; }
+      .metal { fill: #888; stroke: #555; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#9a8a7a"/>
+
+  <!-- Back wheel -->
+  <circle cx="100" cy="200" r="40" class="bike"/>
+  <circle cx="100" cy="200" r="3" class="metal"/>
+
+  <!-- Front wheel -->
+  <circle cx="300" cy="200" r="40" class="bike"/>
+  <circle cx="300" cy="200" r="3" class="metal"/>
+
+  <!-- Recumbent frame (low and long) -->
+  <path d="M 100 180 Q 200 140 300 200" class="bike" stroke-width="3"/>
+  <line x1="100" y1="200" x2="300" y2="200" class="bike" stroke-width="2"/>
+
+  <!-- Low seat (recumbent position) -->
+  <ellipse cx="180" cy="165" rx="35" ry="25" class="metal"/>
+
+  <!-- Handlebar extension -->
+  <line x1="250" y1="160" x2="280" y2="130" class="bike"/>
+  <line x1="270" y1="125" x2="290" y2="140" class="bike" stroke-width="2"/>
+
+  <!-- Pintail body (sleek) -->
+  <ellipse cx="190" cy="145" rx="38" ry="35" class="bird"/>
+
+  <!-- Pintail neck (long and thin) -->
+  <path d="M 215 120 Q 235 90 240 50" stroke="#5a4a3a" stroke-width="7" fill="none"/>
+
+  <!-- Pintail head -->
+  <circle cx="242" cy="48" r="12" class="bird"/>
+
+  <!-- Pintail eye -->
+  <circle cx="248" cy="46" r="2" class="eye"/>
+
+  <!-- Pintail beak (small and pointed) -->
+  <polygon points="256,48 275,46 256,50" fill="#999"/>
+
+  <!-- Pedals (low) -->
+  <circle cx="140" cy="175" r="5" class="metal"/>
+  <circle cx="240" cy="175" r="5" class="metal"/>
+</svg>

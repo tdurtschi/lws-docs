@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Northern shoveler on a chopper</title>
+  <line x1="20" y1="262" x2="380" y2="262" stroke="#9e9e9e" stroke-width="3" stroke-linecap="round"/>
+  <!-- big rear wheel, small front way out -->
+  <g stroke="#212121" fill="none">
+    <circle cx="120" cy="216" r="46" stroke-width="7"/>
+    <circle cx="330" cy="238" r="24" stroke-width="6"/>
+    <g stroke-width="1.5">
+      <path d="M120 170v92M74 216h92M87 183l66 66M87 249l66-66"/>
+      <path d="M330 214v48M306 238h48"/>
+    </g>
+  </g>
+  <!-- low-slung frame with raked fork -->
+  <g stroke="#ffb300" stroke-width="7" fill="none" stroke-linecap="round">
+    <path d="M200 226 L172 172"/>
+    <path d="M200 226 L258 176"/>
+    <path d="M174 176 L258 176"/>
+    <path d="M172 175 L120 216"/>
+    <path d="M200 226 L120 216"/>
+    <path d="M262 172 L330 238"/>
+  </g>
+  <!-- ape hanger bars -->
+  <path d="M260 174 L252 112 M240 112 h24" fill="none" stroke="#212121" stroke-width="5" stroke-linecap="round"/>
+  <!-- banana seat with sissy bar -->
+  <path d="M142 168 C160 174 178 174 194 168" fill="none" stroke="#d81b60" stroke-width="10" stroke-linecap="round"/>
+  <path d="M142 170 L134 128" stroke="#9e9e9e" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="200" cy="226" r="10" fill="none" stroke="#212121" stroke-width="4"/>
+  <line x1="200" y1="226" x2="216" y2="248" stroke="#212121" stroke-width="5" stroke-linecap="round"/>
+  <path d="M209 249h16" stroke="#424242" stroke-width="6" stroke-linecap="round"/>
+  <!-- shoveler: green head, giant spoon bill, white chest, chestnut flank -->
+  <path d="M136 130 l-24 -10 5 12 -7 10 19 0z" fill="#37474f"/>
+  <ellipse cx="172" cy="140" rx="40" ry="26" fill="#fafafa" stroke="#e0e0e0" stroke-width="2"/>
+  <path d="M146 146 C158 156 176 160 192 156 L190 138 C174 142 158 142 148 138 Z" fill="#a1502d"/>
+  <path d="M198 128 C214 120 226 108 232 94" stroke="#2e7d32" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <circle cx="236" cy="86" r="15" fill="#2e7d32"/>
+  <!-- oversized spatulate bill -->
+  <path d="M249 82 C262 80 274 84 278 92 C270 98 256 98 248 92 Z" fill="#37474f"/>
+  <circle cx="240" cy="82" r="2.6" fill="#ffd600"/>
+  <circle cx="240" cy="82" r="1.2" fill="#111"/>
+  <path d="M160 130 C186 130 224 144 254 160 C224 158 190 154 164 148 Z" fill="#90a4ae"/>
+  <polyline points="184,162 198,200 214,246" fill="none" stroke="#fb8c00" stroke-width="6" stroke-linecap="round"/>
+  <path d="M206 247h17" stroke="#fb8c00" stroke-width="5" stroke-linecap="round"/>
+</svg>

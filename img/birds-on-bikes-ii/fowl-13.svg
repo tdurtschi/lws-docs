@@ -1,0 +1,52 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Trials Bike Scaup -->
+  <defs>
+    <style>
+      .bird { fill: #3a2a4a; stroke: #1a0a2a; stroke-width: 2; }
+      .eye { fill: #ffff00; }
+      .bike { stroke: #00ff00; stroke-width: 2.5; fill: none; }
+      .metal { fill: #00aa00; stroke: #005500; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#6a7a6a"/>
+
+  <!-- Back wheel (trick) -->
+  <circle cx="270" cy="190" r="35" class="bike" stroke-width="3"/>
+  <circle cx="270" cy="190" r="3" class="metal"/>
+
+  <!-- Front wheel (trick) -->
+  <circle cx="140" cy="190" r="35" class="bike" stroke-width="3"/>
+  <circle cx="140" cy="190" r="3" class="metal"/>
+
+  <!-- Trials frame (compact, strong) -->
+  <line x1="140" y1="120" x2="270" y2="190" class="bike"/>
+  <line x1="140" y1="120" x2="105" y2="190" class="bike"/>
+  <line x1="270" y1="190" x2="105" y2="190" class="bike"/>
+
+  <!-- Extended front brake arm -->
+  <line x1="140" y1="120" x2="140" y2="80" class="bike" stroke-width="3"/>
+
+  <!-- Stubby handlebars -->
+  <line x1="125" y1="75" x2="155" y2="75" class="bike" stroke-width="2"/>
+
+  <!-- Low trials seat -->
+  <circle cx="190" cy="115" r="7" class="metal"/>
+
+  <!-- Scaup body (diving duck, compact) -->
+  <ellipse cx="190" cy="100" rx="32" ry="34" class="bird"/>
+
+  <!-- Scaup head (rounded) -->
+  <circle cx="210" cy="63" r="14" class="bird"/>
+
+  <!-- Scaup yellow eye -->
+  <circle cx="217" cy="61" r="3" class="eye"/>
+
+  <!-- Scaup beak -->
+  <polygon points="226,63 246,61 226,65" fill="#999"/>
+
+  <!-- Trials pedals (high tension) -->
+  <circle cx="165" cy="145" r="5" class="metal"/>
+  <circle cx="215" cy="145" r="5" class="metal"/>
+</svg>

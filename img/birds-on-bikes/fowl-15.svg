@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="choppersky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#212121"/>
+      <stop offset="60%" stop-color="#37474F"/>
+      <stop offset="100%" stop-color="#455A64"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="265" fill="url(#choppersky)"/>
+  <!-- Stars in night sky -->
+  <circle cx="30" cy="25" r="1.5" fill="white" opacity="0.9"/>
+  <circle cx="80" cy="15" r="1" fill="white" opacity="0.9"/>
+  <circle cx="140" cy="35" r="1.5" fill="white" opacity="0.9"/>
+  <circle cx="200" cy="12" r="1" fill="white" opacity="0.9"/>
+  <circle cx="260" cy="40" r="1.5" fill="white" opacity="0.9"/>
+  <circle cx="330" cy="20" r="1" fill="white" opacity="0.9"/>
+  <circle cx="380" cy="35" r="1.5" fill="white" opacity="0.9"/>
+  <!-- Neon diner sign -->
+  <text x="30" y="100" font-family="serif" font-size="22" fill="#FF4081" opacity="0.9" font-style="italic">DINER</text>
+  <text x="30" y="100" font-family="serif" font-size="22" fill="none" stroke="#FF4081" stroke-width="1" opacity="0.5" font-style="italic">DINER</text>
+  <!-- Road -->
+  <rect y="252" width="400" height="48" fill="#1A1A1A"/>
+  <rect y="249" width="400" height="6" fill="#333"/>
+  <!-- Center line -->
+  <rect x="40" y="263" width="60" height="4" fill="#FDD835" opacity="0.7" rx="2"/>
+  <rect x="150" y="263" width="60" height="4" fill="#FDD835" opacity="0.7" rx="2"/>
+  <rect x="260" y="263" width="60" height="4" fill="#FDD835" opacity="0.7" rx="2"/>
+
+  <!-- Chopper Bike (long fork, high handlebars) -->
+  <!-- Rear wheel (fat) -->
+  <circle cx="225" cy="222" r="42" fill="none" stroke="#CFD8DC" stroke-width="7"/>
+  <circle cx="225" cy="222" r="34" fill="none" stroke="#90A4AE" stroke-width="1.5"/>
+  <g stroke="#90A4AE" stroke-width="1.5">
+    <line x1="225" y1="180" x2="225" y2="264"/>
+    <line x1="183" y1="222" x2="267" y2="222"/>
+    <line x1="196" y1="192" x2="254" y2="252"/>
+    <line x1="254" y1="192" x2="196" y2="252"/>
+    <line x1="184" y1="207" x2="266" y2="237"/>
+    <line x1="266" y1="207" x2="184" y2="237"/>
+  </g>
+  <circle cx="225" cy="222" r="8" fill="#CFD8DC"/>
+
+  <!-- Front wheel (tall, narrow, extended way out front) -->
+  <circle cx="105" cy="228" r="36" fill="none" stroke="#CFD8DC" stroke-width="5"/>
+  <circle cx="105" cy="228" r="30" fill="none" stroke="#90A4AE" stroke-width="1"/>
+  <g stroke="#90A4AE" stroke-width="1.5">
+    <line x1="105" y1="192" x2="105" y2="264"/>
+    <line x1="69" y1="228" x2="141" y2="228"/>
+    <line x1="79" y1="202" x2="131" y2="254"/>
+    <line x1="131" y1="202" x2="79" y2="254"/>
+    <line x1="71" y1="215" x2="139" y2="241"/>
+    <line x1="139" y1="215" x2="71" y2="241"/>
+  </g>
+  <circle cx="105" cy="228" r="7" fill="#CFD8DC"/>
+
+  <!-- Extended chopper fork (very raked) -->
+  <line x1="225" y1="222" x2="200" y2="155" stroke="#78909C" stroke-width="6"/>
+  <line x1="200" y1="155" x2="105" y2="228" stroke="#78909C" stroke-width="6"/>
+
+  <!-- Frame (low-slung chopper) -->
+  <path d="M225,222 Q220,180 210,165 Q205,160 200,155" stroke="#546E7A" stroke-width="7" fill="none"/>
+  <line x1="225" y1="222" x2="215" y2="162" stroke="#546E7A" stroke-width="7"/>
+  <line x1="215" y1="162" x2="200" y2="155" stroke="#546E7A" stroke-width="5"/>
+
+  <!-- Seat (chopper, low slung) -->
+  <line x1="215" y1="162" x2="215" y2="145" stroke="#546E7A" stroke-width="5"/>
+  <path d="M198,144 Q215,137 232,142 Q232,150 222,154 Q215,156 208,152 Z" fill="#D32F2F"/>
+  <path d="M200,144 Q215,138 230,143" stroke="#B71C1C" stroke-width="2" fill="none"/>
+
+  <!-- High-rise handlebars (ape hanger style) -->
+  <line x1="200" y1="155" x2="200" y2="120" stroke="#546E7A" stroke-width="5"/>
+  <line x1="168" y1="90" x2="232" y2="90" stroke="#546E7A" stroke-width="5"/>
+  <line x1="168" y1="90" x2="168" y2="108" stroke="#546E7A" stroke-width="4"/>
+  <line x1="232" y1="90" x2="232" y2="108" stroke="#546E7A" stroke-width="4"/>
+  <circle cx="168" cy="108" r="5" fill="#90A4AE"/>
+  <circle cx="232" cy="108" r="5" fill="#90A4AE"/>
+  <!-- Ape hanger verticals -->
+  <line x1="168" y1="120" x2="168" y2="90" stroke="#546E7A" stroke-width="4"/>
+  <line x1="232" y1="120" x2="232" y2="90" stroke="#546E7A" stroke-width="4"/>
+  <line x1="168" y1="120" x2="200" y2="120" stroke="#546E7A" stroke-width="4"/>
+  <line x1="200" y1="120" x2="232" y2="120" stroke="#546E7A" stroke-width="4"/>
+
+  <!-- MANDARIN DUCK (most colorful duck in the world) -->
+  <!-- Body -->
+  <ellipse cx="210" cy="128" rx="36" ry="20" fill="#5C4033" transform="rotate(-5 210 128)"/>
+  <!-- Purple chest -->
+  <ellipse cx="228" cy="120" rx="18" ry="18" fill="#4A148C" transform="rotate(20 228 120)"/>
+  <!-- White chest bar -->
+  <path d="M226,135 Q232,138 238,135" stroke="white" stroke-width="4" fill="none"/>
+  <!-- Orange "sails" (sail feathers - most distinctive feature!) -->
+  <path d="M195,112 Q190,95 194,80 Q200,72 208,78 Q206,95 198,112 Z" fill="#FF6D00"/>
+  <path d="M195,112 Q196,98 200,85 Q205,78 210,84 Q208,98 202,112 Z" fill="#FF8F00"/>
+  <!-- Blue-green back -->
+  <ellipse cx="200" cy="122" rx="30" ry="12" fill="#006064" transform="rotate(-5 200 122)"/>
+  <!-- Rusty-orange flanks -->
+  <ellipse cx="218" cy="128" rx="20" ry="10" fill="#E65100" transform="rotate(-10 218 128)"/>
+  <!-- Head (spectacular multicolor crest) -->
+  <circle cx="245" cy="106" r="20" fill="#1B5E20"/>
+  <ellipse cx="240" cy="103" rx="13" ry="10" fill="#4A148C" opacity="0.7"/>
+  <!-- White cheek crescent -->
+  <ellipse cx="256" cy="108" rx="8" ry="12" fill="white" opacity="0.9" transform="rotate(-15 256 108)"/>
+  <!-- Red eye -->
+  <circle cx="258" cy="101" r="4" fill="#D32F2F"/>
+  <circle cx="258" cy="101" r="2.5" fill="#1A1A1A"/>
+  <circle cx="259" cy="100" r="1" fill="white"/>
+  <!-- Bill (orange-red) -->
+  <path d="M265,107 L283,109 L265,113" fill="#D84315"/>
+  <!-- Crest feathers (flowing orange-white) -->
+  <path d="M234,90 Q228,78 224,68" stroke="#FF6D00" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M240,88 Q236,75 234,64" stroke="#FF8F00" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M246,87 Q244,74 244,62" stroke="#1B5E20" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Tail -->
+  <path d="M178,122 Q162,115 159,124 Q167,130 164,138" fill="#006064"/>
+  <!-- Feet (orange) -->
+  <line x1="206" y1="145" x2="202" y2="166" stroke="#FF6D00" stroke-width="3"/>
+  <line x1="219" y1="146" x2="223" y2="167" stroke="#FF6D00" stroke-width="3"/>
+  <path d="M196,166 L208,166 L201,170" fill="#FF6D00"/>
+  <path d="M218,167 L230,167 L223,171" fill="#FF6D00"/>
+
+  <text x="8" y="292" font-family="Georgia,serif" font-size="13" fill="#FF8F00" font-style="italic">Mandarin Duck · Chopper</text>
+</svg>

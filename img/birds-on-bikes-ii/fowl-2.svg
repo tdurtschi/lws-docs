@@ -1,0 +1,58 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mountain Bike Goose -->
+  <defs>
+    <style>
+      .bird { fill: #5a5a5a; stroke: #333; stroke-width: 2; }
+      .eye { fill: #000; }
+      .bike { stroke: #1a1a1a; stroke-width: 3; fill: none; }
+      .metal { fill: #666; stroke: #444; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#8b7355"/>
+
+  <!-- Back wheel (knobby) -->
+  <circle cx="300" cy="210" r="45" class="bike"/>
+  <circle cx="300" cy="210" r="50" class="bike" opacity="0.3"/>
+  <circle cx="300" cy="210" r="3" class="metal"/>
+
+  <!-- Front wheel (knobby) -->
+  <circle cx="120" cy="200" r="45" class="bike"/>
+  <circle cx="120" cy="200" r="50" class="bike" opacity="0.3"/>
+  <circle cx="120" cy="200" r="3" class="metal"/>
+
+  <!-- Frame (thick mountain bike) -->
+  <line x1="120" y1="130" x2="300" y2="210" class="bike"/>
+  <line x1="120" y1="130" x2="80" y2="210" class="bike"/>
+  <line x1="300" y1="210" x2="80" y2="210" class="bike"/>
+
+  <!-- Suspension fork -->
+  <line x1="120" y1="130" x2="120" y2="155" class="bike"/>
+
+  <!-- Handlebars (wide) -->
+  <line x1="120" y1="130" x2="120" y2="100" class="bike"/>
+  <line x1="90" y1="95" x2="150" y2="95" class="bike" stroke-width="2"/>
+
+  <!-- Seat -->
+  <ellipse cx="180" cy="120" rx="16" ry="10" class="metal"/>
+
+  <!-- Goose body -->
+  <ellipse cx="190" cy="100" rx="40" ry="45" class="bird"/>
+
+  <!-- Goose neck -->
+  <path d="M 210 55 Q 220 30 225 10" stroke="#5a5a5a" stroke-width="8" fill="none" class="bird"/>
+
+  <!-- Goose head -->
+  <circle cx="228" cy="8" r="16" class="bird"/>
+
+  <!-- Goose eye -->
+  <circle cx="235" cy="5" r="3" class="eye"/>
+
+  <!-- Goose beak -->
+  <polygon points="245,8 265,6 245,10" fill="#ff9900"/>
+
+  <!-- Pedals and crank -->
+  <circle cx="160" cy="165" r="5" class="metal"/>
+  <circle cx="220" cy="165" r="5" class="metal"/>
+</svg>

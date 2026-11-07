@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Great Egret on Touring Bike</title>
+  <rect width="400" height="300" fill="#D9E5D6"/>
+  <rect y="255" width="400" height="45" fill="#96A972"/>
+  <!-- Touring bike: with panniers/racks -->
+  <circle cx="90" cy="220" r="34" fill="none" stroke="#111" stroke-width="3"/>
+  <circle cx="310" cy="220" r="34" fill="none" stroke="#111" stroke-width="3"/>
+  <g stroke="#111" stroke-width="1">
+    <line x1="90" y1="186" x2="90" y2="254"/>
+    <line x1="56" y1="220" x2="124" y2="220"/>
+    <line x1="310" y1="186" x2="310" y2="254"/>
+    <line x1="276" y1="220" x2="344" y2="220"/>
+  </g>
+  <path d="M 90 220 L 200 165 L 310 220 L 200 220 Z" stroke="#2e5e8a" stroke-width="5" fill="none"/>
+  <line x1="90" y1="220" x2="130" y2="140" stroke="#2e5e8a" stroke-width="5"/>
+  <path d="M 130 140 Q 115 135 112 148 M 130 140 Q 145 135 148 148" stroke="#111" stroke-width="3" fill="none"/>
+  <!-- Rear rack with pannier -->
+  <line x1="310" y1="220" x2="310" y2="180" stroke="#2e5e8a" stroke-width="3"/>
+  <line x1="270" y1="180" x2="335" y2="180" stroke="#2e5e8a" stroke-width="3"/>
+  <rect x="275" y="180" width="55" height="42" fill="#8b4513" stroke="#5a2f0a" stroke-width="2"/>
+  <line x1="275" y1="195" x2="330" y2="195" stroke="#5a2f0a" stroke-width="1"/>
+  <!-- Front handlebar bag -->
+  <rect x="115" y="150" width="35" height="20" fill="#8b4513" stroke="#5a2f0a" stroke-width="1.5" rx="2"/>
+  <rect x="197" y="157" width="18" height="6" fill="#111" rx="1"/>
+  <!-- Great Egret: white, long neck -->
+  <ellipse cx="220" cy="140" rx="38" ry="18" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <!-- Long S-neck -->
+  <path d="M 190 140 Q 165 120 170 90 Q 175 70 190 55 Q 195 75 188 95 Q 185 115 205 130 Z" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <!-- Wispy plumes -->
+  <path d="M 245 148 Q 265 145 275 160 M 250 152 Q 270 150 280 165" stroke="#fff" stroke-width="1.5" fill="none"/>
+  <circle cx="192" cy="60" r="10" fill="#fff"/>
+  <polygon points="200,60 232,58 200,66" fill="#f5c451"/>
+  <line x1="200" y1="61" x2="228" y2="61" stroke="#c68820" stroke-width="0.7"/>
+  <circle cx="196" cy="57" r="1.8" fill="#000"/>
+  <path d="M 195 58 L 199 58" stroke="#2c8c5a" stroke-width="1"/>
+  <line x1="220" y1="158" x2="200" y2="215" stroke="#111" stroke-width="3"/>
+</svg>

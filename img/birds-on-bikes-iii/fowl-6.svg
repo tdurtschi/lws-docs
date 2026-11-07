@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Trumpeter Swan on Recumbent</title>
+  <rect width="400" height="300" fill="#CFE9F5"/>
+  <rect y="255" width="400" height="45" fill="#7CB37E"/>
+  <!-- Recumbent: two wheels, reclined seat -->
+  <circle cx="70" cy="230" r="24" fill="none" stroke="#222" stroke-width="3"/>
+  <circle cx="340" cy="230" r="36" fill="none" stroke="#222" stroke-width="4"/>
+  <g stroke="#222" stroke-width="1">
+    <line x1="70" y1="206" x2="70" y2="254"/>
+    <line x1="46" y1="230" x2="94" y2="230"/>
+    <line x1="340" y1="194" x2="340" y2="266"/>
+    <line x1="304" y1="230" x2="376" y2="230"/>
+  </g>
+  <path d="M 70 230 L 200 200 L 340 230" stroke="#8e44ad" stroke-width="6" fill="none"/>
+  <!-- Reclined seat -->
+  <path d="M 195 145 L 260 195 L 240 205 L 180 155 Z" fill="#4a2266" stroke="#2a1240" stroke-width="2"/>
+  <path d="M 260 195 L 300 190 L 305 200 L 265 205 Z" fill="#4a2266" stroke="#2a1240" stroke-width="2"/>
+  <line x1="70" y1="230" x2="115" y2="200" stroke="#8e44ad" stroke-width="6"/>
+  <line x1="115" y1="200" x2="100" y2="185" stroke="#222" stroke-width="4"/>
+  <line x1="115" y1="200" x2="130" y2="185" stroke="#222" stroke-width="4"/>
+  <!-- Trumpeter Swan reclining -->
+  <ellipse cx="245" cy="180" rx="48" ry="20" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <path d="M 200 175 Q 165 155 145 130 Q 135 115 125 95 Q 120 82 130 78 Q 138 88 150 105 Q 165 125 185 145 Q 200 160 210 168 Z" fill="#fff" stroke="#e6e6e6" stroke-width="1"/>
+  <circle cx="125" cy="82" r="9" fill="#fff"/>
+  <polygon points="120,84 105,86 120,92" fill="#111"/>
+  <circle cx="122" cy="80" r="1.8" fill="#000"/>
+  <line x1="230" y1="200" x2="115" y2="200" stroke="#f5a623" stroke-width="3"/>
+</svg>

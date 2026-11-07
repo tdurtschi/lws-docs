@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Emperor Goose on Electric Bike</title>
+  <rect width="400" height="300" fill="#C8D6E5"/>
+  <rect y="255" width="400" height="45" fill="#8395A7"/>
+  <!-- E-bike: with battery pack and motor -->
+  <circle cx="105" cy="220" r="35" fill="none" stroke="#111" stroke-width="4"/>
+  <circle cx="295" cy="220" r="35" fill="none" stroke="#111" stroke-width="4"/>
+  <g stroke="#111" stroke-width="1">
+    <line x1="105" y1="185" x2="105" y2="255"/>
+    <line x1="70" y1="220" x2="140" y2="220"/>
+    <line x1="295" y1="185" x2="295" y2="255"/>
+    <line x1="260" y1="220" x2="330" y2="220"/>
+  </g>
+  <!-- Motor at rear hub -->
+  <circle cx="295" cy="220" r="14" fill="#333" stroke="#111" stroke-width="1"/>
+  <circle cx="295" cy="220" r="4" fill="#f5c451"/>
+  <path d="M 105 220 L 200 165 L 295 220 L 200 220 Z" stroke="#0abde3" stroke-width="6" fill="none"/>
+  <line x1="105" y1="220" x2="140" y2="145" stroke="#0abde3" stroke-width="6"/>
+  <!-- Battery pack on downtube -->
+  <rect x="155" y="185" width="60" height="12" fill="#2c3e50" stroke="#111" stroke-width="1" rx="2"/>
+  <rect x="200" y="188" width="10" height="6" fill="#00e676"/>
+  <path d="M 140 145 L 120 132 M 140 145 L 160 132" stroke="#111" stroke-width="4"/>
+  <!-- Display screen -->
+  <rect x="145" y="130" width="22" height="14" fill="#111" stroke="#333" stroke-width="1" rx="1"/>
+  <text x="147" y="140" font-family="monospace" font-size="8" fill="#00e676">25</text>
+  <rect x="192" y="157" width="18" height="6" fill="#111" rx="1"/>
+  <!-- Emperor Goose: blue-gray body, white head with yellow-orange -->
+  <ellipse cx="205" cy="140" rx="42" ry="22" fill="#7a8a9c"/>
+  <!-- Scaled feathers pattern -->
+  <path d="M 175 135 Q 185 130 195 135 M 195 135 Q 205 130 215 135 M 215 135 Q 225 130 235 135 M 180 145 Q 190 140 200 145 M 200 145 Q 210 140 220 145" stroke="#556677" stroke-width="1" fill="none"/>
+  <ellipse cx="185" cy="140" rx="15" ry="8" fill="#4a5a6c"/>
+  <circle cx="180" cy="115" r="18" fill="#fff"/>
+  <path d="M 172 105 Q 178 100 184 105" stroke="#f5c451" stroke-width="2" fill="none"/>
+  <polygon points="163,116 148,118 163,122" fill="#f5c451"/>
+  <path d="M 148 118 L 158 118" stroke="#c68820" stroke-width="1"/>
+  <circle cx="178" cy="112" r="1.8" fill="#000"/>
+  <line x1="205" y1="160" x2="200" y2="215" stroke="#f5c451" stroke-width="3"/>
+</svg>

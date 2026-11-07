@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="foldsky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8F5E9"/>
+      <stop offset="100%" stop-color="#C8E6C9"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="265" fill="url(#foldsky)"/>
+  <!-- Park scene -->
+  <ellipse cx="60" cy="245" rx="55" ry="15" fill="#81C784" opacity="0.7"/>
+  <rect x="56" y="200" width="8" height="45" fill="#6D4C41"/>
+  <ellipse cx="60" cy="195" rx="28" ry="32" fill="#388E3C"/>
+  <ellipse cx="330" cy="245" rx="55" ry="15" fill="#81C784" opacity="0.7"/>
+  <rect x="326" y="200" width="8" height="45" fill="#6D4C41"/>
+  <ellipse cx="330" cy="195" rx="28" ry="32" fill="#2E7D32"/>
+  <!-- Path -->
+  <rect y="252" width="400" height="48" fill="#D7CCC8"/>
+  <rect y="249" width="400" height="6" fill="#BCAAA4"/>
+
+  <!-- Folding Bike (small wheels, visible hinge) -->
+  <!-- Rear wheel (small) -->
+  <circle cx="160" cy="228" r="30" fill="none" stroke="#1A1A1A" stroke-width="5"/>
+  <circle cx="160" cy="228" r="24" fill="none" stroke="#333" stroke-width="1"/>
+  <g stroke="#444" stroke-width="1.5">
+    <line x1="160" y1="198" x2="160" y2="258"/>
+    <line x1="130" y1="228" x2="190" y2="228"/>
+    <line x1="139" y1="207" x2="181" y2="249"/>
+    <line x1="181" y1="207" x2="139" y2="249"/>
+    <line x1="131" y1="218" x2="189" y2="238"/>
+    <line x1="189" y1="218" x2="131" y2="238"/>
+  </g>
+  <circle cx="160" cy="228" r="6" fill="#1A1A1A"/>
+
+  <!-- Front wheel (small) -->
+  <circle cx="278" cy="228" r="30" fill="none" stroke="#1A1A1A" stroke-width="5"/>
+  <circle cx="278" cy="228" r="24" fill="none" stroke="#333" stroke-width="1"/>
+  <g stroke="#444" stroke-width="1.5">
+    <line x1="278" y1="198" x2="278" y2="258"/>
+    <line x1="248" y1="228" x2="308" y2="228"/>
+    <line x1="257" y1="207" x2="299" y2="249"/>
+    <line x1="299" y1="207" x2="257" y2="249"/>
+    <line x1="249" y1="218" x2="307" y2="238"/>
+    <line x1="307" y1="218" x2="249" y2="238"/>
+  </g>
+  <circle cx="278" cy="228" r="6" fill="#1A1A1A"/>
+
+  <!-- Folding frame -->
+  <line x1="160" y1="228" x2="185" y2="178" stroke="#0288D1" stroke-width="6"/>
+  <line x1="185" y1="178" x2="215" y2="178" stroke="#0288D1" stroke-width="6"/>
+  <!-- Hinge point (visible fold joint) -->
+  <circle cx="215" cy="178" r="8" fill="#FFC107" stroke="#FF8F00" stroke-width="2"/>
+  <line x1="215" y1="178" x2="240" y2="175" stroke="#0288D1" stroke-width="6"/>
+  <line x1="240" y1="175" x2="278" y2="228" stroke="#0288D1" stroke-width="6"/>
+  <line x1="185" y1="178" x2="160" y2="228" stroke="#0288D1" stroke-width="5"/>
+  <line x1="240" y1="175" x2="200" y2="228" stroke="#0288D1" stroke-width="5"/>
+  <line x1="200" y1="228" x2="160" y2="228" stroke="#0288D1" stroke-width="4"/>
+  <line x1="200" y1="228" x2="240" y2="175" stroke="#0288D1" stroke-width="3"/>
+
+  <!-- Compact saddle -->
+  <line x1="185" y1="178" x2="185" y2="158" stroke="#333" stroke-width="4"/>
+  <ellipse cx="185" cy="157" rx="16" ry="6" fill="#212121"/>
+
+  <!-- Compact folding handlebars -->
+  <line x1="240" y1="175" x2="240" y2="153" stroke="#333" stroke-width="4"/>
+  <line x1="222" y1="149" x2="258" y2="149" stroke="#333" stroke-width="4"/>
+  <circle cx="222" cy="149" r="4" fill="#111"/>
+  <circle cx="258" cy="149" r="4" fill="#111"/>
+
+  <!-- RUDDY DUCK -->
+  <!-- Body (chestnut red) -->
+  <ellipse cx="200" cy="135" rx="35" ry="22" fill="#8D3B1B" transform="rotate(-10 200 135)"/>
+  <!-- White cheek patches -->
+  <ellipse cx="225" cy="120" rx="12" ry="10" fill="white" transform="rotate(15 225 120)"/>
+  <!-- Black crown -->
+  <path d="M212,110 Q225,104 238,110" fill="#1A1A1A"/>
+  <!-- Dark tail (stiff, upright) -->
+  <path d="M168,132 L155,118 L160,135 L150,130 L158,142" fill="#1A1A1A"/>
+  <!-- Head (black crown) -->
+  <circle cx="228" cy="113" r="19" fill="#3E2723"/>
+  <!-- Blue bill! -->
+  <path d="M244,117 L263,119 L244,123" fill="#1976D2"/>
+  <!-- Eye -->
+  <circle cx="240" cy="111" r="3" fill="#FFCC02"/>
+  <circle cx="240" cy="111" r="1.8" fill="#111"/>
+  <!-- Wing -->
+  <ellipse cx="192" cy="142" rx="28" ry="12" fill="#6D2A10" transform="rotate(-8 192 142)"/>
+  <!-- Feet -->
+  <line x1="197" y1="154" x2="192" y2="178" stroke="#6D2A10" stroke-width="3"/>
+  <line x1="210" y1="156" x2="215" y2="180" stroke="#6D2A10" stroke-width="3"/>
+  <line x1="185" y1="177" x2="200" y2="177" stroke="#6D2A10" stroke-width="3"/>
+  <line x1="210" y1="179" x2="225" y2="179" stroke="#6D2A10" stroke-width="3"/>
+
+  <text x="8" y="292" font-family="Georgia,serif" font-size="13" fill="#01579B" font-style="italic">Ruddy Duck · Folding Bike</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Common merganser on a fixie</title>
+  <line x1="20" y1="262" x2="380" y2="262" stroke="#9e9e9e" stroke-width="3" stroke-linecap="round"/>
+  <!-- deep-V rims, minimal spokes -->
+  <g fill="none">
+    <circle cx="105" cy="220" r="42" stroke="#212121" stroke-width="5"/>
+    <circle cx="105" cy="220" r="34" stroke="#aeea00" stroke-width="7"/>
+    <circle cx="295" cy="220" r="42" stroke="#212121" stroke-width="5"/>
+    <circle cx="295" cy="220" r="34" stroke="#aeea00" stroke-width="7"/>
+    <g stroke="#616161" stroke-width="1.5">
+      <path d="M105 186v68M71 220h68"/>
+      <path d="M295 186v68M261 220h68"/>
+    </g>
+  </g>
+  <!-- clean minimal frame -->
+  <g stroke="#7b1fa2" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M195 222L162 140"/>
+    <path d="M195 222L268 146"/>
+    <path d="M165 146L268 146"/>
+    <path d="M162 143L105 220"/>
+    <path d="M195 222L105 220"/>
+    <path d="M272 141L295 220"/>
+  </g>
+  <!-- bullhorn bars -->
+  <path d="M268 146 L272 130 h20 l6 -10" fill="none" stroke="#212121" stroke-width="5" stroke-linecap="round"/>
+  <path d="M146 138h32" stroke="#212121" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="195" cy="222" r="11" fill="none" stroke="#212121" stroke-width="4"/>
+  <line x1="195" y1="222" x2="212" y2="245" stroke="#212121" stroke-width="5" stroke-linecap="round"/>
+  <path d="M204 246h18" stroke="#212121" stroke-width="6" stroke-linecap="round"/>
+  <line x1="195" y1="222" x2="105" y2="220" stroke="#616161" stroke-width="2"/>
+  <!-- merganser: white body, dark green shaggy head, thin red bill -->
+  <path d="M130 100 l-24 -10 5 12 -7 10 19 0z" fill="#455a64"/>
+  <ellipse cx="166" cy="110" rx="41" ry="26" fill="#fafafa" stroke="#e0e0e0" stroke-width="2"/>
+  <path d="M192 96 C208 90 220 80 226 64" stroke="#eceff1" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <circle cx="230" cy="58" r="14" fill="#1b5e20"/>
+  <!-- shaggy crest -->
+  <path d="M222 48 l-8 -8 M228 45 l-4 -11 M235 45 l2 -11 M240 49 l8 -8" stroke="#1b5e20" stroke-width="4" stroke-linecap="round"/>
+  <path d="M242 56 L266 60 L242 64 Z" fill="#d32f2f"/>
+  <circle cx="234" cy="54" r="2.4" fill="#111"/>
+  <path d="M154 100 C180 100 220 114 254 130 C220 130 182 126 156 120 Z" fill="#cfd8dc"/>
+  <polyline points="180,132 195,192 211,243" fill="none" stroke="#d32f2f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M203 244h17" stroke="#d32f2f" stroke-width="5" stroke-linecap="round"/>
+</svg>

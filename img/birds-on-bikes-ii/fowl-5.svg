@@ -1,0 +1,53 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fixie Cormorant -->
+  <defs>
+    <style>
+      .bird { fill: #1a1a1a; stroke: #000; stroke-width: 2; }
+      .eye { fill: #ffff00; }
+      .bike { stroke: #ff0000; stroke-width: 2; fill: none; }
+      .metal { fill: #333; stroke: #000; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#4a4a4a"/>
+
+  <!-- Back wheel (solid, no spokes) -->
+  <circle cx="300" cy="210" r="40" class="bike"/>
+  <circle cx="300" cy="210" r="3" class="metal"/>
+
+  <!-- Front wheel -->
+  <circle cx="130" cy="210" r="40" class="bike"/>
+  <circle cx="130" cy="210" r="3" class="metal"/>
+
+  <!-- Minimalist frame -->
+  <line x1="130" y1="140" x2="300" y2="210" class="bike" stroke-width="3"/>
+  <line x1="130" y1="140" x2="90" y2="210" class="bike" stroke-width="3"/>
+  <line x1="300" y1="210" x2="90" y2="210" class="bike" stroke-width="3"/>
+
+  <!-- Minimalist handlebars -->
+  <line x1="130" y1="140" x2="130" y2="110" class="bike" stroke-width="2"/>
+  <line x1="120" y1="105" x2="140" y2="105" class="bike" stroke-width="2"/>
+
+  <!-- Slim seat -->
+  <rect x="195" y="120" width="25" height="8" class="metal"/>
+
+  <!-- Cormorant body (sleek) -->
+  <ellipse cx="190" cy="100" rx="32" ry="40" class="bird"/>
+
+  <!-- Cormorant neck -->
+  <path d="M 205 60 Q 215 35 220 10" stroke="#1a1a1a" stroke-width="9" fill="none"/>
+
+  <!-- Cormorant head -->
+  <circle cx="223" cy="8" r="14" class="bird"/>
+
+  <!-- Cormorant eye (bright) -->
+  <circle cx="230" cy="6" r="3" class="eye"/>
+
+  <!-- Cormorant beak (long and pointed) -->
+  <polygon points="240,7 270,5 240,9" fill="#ff6000"/>
+
+  <!-- Single-speed pedals -->
+  <circle cx="165" cy="160" r="5" class="metal"/>
+  <circle cx="215" cy="160" r="5" class="metal"/>
+</svg>

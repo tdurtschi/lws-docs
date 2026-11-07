@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bmxsky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="100%" stop-color="#FFF176"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="265" fill="url(#bmxsky)"/>
+  <rect y="253" width="400" height="47" fill="#8D6E63"/>
+  <rect y="250" width="400" height="6" fill="#6D4C41"/>
+  <!-- Skate park ramp hint -->
+  <path d="M0,253 Q100,220 180,253" fill="#BDBDBD" stroke="#9E9E9E" stroke-width="2"/>
+
+  <!-- BMX Bike -->
+  <!-- Rear wheel (small, thick) -->
+  <circle cx="155" cy="225" r="34" fill="none" stroke="#111" stroke-width="8"/>
+  <circle cx="155" cy="225" r="25" fill="none" stroke="#333" stroke-width="1.5"/>
+  <g stroke="#444" stroke-width="2">
+    <line x1="155" y1="191" x2="155" y2="259"/>
+    <line x1="121" y1="225" x2="189" y2="225"/>
+    <line x1="131" y1="201" x2="179" y2="249"/>
+    <line x1="179" y1="201" x2="131" y2="249"/>
+    <line x1="121" y1="213" x2="189" y2="237"/>
+    <line x1="189" y1="213" x2="121" y2="237"/>
+  </g>
+  <circle cx="155" cy="225" r="7" fill="#111"/>
+  <!-- Rear peg -->
+  <rect x="183" y="221" width="12" height="8" rx="2" fill="#888"/>
+
+  <!-- Front wheel -->
+  <circle cx="275" cy="225" r="34" fill="none" stroke="#111" stroke-width="8"/>
+  <circle cx="275" cy="225" r="25" fill="none" stroke="#333" stroke-width="1.5"/>
+  <g stroke="#444" stroke-width="2">
+    <line x1="275" y1="191" x2="275" y2="259"/>
+    <line x1="241" y1="225" x2="309" y2="225"/>
+    <line x1="251" y1="201" x2="299" y2="249"/>
+    <line x1="299" y1="201" x2="251" y2="249"/>
+    <line x1="241" y1="213" x2="309" y2="237"/>
+    <line x1="309" y1="213" x2="241" y2="237"/>
+  </g>
+  <circle cx="275" cy="225" r="7" fill="#111"/>
+  <!-- Front peg -->
+  <rect x="242" y="221" width="12" height="8" rx="2" fill="#888"/>
+
+  <!-- BMX Frame (compact, sturdy) -->
+  <line x1="155" y1="225" x2="205" y2="172" stroke="#F44336" stroke-width="7"/>
+  <line x1="205" y1="172" x2="275" y2="225" stroke="#F44336" stroke-width="6"/>
+  <line x1="205" y1="172" x2="220" y2="170" stroke="#F44336" stroke-width="6"/>
+  <line x1="220" y1="170" x2="155" y2="225" stroke="#F44336" stroke-width="5"/>
+  <!-- Top tube -->
+  <line x1="205" y1="172" x2="245" y2="170" stroke="#F44336" stroke-width="6"/>
+  <!-- Fork -->
+  <line x1="245" y1="170" x2="275" y2="225" stroke="#F44336" stroke-width="5"/>
+
+  <!-- Seat post & BMX seat (slim) -->
+  <line x1="220" y1="170" x2="220" y2="152" stroke="#333" stroke-width="5"/>
+  <path d="M210,152 L230,152 L228,148 L212,148 Z" fill="#1A1A1A"/>
+
+  <!-- Flat BMX handlebars (high rise) -->
+  <line x1="245" y1="170" x2="245" y2="140" stroke="#333" stroke-width="5"/>
+  <line x1="220" y1="135" x2="270" y2="135" stroke="#333" stroke-width="5"/>
+  <circle cx="220" cy="135" r="5" fill="#111"/>
+  <circle cx="270" cy="135" r="5" fill="#111"/>
+
+  <!-- GREAT BLUE HERON -->
+  <!-- Very long body -->
+  <ellipse cx="228" cy="138" rx="35" ry="18" fill="#78909C" transform="rotate(-10 228 138)"/>
+  <!-- Wing -->
+  <ellipse cx="218" cy="145" rx="28" ry="12" fill="#607D8B" transform="rotate(-8 218 145)"/>
+  <!-- Very long neck -->
+  <path d="M248,130 Q268,115 272,95 Q275,78 268,65" stroke="#90A4AE" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Head -->
+  <ellipse cx="265" cy="60" rx="14" ry="12" fill="#90A4AE"/>
+  <!-- Black crown stripe -->
+  <path d="M252,55 Q265,50 278,55" stroke="#1A1A1A" stroke-width="4" fill="none"/>
+  <!-- Long plume -->
+  <path d="M278,56 L295,50 L290,58" fill="#1A1A1A"/>
+  <!-- Long pointed bill -->
+  <line x1="278" y1="62" x2="315" y2="68" stroke="#FFC107" stroke-width="5" stroke-linecap="round"/>
+  <!-- Eye -->
+  <circle cx="276" cy="59" r="3" fill="#FFF9C4"/>
+  <circle cx="276" cy="59" r="2" fill="#1A1A1A"/>
+  <!-- Tail -->
+  <path d="M196,133 Q180,128 175,136 Q183,143 178,150" fill="#546E7A"/>
+  <!-- Very long legs -->
+  <line x1="220" y1="154" x2="215" y2="195" stroke="#78909C" stroke-width="4"/>
+  <line x1="236" y1="156" x2="241" y2="197" stroke="#78909C" stroke-width="4"/>
+  <!-- Feet on pegs -->
+  <line x1="209" y1="193" x2="222" y2="193" stroke="#78909C" stroke-width="3"/>
+  <line x1="236" y1="195" x2="249" y2="195" stroke="#78909C" stroke-width="3"/>
+
+  <text x="8" y="292" font-family="Georgia,serif" font-size="13" fill="#4A148C" font-style="italic">Great Blue Heron · BMX</text>
+</svg>
