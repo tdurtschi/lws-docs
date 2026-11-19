@@ -8,7 +8,6 @@
 - [Flexbox Froggy](https://flexboxfroggy.com/)
 
 ## Fun
-- [Zoom Backgrounds](https://github.com/tdurtschi/zoom-backgrounds)
 - [Internet Checkpoint](https://internetcheckpoint.page/)
 - [Universal Paperclips](https://www.decisionproblem.com/paperclips/index2.html)
 - [Elevator Saga 2](https://tdurtschi.github.io/elevator-saga-2/)
