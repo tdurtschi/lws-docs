@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Mandarin Duck on Chopper</title>
+  <rect width="400" height="300" fill="#FFDCAA"/>
+  <rect y="255" width="400" height="45" fill="#7a3b0c"/>
+  <!-- Chopper: long forks, small back wheel, big front wheel -->
+  <circle cx="65" cy="235" r="20" fill="none" stroke="#111" stroke-width="5"/>
+  <circle cx="335" cy="220" r="42" fill="none" stroke="#111" stroke-width="5"/>
+  <g stroke="#111" stroke-width="1.5">
+    <line x1="65" y1="215" x2="65" y2="255"/>
+    <line x1="45" y1="235" x2="85" y2="235"/>
+    <line x1="335" y1="178" x2="335" y2="262"/>
+    <line x1="293" y1="220" x2="377" y2="220"/>
+  </g>
+  <!-- Long extended forks -->
+  <line x1="335" y1="220" x2="240" y2="130" stroke="#111" stroke-width="6"/>
+  <line x1="325" y1="220" x2="230" y2="130" stroke="#111" stroke-width="6"/>
+  <!-- Ape hanger bars -->
+  <line x1="235" y1="130" x2="220" y2="80" stroke="#111" stroke-width="5"/>
+  <line x1="220" y1="80" x2="195" y2="72" stroke="#111" stroke-width="5"/>
+  <line x1="235" y1="130" x2="255" y2="80" stroke="#111" stroke-width="5"/>
+  <line x1="255" y1="80" x2="280" y2="72" stroke="#111" stroke-width="5"/>
+  <!-- Main frame -->
+  <line x1="65" y1="235" x2="180" y2="200" stroke="#c0392b" stroke-width="8"/>
+  <line x1="180" y1="200" x2="335" y2="220" stroke="#c0392b" stroke-width="8"/>
+  <line x1="180" y1="200" x2="175" y2="155" stroke="#c0392b" stroke-width="8"/>
+  <path d="M 155 155 L 200 152 L 200 165 L 155 168 Z" fill="#111"/>
+  <!-- Mandarin Duck (very colorful) -->
+  <ellipse cx="180" cy="135" rx="38" ry="20" fill="#f5c451"/>
+  <ellipse cx="200" cy="130" rx="15" ry="18" fill="#c0392b" transform="rotate(-10 200 130)"/>
+  <ellipse cx="160" cy="135" rx="18" ry="12" fill="#e67e22"/>
+  <circle cx="150" cy="112" r="18" fill="#7b1a3f"/>
+  <path d="M 152 95 Q 158 90 165 96 Q 170 100 168 108 Q 160 100 152 105 Z" fill="#f39c12"/>
+  <path d="M 148 95 Q 145 88 138 90 Q 135 100 140 108" fill="#7b1a3f"/>
+  <path d="M 140 108 Q 130 105 128 118 Q 135 125 145 122" fill="#f5f5f5"/>
+  <path d="M 156 108 L 172 108 L 165 118 Z" fill="#2c8c5a"/>
+  <polygon points="132,112 118,113 132,118" fill="#c0392b"/>
+  <circle cx="145" cy="108" r="2" fill="#000"/>
+  <line x1="180" y1="155" x2="180" y2="200" stroke="#f39c12" stroke-width="3"/>
+</svg>

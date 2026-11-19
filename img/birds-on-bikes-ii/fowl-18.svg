@@ -1,0 +1,56 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lowrider Bike Canvasback -->
+  <defs>
+    <style>
+      .bird { fill: #8a3a2a; stroke: #5a1a0a; stroke-width: 2; }
+      .eye { fill: #ffff00; }
+      .bike { stroke: #ff00ff; stroke-width: 3; fill: none; }
+      .metal { fill: #ff1493; stroke: #cc0099; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#5a3a2a"/>
+
+  <!-- Back wheel (low) -->
+  <circle cx="300" cy="230" r="40" class="bike" stroke-width="3"/>
+  <circle cx="300" cy="230" r="3" class="metal"/>
+
+  <!-- Front wheel (low) -->
+  <circle cx="130" cy="230" r="40" class="bike" stroke-width="3"/>
+  <circle cx="130" cy="230" r="3" class="metal"/>
+
+  <!-- Extended lowrider frame -->
+  <path d="M 130 120 L 300 230" class="bike" stroke-width="4"/>
+  <line x1="130" y1="230" x2="100" y2="230" class="bike" stroke-width="3"/>
+  <line x1="300" y1="230" x2="100" y2="230" class="bike" stroke-width="3"/>
+
+  <!-- Pulled-back handlebars (very high) -->
+  <line x1="130" y1="120" x2="130" y2="50" class="bike" stroke-width="3"/>
+  <line x1="105" y1="45" x2="155" y2="45" class="bike" stroke-width="3"/>
+
+  <!-- Lowrider seat (very long and low) -->
+  <ellipse cx="200" cy="140" rx="40" ry="15" class="metal" stroke-width="3"/>
+
+  <!-- Seat covering -->
+  <ellipse cx="200" cy="138" rx="38" ry="12" fill="#ff1493" opacity="0.6"/>
+
+  <!-- Canvasback body (diving duck, sleek) -->
+  <ellipse cx="200" cy="120" rx="38" ry="40" class="bird"/>
+
+  <!-- Canvasback head -->
+  <circle cx="220" cy="75" r="15" class="bird"/>
+
+  <!-- Canvasback yellow eye -->
+  <circle cx="228" cy="73" r="3" class="eye"/>
+
+  <!-- Canvasback beak -->
+  <polygon points="236,75 256,73 236,77" fill="#999"/>
+
+  <!-- Lowrider pedals (extended cranks) -->
+  <circle cx="150" cy="170" r="7" class="metal" stroke-width="2"/>
+  <circle cx="250" cy="170" r="7" class="metal" stroke-width="2"/>
+
+  <!-- Chain guard (flashy) -->
+  <path d="M 160 170 Q 200 180 240 170" class="metal" fill="none" stroke-width="3"/>
+</svg>

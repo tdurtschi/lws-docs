@@ -1,0 +1,50 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Folding Bike Teal Duck -->
+  <defs>
+    <style>
+      .bird { fill: #1a4a5a; stroke: #0a2a3a; stroke-width: 2; }
+      .eye { fill: #fff; }
+      .bike { stroke: #007bff; stroke-width: 2; fill: none; }
+      .metal { fill: #0066cc; stroke: #003d7a; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#8a9a9a"/>
+
+  <!-- Back wheel (smaller for folding) -->
+  <circle cx="280" cy="210" r="32" class="bike"/>
+  <circle cx="280" cy="210" r="3" class="metal"/>
+
+  <!-- Front wheel (smaller) -->
+  <circle cx="130" cy="210" r="32" class="bike"/>
+  <circle cx="130" cy="210" r="3" class="metal"/>
+
+  <!-- Compact folding frame -->
+  <line x1="130" y1="150" x2="280" y2="210" class="bike"/>
+  <line x1="130" y1="150" x2="95" y2="210" class="bike"/>
+  <line x1="280" y1="210" x2="95" y2="210" class="bike"/>
+
+  <!-- Handlebar -->
+  <line x1="130" y1="150" x2="130" y2="125" class="bike"/>
+  <line x1="115" y1="120" x2="145" y2="120" class="bike"/>
+
+  <!-- Compact seat -->
+  <rect x="185" y="140" width="20" height="8" class="metal"/>
+
+  <!-- Teal duck body -->
+  <ellipse cx="190" cy="120" rx="30" ry="32" class="bird"/>
+
+  <!-- Teal duck head -->
+  <circle cx="205" cy="85" r="13" class="bird"/>
+
+  <!-- Teal duck eye (white/bright) -->
+  <circle cx="211" cy="83" r="3" class="eye"/>
+
+  <!-- Teal duck beak -->
+  <polygon points="220,85 240,83 220,87" fill="#ffaa00"/>
+
+  <!-- Pedals -->
+  <circle cx="160" cy="165" r="4" class="metal"/>
+  <circle cx="210" cy="165" r="4" class="metal"/>
+</svg>

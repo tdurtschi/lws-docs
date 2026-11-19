@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="unisky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8F5E9"/>
+      <stop offset="100%" stop-color="#F1F8E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="265" fill="url(#unisky)"/>
+  <!-- Big top circus feel -->
+  <!-- Striped tent top -->
+  <path d="M0,0 L40,0 L40,60 L0,60 Z" fill="#E53935" opacity="0.4"/>
+  <path d="M40,0 L80,0 L80,60 L40,60 Z" fill="white" opacity="0.4"/>
+  <path d="M80,0 L120,0 L120,60 L80,60 Z" fill="#E53935" opacity="0.4"/>
+  <path d="M120,0 L160,0 L160,60 L120,60 Z" fill="white" opacity="0.4"/>
+  <!-- Spotlight -->
+  <path d="M200,0 L140,180 L260,180 Z" fill="#FDD835" opacity="0.15"/>
+  <!-- Stage/platform -->
+  <rect y="252" width="400" height="48" fill="#8D6E63"/>
+  <rect y="249" width="400" height="6" fill="#6D4C41"/>
+  <!-- Stage edge glow/lights -->
+  <g fill="#FDD835" opacity="0.8">
+    <circle cx="30" cy="252" r="4"/>
+    <circle cx="70" cy="252" r="4"/>
+    <circle cx="110" cy="252" r="4"/>
+    <circle cx="150" cy="252" r="4"/>
+    <circle cx="190" cy="252" r="4"/>
+    <circle cx="230" cy="252" r="4"/>
+    <circle cx="270" cy="252" r="4"/>
+    <circle cx="310" cy="252" r="4"/>
+    <circle cx="350" cy="252" r="4"/>
+    <circle cx="390" cy="252" r="4"/>
+  </g>
+
+  <!-- UNICYCLE -->
+  <!-- Single wheel (large, impressive) -->
+  <circle cx="205" cy="228" r="44" fill="none" stroke="#1A1A1A" stroke-width="7"/>
+  <circle cx="205" cy="228" r="37" fill="none" stroke="#333" stroke-width="1.5"/>
+  <g stroke="#444" stroke-width="2">
+    <line x1="205" y1="184" x2="205" y2="272"/>
+    <line x1="161" y1="228" x2="249" y2="228"/>
+    <line x1="174" y1="197" x2="236" y2="259"/>
+    <line x1="236" y1="197" x2="174" y2="259"/>
+    <line x1="163" y1="212" x2="247" y2="244"/>
+    <line x1="247" y1="212" x2="163" y2="244"/>
+    <line x1="188" y1="185" x2="222" y2="271"/>
+    <line x1="222" y1="185" x2="188" y2="271"/>
+  </g>
+  <circle cx="205" cy="228" r="10" fill="#1A1A1A"/>
+
+  <!-- Unicycle frame (seat post only) -->
+  <line x1="205" y1="228" x2="205" y2="155" stroke="#333" stroke-width="6"/>
+
+  <!-- Seat -->
+  <ellipse cx="205" cy="153" rx="24" ry="9" fill="#D32F2F"/>
+  <ellipse cx="205" cy="151" rx="22" ry="7" fill="#E53935"/>
+
+  <!-- Pedals (on each side of hub) -->
+  <line x1="205" y1="228" x2="185" y2="244" stroke="#555" stroke-width="4"/>
+  <line x1="205" y1="228" x2="225" y2="212" stroke="#555" stroke-width="4"/>
+  <rect x="178" y="242" width="15" height="5" fill="#333" rx="2"/>
+  <rect x="222" y="210" width="15" height="5" fill="#333" rx="2"/>
+
+  <!-- WHITE IBIS (on unicycle, arms/wings out for balance) -->
+  <!-- Body (white) -->
+  <ellipse cx="205" cy="130" rx="32" ry="18" fill="white" stroke="#E8EAF6" stroke-width="1" transform="rotate(-5 205 130)"/>
+  <!-- Wings spread wide for balance! -->
+  <path d="M175,128 Q155,120 138,125 Q130,130 138,138 Q155,138 175,132" fill="white" stroke="#E0E0E0" stroke-width="1.5"/>
+  <path d="M235,128 Q255,120 272,125 Q280,130 272,138 Q255,138 235,132" fill="white" stroke="#E0E0E0" stroke-width="1.5"/>
+  <!-- Black wing tips -->
+  <path d="M140,127 Q132,132 138,138" stroke="#1A1A1A" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M270,127 Q278,132 272,138" stroke="#1A1A1A" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Neck -->
+  <path d="M215,115 Q225,102 228,88" stroke="white" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Head (bare pink/red skin) -->
+  <circle cx="228" cy="82" r="14" fill="white"/>
+  <!-- Bare facial skin (red) -->
+  <ellipse cx="234" cy="83" rx="8" ry="7" fill="#D32F2F" opacity="0.7"/>
+  <!-- LONG CURVED DOWN-CURVED BILL -->
+  <path d="M238,84 Q258,94 266,108 Q268,114 264,116" stroke="#D32F2F" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M238,84 Q256,93 264,107" stroke="#BF360C" stroke-width="3" fill="none"/>
+  <!-- Eye -->
+  <circle cx="238" cy="79" r="3" fill="#1565C0"/>
+  <circle cx="238" cy="79" r="1.5" fill="#1A1A1A"/>
+  <!-- Feet on pedals -->
+  <line x1="200" y1="147" x2="187" y2="174" stroke="#D32F2F" stroke-width="3"/>
+  <line x1="210" y1="147" x2="221" y2="172" stroke="#D32F2F" stroke-width="3"/>
+  <path d="M181,174 L193,174 L186,178" fill="#D32F2F"/>
+  <path d="M216,172 L228,172 L221,176" fill="#D32F2F"/>
+  <!-- Sweat drops / concentration marks -->
+  <text x="160" y="115" font-size="16" opacity="0.6">💦</text>
+  <text x="240" y="110" font-size="16" opacity="0.6">💦</text>
+
+  <text x="8" y="292" font-family="Georgia,serif" font-size="13" fill="#1B5E20" font-style="italic">White Ibis · Unicycle</text>
+</svg>

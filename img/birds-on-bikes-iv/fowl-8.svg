@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Green-winged teal on a folding bike</title>
+  <line x1="20" y1="262" x2="380" y2="262" stroke="#9e9e9e" stroke-width="3" stroke-linecap="round"/>
+  <!-- tiny wheels -->
+  <g stroke="#37474f" fill="none">
+    <circle cx="140" cy="238" r="24" stroke-width="6"/>
+    <circle cx="272" cy="238" r="24" stroke-width="6"/>
+    <g stroke-width="1.5">
+      <path d="M140 214v48M116 238h48"/>
+      <path d="M272 214v48M248 238h48"/>
+    </g>
+  </g>
+  <!-- low folding frame with hinge -->
+  <g stroke="#e53935" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M140 238 L205 226 L268 232"/>
+    <path d="M190 228 L182 150"/>
+    <path d="M266 232 L258 154"/>
+  </g>
+  <circle cx="205" cy="226" r="7" fill="#fdd835" stroke="#f9a825" stroke-width="2"/>
+  <!-- tall seatpost and stem -->
+  <path d="M182 150 L180 132" stroke="#9e9e9e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M164 130h32" stroke="#212121" stroke-width="8" stroke-linecap="round"/>
+  <path d="M258 154 L254 118 h-22" fill="none" stroke="#9e9e9e" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="205" cy="238" r="8" fill="none" stroke="#37474f" stroke-width="4"/>
+  <line x1="205" y1="238" x2="219" y2="256" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M212 257h15" stroke="#212121" stroke-width="6" stroke-linecap="round"/>
+  <!-- little teal -->
+  <path d="M148 96 l-20 -10 5 12 -7 10 17 0z" fill="#5d4037"/>
+  <ellipse cx="180" cy="104" rx="34" ry="22" fill="#bcaaa4"/>
+  <path d="M162 92 l6 4 -6 4 6 4 -6 4" stroke="#8d6e63" stroke-width="1.5" fill="none"/>
+  <path d="M200 94 C212 88 220 78 224 66" stroke="#6d4c41" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <circle cx="226" cy="60" r="13" fill="#6d4c41"/>
+  <path d="M222 52 C230 48 238 52 240 60 C234 64 226 64 222 58 Z" fill="#2e7d32"/>
+  <path d="M237 60 L253 64 L237 68 Z" fill="#37474f"/>
+  <circle cx="228" cy="56" r="2.2" fill="#111"/>
+  <path d="M168 96 C190 96 222 106 250 118 C222 118 190 114 170 110 Z" fill="#a1887f"/>
+  <path d="M196 106 l14 4 -16 3z" fill="#2e7d32"/>
+  <polyline points="192,124 204,200 218,254" fill="none" stroke="#78909c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M211 255h15" stroke="#78909c" stroke-width="4" stroke-linecap="round"/>
+</svg>

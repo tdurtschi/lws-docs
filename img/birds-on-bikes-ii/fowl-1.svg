@@ -1,0 +1,52 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Road Bike Mallard Duck -->
+  <defs>
+    <style>
+      .bird { fill: #2d5016; stroke: #1a3009; stroke-width: 2; }
+      .eye { fill: #000; }
+      .bike { stroke: #333; stroke-width: 2; fill: none; }
+      .metal { fill: #888; stroke: #555; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#8b7355"/>
+  <line x1="0" y1="250" x2="400" y2="250" stroke="#654321" stroke-width="2"/>
+
+  <!-- Back wheel -->
+  <circle cx="320" cy="200" r="40" class="bike"/>
+  <circle cx="320" cy="200" r="3" class="metal"/>
+
+  <!-- Front wheel -->
+  <circle cx="140" cy="200" r="40" class="bike"/>
+  <circle cx="140" cy="200" r="3" class="metal"/>
+
+  <!-- Frame -->
+  <line x1="140" y1="140" x2="320" y2="200" class="bike"/>
+  <line x1="140" y1="140" x2="100" y2="200" class="bike"/>
+  <line x1="320" y1="200" x2="100" y2="200" class="bike"/>
+  <line x1="140" y1="140" x2="320" y2="200" class="bike"/>
+
+  <!-- Handlebars -->
+  <line x1="140" y1="140" x2="140" y2="120" class="bike"/>
+  <line x1="130" y1="115" x2="150" y2="115" class="bike" stroke-width="1"/>
+
+  <!-- Seat -->
+  <ellipse cx="200" cy="130" rx="15" ry="8" class="metal"/>
+
+  <!-- Duck body -->
+  <ellipse cx="200" cy="110" rx="35" ry="40" class="bird"/>
+
+  <!-- Duck head -->
+  <circle cx="220" cy="65" r="18" class="bird"/>
+
+  <!-- Duck eye -->
+  <circle cx="228" cy="63" r="3" class="eye"/>
+
+  <!-- Duck beak -->
+  <polygon points="235,65 250,63 235,67" fill="#ff8c00"/>
+
+  <!-- Pedals -->
+  <circle cx="180" cy="160" r="4" class="metal"/>
+  <circle cx="220" cy="160" r="4" class="metal"/>
+</svg>

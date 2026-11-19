@@ -1,0 +1,53 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- BMX Pelican -->
+  <defs>
+    <style>
+      .bird { fill: #fff0db; stroke: #8b6914; stroke-width: 2; }
+      .eye { fill: #000; }
+      .bike { stroke: #ff00ff; stroke-width: 2; fill: none; }
+      .metal { fill: #ffff00; stroke: #ff8c00; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#9a7b3a"/>
+
+  <!-- Back wheel -->
+  <circle cx="280" cy="190" r="35" class="bike"/>
+  <circle cx="280" cy="190" r="3" class="metal"/>
+
+  <!-- Front wheel -->
+  <circle cx="140" cy="190" r="35" class="bike"/>
+  <circle cx="140" cy="190" r="3" class="metal"/>
+
+  <!-- Frame (compact BMX) -->
+  <line x1="140" y1="120" x2="280" y2="190" class="bike"/>
+  <line x1="140" y1="120" x2="100" y2="190" class="bike"/>
+  <line x1="280" y1="190" x2="100" y2="190" class="bike"/>
+
+  <!-- Short handlebars -->
+  <line x1="140" y1="120" x2="140" y2="95" class="bike"/>
+  <line x1="125" y1="90" x2="155" y2="90" class="bike" stroke-width="2"/>
+
+  <!-- Small seat -->
+  <ellipse cx="180" cy="110" rx="10" ry="8" class="metal"/>
+
+  <!-- Pelican body (rotund) -->
+  <ellipse cx="190" cy="100" rx="42" ry="38" class="bird"/>
+
+  <!-- Pelican pouch (under beak) -->
+  <ellipse cx="215" cy="55" rx="25" ry="18" class="bird" opacity="0.7"/>
+
+  <!-- Pelican head -->
+  <circle cx="225" cy="40" r="16" class="bird"/>
+
+  <!-- Pelican eye -->
+  <circle cx="232" cy="38" r="3" class="eye"/>
+
+  <!-- Long pelican beak -->
+  <path d="M 240 45 L 270 42 L 242 50" fill="#ff8c00" stroke="#8b6914" stroke-width="1"/>
+
+  <!-- Pedals -->
+  <circle cx="160" cy="150" r="4" class="metal"/>
+  <circle cx="200" cy="150" r="4" class="metal"/>
+</svg>

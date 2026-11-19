@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="mtnsky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#90CAF9"/>
+      <stop offset="100%" stop-color="#E3F2FD"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="265" fill="url(#mtnsky)"/>
+  <!-- Mountain silhouettes -->
+  <polygon points="0,220 90,100 180,220" fill="#78909C" opacity="0.45"/>
+  <polygon points="110,220 210,75 310,220" fill="#607D8B" opacity="0.45"/>
+  <polygon points="230,220 330,105 400,220" fill="#78909C" opacity="0.45"/>
+  <rect y="255" width="400" height="45" fill="#558B2F"/>
+  <rect y="252" width="400" height="6" fill="#33691E"/>
+
+  <!-- Mountain Bike -->
+  <!-- Rear wheel (thick tires) -->
+  <circle cx="138" cy="218" r="44" fill="none" stroke="#1A1A1A" stroke-width="10"/>
+  <circle cx="138" cy="218" r="32" fill="none" stroke="#333" stroke-width="2"/>
+  <g stroke="#444" stroke-width="2">
+    <line x1="138" y1="174" x2="138" y2="262"/>
+    <line x1="94" y1="218" x2="182" y2="218"/>
+    <line x1="107" y1="187" x2="169" y2="249"/>
+    <line x1="169" y1="187" x2="107" y2="249"/>
+    <line x1="97" y1="202" x2="179" y2="234"/>
+    <line x1="179" y1="202" x2="97" y2="234"/>
+  </g>
+  <circle cx="138" cy="218" r="8" fill="#1A1A1A"/>
+
+  <!-- Front wheel (thick tires) -->
+  <circle cx="285" cy="218" r="44" fill="none" stroke="#1A1A1A" stroke-width="10"/>
+  <circle cx="285" cy="218" r="32" fill="none" stroke="#333" stroke-width="2"/>
+  <g stroke="#444" stroke-width="2">
+    <line x1="285" y1="174" x2="285" y2="262"/>
+    <line x1="241" y1="218" x2="329" y2="218"/>
+    <line x1="254" y1="187" x2="316" y2="249"/>
+    <line x1="316" y1="187" x2="254" y2="249"/>
+    <line x1="244" y1="202" x2="326" y2="234"/>
+    <line x1="326" y1="202" x2="244" y2="234"/>
+  </g>
+  <circle cx="285" cy="218" r="8" fill="#1A1A1A"/>
+
+  <!-- Frame (mountain geometry) -->
+  <line x1="138" y1="218" x2="195" y2="155" stroke="#B71C1C" stroke-width="7"/>
+  <line x1="195" y1="155" x2="285" y2="218" stroke="#B71C1C" stroke-width="6"/>
+  <line x1="195" y1="155" x2="220" y2="152" stroke="#B71C1C" stroke-width="6"/>
+  <line x1="220" y1="152" x2="138" y2="218" stroke="#B71C1C" stroke-width="5"/>
+  <!-- Suspension fork hint -->
+  <line x1="285" y1="218" x2="270" y2="175" stroke="#B71C1C" stroke-width="5"/>
+  <line x1="270" y1="175" x2="195" y2="155" stroke="#B71C1C" stroke-width="5"/>
+  <rect x="263" y="172" width="9" height="22" rx="3" fill="#BDBDBD" stroke="#9E9E9E" stroke-width="1"/>
+
+  <!-- Seat post and saddle -->
+  <line x1="220" y1="152" x2="220" y2="133" stroke="#333" stroke-width="5"/>
+  <ellipse cx="220" cy="131" rx="18" ry="7" fill="#212121"/>
+
+  <!-- Handlebars (raised MTB style) -->
+  <line x1="195" y1="155" x2="195" y2="128" stroke="#333" stroke-width="5"/>
+  <line x1="170" y1="122" x2="220" y2="122" stroke="#333" stroke-width="5"/>
+  <circle cx="170" cy="122" r="5" fill="#111"/>
+  <circle cx="220" cy="122" r="5" fill="#111"/>
+
+  <!-- Pedal/crank -->
+  <circle cx="195" cy="195" r="10" fill="#333"/>
+  <line x1="185" y1="205" x2="205" y2="185" stroke="#555" stroke-width="4"/>
+  <rect x="178" y="203" width="14" height="5" fill="#222" rx="2"/>
+
+  <!-- CANADA GOOSE -->
+  <!-- Body -->
+  <ellipse cx="215" cy="113" rx="42" ry="25" fill="#8D6E63" transform="rotate(-6 215 113)"/>
+  <!-- Wing pattern -->
+  <ellipse cx="204" cy="120" rx="36" ry="15" fill="#6D4C41"/>
+  <!-- Black neck -->
+  <path d="M246,105 Q268,90 273,68" stroke="#1A1A1A" stroke-width="15" fill="none" stroke-linecap="round"/>
+  <!-- White chin patch -->
+  <ellipse cx="263" cy="87" rx="10" ry="14" fill="white" transform="rotate(25 263 87)"/>
+  <!-- Head black -->
+  <circle cx="279" cy="62" r="21" fill="#1A1A1A"/>
+  <!-- Bill -->
+  <path d="M296,65 L314,68 L296,72" fill="#1C1C1C"/>
+  <!-- Eye -->
+  <circle cx="289" cy="58" r="3.5" fill="#6D4C41"/>
+  <circle cx="290" cy="57" r="1.2" fill="white"/>
+  <!-- Tail -->
+  <path d="M178,106 Q162,98 158,108 Q166,115 162,122 Q174,117 172,124" fill="#5D4037"/>
+  <!-- Feet -->
+  <line x1="210" y1="135" x2="205" y2="163" stroke="#8D6E63" stroke-width="3"/>
+  <line x1="225" y1="137" x2="230" y2="165" stroke="#8D6E63" stroke-width="3"/>
+  <line x1="199" y1="162" x2="212" y2="162" stroke="#8D6E63" stroke-width="3"/>
+  <line x1="225" y1="164" x2="238" y2="164" stroke="#8D6E63" stroke-width="3"/>
+
+  <text x="8" y="292" font-family="Georgia,serif" font-size="13" fill="#1B5E20" font-style="italic">Canada Goose · Mountain Bike</text>
+</svg>

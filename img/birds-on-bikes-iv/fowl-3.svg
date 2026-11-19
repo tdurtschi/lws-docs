@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300">
+  <title>Trumpeter swan and cygnet on a tandem</title>
+  <line x1="20" y1="262" x2="500" y2="262" stroke="#9e9e9e" stroke-width="3" stroke-linecap="round"/>
+  <!-- wheels -->
+  <g stroke="#37474f" fill="none">
+    <circle cx="95" cy="220" r="42" stroke-width="6"/>
+    <circle cx="435" cy="220" r="42" stroke-width="6"/>
+    <g stroke-width="1.5">
+      <path d="M95 178v84M53 220h84M65 190l60 60M65 250l60-60"/>
+      <path d="M435 178v84M393 220h84M405 190l60 60M405 250l60-60"/>
+    </g>
+  </g>
+  <!-- tandem frame -->
+  <g stroke="#1565c0" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M200 222L165 140"/>
+    <path d="M330 222L295 140"/>
+    <path d="M168 146L298 146"/>
+    <path d="M200 222L330 222"/>
+    <path d="M330 222L408 148"/>
+    <path d="M298 146L408 148"/>
+    <path d="M165 143L95 220"/>
+    <path d="M200 222L95 220"/>
+    <path d="M412 143L435 220"/>
+  </g>
+  <!-- cranks -->
+  <circle cx="200" cy="222" r="10" fill="none" stroke="#37474f" stroke-width="4"/>
+  <circle cx="330" cy="222" r="10" fill="none" stroke="#37474f" stroke-width="4"/>
+  <line x1="200" y1="222" x2="216" y2="244" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+  <line x1="330" y1="222" x2="346" y2="244" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M209 245h16M339 245h16" stroke="#212121" stroke-width="6" stroke-linecap="round"/>
+  <!-- saddles and bars -->
+  <path d="M149 138h32M279 138h32" stroke="#212121" stroke-width="8" stroke-linecap="round"/>
+  <path d="M408 148L412 128h18" fill="none" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M295 140L292 122h-20" fill="none" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+  <!-- cygnet (rear seat, front of image? no—stoker sits at rear saddle x=165) -->
+  <ellipse cx="162" cy="112" rx="28" ry="20" fill="#b0bec5"/>
+  <path d="M138 104 l-18 -8 4 10 -6 8 14 2z" fill="#90a4ae"/>
+  <path d="M180 100 C190 92 194 82 194 72" stroke="#90a4ae" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <circle cx="196" cy="68" r="10" fill="#b0bec5"/>
+  <path d="M205 66 L219 70 L205 73 Z" fill="#616161"/>
+  <circle cx="199" cy="65" r="1.8" fill="#111"/>
+  <path d="M150 104 C170 106 210 116 268 122 C220 124 176 122 152 118 Z" fill="#90a4ae"/>
+  <polyline points="172,128 190,190 213,242" fill="none" stroke="#616161" stroke-width="5" stroke-linecap="round"/>
+  <!-- adult trumpeter swan (captain, front saddle x=295) -->
+  <path d="M262 100 l-22 -10 5 12 -7 10 17 1z" fill="#eceff1"/>
+  <ellipse cx="298" cy="106" rx="40" ry="26" fill="#fafafa" stroke="#cfd8dc" stroke-width="2"/>
+  <path d="M322 92 C338 80 344 62 342 44" stroke="#fafafa" stroke-width="13" fill="none" stroke-linecap="round"/>
+  <circle cx="344" cy="40" r="13" fill="#fafafa"/>
+  <path d="M355 38 L376 44 L355 48 Z" fill="#212121"/>
+  <path d="M350 34 C354 32 358 33 360 37" stroke="#212121" stroke-width="3" fill="none"/>
+  <circle cx="348" cy="36" r="2.2" fill="#111"/>
+  <path d="M286 96 C310 98 356 110 402 124 C356 126 314 122 288 116 Z" fill="#eceff1"/>
+  <polyline points="308,128 324,190 343,242" fill="none" stroke="#455a64" stroke-width="6" stroke-linecap="round"/>
+  <path d="M335 244h18" stroke="#455a64" stroke-width="5" stroke-linecap="round"/>
+</svg>
