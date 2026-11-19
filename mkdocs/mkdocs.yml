@@ -4,8 +4,6 @@ site_url: https://tdurtschi.github.io/lws-docs/
 nav:
   - Home: index.md
   - Links: links.md
-  - TDD: tdd.md
-  - Refactoring: refactoring.md
   - Developer Experience: dev-experience.md
   - Docker: docker.md
   - .NET: dotnet.md
