@@ -10,7 +10,6 @@
 ## Fun
 - [Internet Checkpoint](https://internetcheckpoint.page/)
 - [Universal Paperclips](https://www.decisionproblem.com/paperclips/index2.html)
-- [Elevator Saga 2](https://tdurtschi.github.io/elevator-saga-2/)
 
 ## AI Learning resources
 - [AI Katas](https://github.com/AI-Engineering-Katas/ai-katas/tree/main/katas)
