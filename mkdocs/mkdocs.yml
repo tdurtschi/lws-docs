@@ -3,8 +3,6 @@ theme: readthedocs
 site_url: https://tdurtschi.github.io/lws-docs/
 nav:
   - Home: index.md
-  - Links: links.md
-  - Projects: projects.md
   - Articles:
       - TDD: tdd.md
       - Refactoring: refactoring.md
