@@ -1,0 +1,66 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tandem Loon Couple -->
+  <defs>
+    <style>
+      .bird { fill: #2a2a3a; stroke: #1a1a2a; stroke-width: 2; }
+      .eye { fill: #ff0000; }
+      .bike { stroke: #666; stroke-width: 2; fill: none; }
+      .metal { fill: #888; stroke: #555; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#5a7a8a"/>
+
+  <!-- Back wheel -->
+  <circle cx="330" cy="200" r="38" class="bike"/>
+  <circle cx="330" cy="200" r="3" class="metal"/>
+
+  <!-- Front wheel -->
+  <circle cx="100" cy="200" r="38" class="bike"/>
+  <circle cx="100" cy="200" r="3" class="metal"/>
+
+  <!-- Long tandem frame -->
+  <line x1="100" y1="140" x2="330" y2="200" class="bike" stroke-width="2"/>
+  <line x1="100" y1="140" x2="70" y2="200" class="bike"/>
+  <line x1="330" y1="200" x2="70" y2="200" class="bike"/>
+
+  <!-- Two seats (back and front) -->
+  <ellipse cx="170" cy="130" rx="12" ry="8" class="metal"/>
+  <ellipse cx="260" cy="145" rx="12" ry="8" class="metal"/>
+
+  <!-- Front handlebar -->
+  <line x1="100" y1="140" x2="100" y2="110" class="bike"/>
+  <line x1="85" y1="105" x2="115" y2="105" class="bike"/>
+
+  <!-- Rear handlebar -->
+  <line x1="260" y1="145" x2="280" y2="120" class="bike"/>
+
+  <!-- Front loon body -->
+  <ellipse cx="165" cy="110" rx="30" ry="38" class="bird"/>
+
+  <!-- Front loon head -->
+  <circle cx="180" cy="70" r="14" class="bird"/>
+
+  <!-- Front loon eye (red) -->
+  <circle cx="187" cy="68" r="3" class="eye"/>
+
+  <!-- Front loon beak -->
+  <polygon points="195,70 215,68 195,72" fill="#333"/>
+
+  <!-- Back loon body -->
+  <ellipse cx="260" cy="125" rx="32" ry="36" class="bird"/>
+
+  <!-- Back loon head -->
+  <circle cx="275" cy="85" r="14" class="bird"/>
+
+  <!-- Back loon eye -->
+  <circle cx="282" cy="83" r="3" class="eye"/>
+
+  <!-- Back loon beak -->
+  <polygon points="290,85 310,83 290,87" fill="#333"/>
+
+  <!-- Pedals (tandem) -->
+  <circle cx="140" cy="160" r="4" class="metal"/>
+  <circle cx="230" cy="160" r="4" class="metal"/>
+</svg>

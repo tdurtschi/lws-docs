@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Mute swan on a Dutch city bike</title>
+  <line x1="20" y1="262" x2="380" y2="262" stroke="#9e9e9e" stroke-width="3" stroke-linecap="round"/>
+  <!-- wheels with fenders -->
+  <g stroke="#37474f" fill="none">
+    <circle cx="105" cy="220" r="42" stroke-width="6"/>
+    <circle cx="295" cy="220" r="42" stroke-width="6"/>
+    <g stroke-width="1.5">
+      <path d="M105 178v84M63 220h84M75 190l60 60M75 250l60-60"/>
+      <path d="M295 178v84M253 220h84M265 190l60 60M265 250l60-60"/>
+    </g>
+  </g>
+  <path d="M57 218 A48 48 0 0 1 153 218" fill="none" stroke="#1b5e20" stroke-width="7"/>
+  <path d="M247 218 A48 48 0 0 1 343 218" fill="none" stroke="#1b5e20" stroke-width="7"/>
+  <!-- step-through frame -->
+  <g stroke="#2e7d32" stroke-width="7" fill="none" stroke-linecap="round">
+    <path d="M195 222L165 138"/>
+    <path d="M165 145 C200 195 240 205 268 150"/>
+    <path d="M165 143L105 220"/>
+    <path d="M195 222L105 220"/>
+    <path d="M272 145L295 220"/>
+  </g>
+  <!-- chain guard -->
+  <ellipse cx="205" cy="224" rx="26" ry="14" fill="#1b5e20"/>
+  <!-- swept-back bars -->
+  <path d="M268 150 L272 122 C262 116 250 118 244 126" fill="none" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+  <!-- wicker basket -->
+  <path d="M282 130 h44 l-6 30 h-32 Z" fill="#d7a86e" stroke="#8d6e63" stroke-width="2"/>
+  <path d="M285 140h38M287 150h34" stroke="#8d6e63" stroke-width="1.5"/>
+  <!-- sprung saddle -->
+  <path d="M147 136h36" stroke="#4e342e" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="195" cy="222" r="6" fill="#37474f"/>
+  <line x1="195" y1="222" x2="212" y2="245" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M204 246h18" stroke="#212121" stroke-width="6" stroke-linecap="round"/>
+  <!-- mute swan -->
+  <path d="M128 96 l-24 -12 5 14 -7 12 19 0z" fill="#eceff1"/>
+  <ellipse cx="166" cy="108" rx="43" ry="28" fill="#fafafa" stroke="#cfd8dc" stroke-width="2"/>
+  <path d="M192 94 C212 88 222 72 220 52" stroke="#fafafa" stroke-width="13" fill="none" stroke-linecap="round"/>
+  <circle cx="221" cy="46" r="13" fill="#fafafa"/>
+  <path d="M232 44 L252 49 L232 53 Z" fill="#ef6c00"/>
+  <path d="M230 40 l4 -4 3 5 Z" fill="#212121"/>
+  <circle cx="225" cy="42" r="2.2" fill="#111"/>
+  <path d="M154 98 C180 98 224 112 258 128 C224 128 184 124 158 118 Z" fill="#eceff1"/>
+  <polyline points="180,132 196,192 211,243" fill="none" stroke="#455a64" stroke-width="6" stroke-linecap="round"/>
+  <path d="M203 244h17" stroke="#455a64" stroke-width="5" stroke-linecap="round"/>
+</svg>

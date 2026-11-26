@@ -1,0 +1,63 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tricycle Harlequin Duck -->
+  <defs>
+    <style>
+      .bird { fill: #4a5a7a; stroke: #2a3a5a; stroke-width: 2; }
+      .eye { fill: #ffff00; }
+      .bike { stroke: #4499ff; stroke-width: 2.5; fill: none; }
+      .metal { fill: #0066cc; stroke: #003d7a; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Ground -->
+  <rect y="250" width="400" height="50" fill="#5a7a9a"/>
+
+  <!-- Back left wheel -->
+  <circle cx="240" cy="220" r="32" class="bike"/>
+  <circle cx="240" cy="220" r="3" class="metal"/>
+
+  <!-- Back right wheel -->
+  <circle cx="300" cy="220" r="32" class="bike"/>
+  <circle cx="300" cy="220" r="3" class="metal"/>
+
+  <!-- Front wheel -->
+  <circle cx="140" cy="180" r="32" class="bike"/>
+  <circle cx="140" cy="180" r="3" class="metal"/>
+
+  <!-- Tricycle frame -->
+  <path d="M 140 140 L 270 200" class="bike" stroke-width="3"/>
+  <line x1="240" y1="220" x2="300" y2="220" class="bike" stroke-width="3"/>
+  <line x1="270" y1="200" x2="240" y2="220" class="bike" stroke-width="2.5"/>
+  <line x1="270" y1="200" x2="300" y2="220" class="bike" stroke-width="2.5"/>
+
+  <!-- Handlebar -->
+  <line x1="140" y1="140" x2="140" y2="110" class="bike"/>
+  <line x1="125" y1="105" x2="155" y2="105" class="bike" stroke-width="2"/>
+
+  <!-- Seat (tricycle position) -->
+  <ellipse cx="190" cy="125" rx="16" ry="10" class="metal"/>
+
+  <!-- Harlequin duck body (colorful, patterned) -->
+  <ellipse cx="190" cy="105" rx="34" ry="36" class="bird"/>
+
+  <!-- Body pattern (harlequin mask) -->
+  <circle cx="205" cy="95" r="10" fill="#5a9a3a" opacity="0.5"/>
+  <circle cx="175" cy="100" r="8" fill="#ff6600" opacity="0.4"/>
+
+  <!-- Harlequin duck head -->
+  <circle cx="210" cy="68" r="14" class="bird"/>
+
+  <!-- Harlequin distinctive facial markings -->
+  <circle cx="205" cy="64" r="6" fill="#fff" opacity="0.6"/>
+  <circle cx="218" cy="62" r="5" fill="#fff" opacity="0.6"/>
+
+  <!-- Harlequin yellow eye -->
+  <circle cx="215" cy="66" r="3" class="eye"/>
+
+  <!-- Harlequin beak -->
+  <polygon points="224,68 244,66 224,70" fill="#999"/>
+
+  <!-- Pedals (tricycle) -->
+  <circle cx="160" cy="155" r="5" class="metal"/>
+  <circle cx="210" cy="155" r="5" class="metal"/>
+</svg>

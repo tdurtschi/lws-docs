@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Common goldeneye on a recumbent</title>
+  <line x1="20" y1="262" x2="380" y2="262" stroke="#9e9e9e" stroke-width="3" stroke-linecap="round"/>
+  <!-- small front wheel, larger rear -->
+  <g stroke="#37474f" fill="none">
+    <circle cx="320" cy="222" r="40" stroke-width="6"/>
+    <circle cx="80" cy="234" r="28" stroke-width="6"/>
+    <g stroke-width="1.5">
+      <path d="M320 182v80M280 222h80M292 194l56 56M292 250l56-56"/>
+      <path d="M80 206v56M52 234h56"/>
+    </g>
+  </g>
+  <!-- long low boom frame -->
+  <path d="M80 234 L150 226 L250 218 L320 222" fill="none" stroke="#ef6c00" stroke-width="9" stroke-linecap="round"/>
+  <!-- reclined seat with backrest -->
+  <path d="M200 218 L240 214 L262 168" fill="none" stroke="#37474f" stroke-width="9" stroke-linecap="round"/>
+  <!-- boom crank out front -->
+  <path d="M80 234 L48 210" stroke="#ef6c00" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="46" cy="208" r="9" fill="none" stroke="#212121" stroke-width="4"/>
+  <line x1="46" y1="208" x2="34" y2="192" stroke="#212121" stroke-width="4" stroke-linecap="round"/>
+  <line x1="46" y1="208" x2="58" y2="224" stroke="#212121" stroke-width="4" stroke-linecap="round"/>
+  <path d="M28 191h14M52 225h14" stroke="#424242" stroke-width="5" stroke-linecap="round"/>
+  <!-- high bars -->
+  <path d="M150 226 L142 172 h-20" fill="none" stroke="#212121" stroke-width="5" stroke-linecap="round"/>
+  <!-- goldeneye lounging back -->
+  <path d="M280 176 l22 -20 -4 16 10 8 -20 6z" fill="#212121"/>
+  <ellipse cx="228" cy="184" rx="44" ry="26" transform="rotate(-14 228 184)" fill="#fafafa" stroke="#e0e0e0" stroke-width="2"/>
+  <path d="M232 162 C226 176 216 188 204 194 L242 194 C242 182 238 170 236 162 Z" fill="#212121"/>
+  <path d="M196 176 C178 170 164 160 156 146" stroke="#1b3b1b" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <circle cx="152" cy="138" r="16" fill="#1b3b1b"/>
+  <circle cx="160" cy="146" r="4.5" fill="#fafafa"/>
+  <path d="M138 140 L120 146 L139 149 Z" fill="#212121"/>
+  <circle cx="147" cy="134" r="2.6" fill="#ffd600"/>
+  <circle cx="147" cy="134" r="1.2" fill="#111"/>
+  <path d="M240 168 C226 176 208 184 190 188 C210 194 232 196 250 192 Z" fill="#eceff1"/>
+  <polyline points="196,196 130,206 56,222" fill="none" stroke="#ef6c00" stroke-width="6" stroke-linecap="round"/>
+  <path d="M50 224 l14 3" stroke="#ef6c00" stroke-width="5" stroke-linecap="round"/>
+</svg>

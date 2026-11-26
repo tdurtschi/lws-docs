@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Ruddy Duck on Unicycle</title>
+  <rect width="400" height="300" fill="#F5D3A5"/>
+  <rect y="255" width="400" height="45" fill="#B85C2A"/>
+  <!-- Unicycle: single wheel -->
+  <circle cx="200" cy="220" r="45" fill="none" stroke="#111" stroke-width="4"/>
+  <circle cx="200" cy="220" r="6" fill="#111"/>
+  <g stroke="#111" stroke-width="1.2">
+    <line x1="200" y1="175" x2="200" y2="265"/>
+    <line x1="155" y1="220" x2="245" y2="220"/>
+    <line x1="170" y1="190" x2="230" y2="250"/>
+    <line x1="230" y1="190" x2="170" y2="250"/>
+    <line x1="165" y1="205" x2="235" y2="235"/>
+    <line x1="235" y1="205" x2="165" y2="235"/>
+  </g>
+  <!-- Seat post and seat -->
+  <line x1="200" y1="220" x2="200" y2="155" stroke="#333" stroke-width="4"/>
+  <ellipse cx="200" cy="152" rx="26" ry="6" fill="#5a2f14"/>
+  <path d="M 175 150 L 225 150 L 220 156 L 180 156 Z" fill="#3a1e0a"/>
+  <!-- Pedal cranks -->
+  <line x1="200" y1="220" x2="230" y2="235" stroke="#333" stroke-width="3"/>
+  <line x1="200" y1="220" x2="170" y2="205" stroke="#333" stroke-width="3"/>
+  <rect x="228" y="232" width="10" height="8" fill="#111"/>
+  <rect x="162" y="200" width="10" height="8" fill="#111"/>
+  <!-- Ruddy Duck: chestnut body, blue beak, white cheek, stiff tail -->
+  <ellipse cx="200" cy="125" rx="36" ry="20" fill="#a0522d"/>
+  <ellipse cx="180" cy="125" rx="15" ry="10" fill="#7a3f1e"/>
+  <!-- Stiff upturned tail -->
+  <polygon points="232,125 260,105 240,130" fill="#3a2a1a"/>
+  <path d="M 232 122 L 258 108 L 254 112 M 234 128 L 258 115 L 253 118" stroke="#5a4a30" stroke-width="1"/>
+  <circle cx="180" cy="103" r="16" fill="#2a1a0f"/>
+  <!-- White cheek patch -->
+  <ellipse cx="172" cy="108" rx="10" ry="6" fill="#fff"/>
+  <!-- Blue beak -->
+  <polygon points="165,108 145,110 165,116" fill="#2e86de"/>
+  <path d="M 145 110 L 155 110" stroke="#1a5a9c" stroke-width="1"/>
+  <circle cx="180" cy="102" r="2" fill="#f5c451"/>
+  <circle cx="180" cy="102" r="1" fill="#000"/>
+  <line x1="200" y1="145" x2="200" y2="175" stroke="#7a3f1e" stroke-width="3"/>
+</svg>

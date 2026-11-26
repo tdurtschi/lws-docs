@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Snow Goose on Folding Bike</title>
+  <rect width="400" height="300" fill="#E8F0FA"/>
+  <rect y="255" width="400" height="45" fill="#B9C4D3"/>
+  <!-- Folding bike: small wheels, hinged frame -->
+  <circle cx="110" cy="230" r="26" fill="none" stroke="#111" stroke-width="4"/>
+  <circle cx="290" cy="230" r="26" fill="none" stroke="#111" stroke-width="4"/>
+  <g stroke="#111" stroke-width="1">
+    <line x1="110" y1="204" x2="110" y2="256"/>
+    <line x1="84" y1="230" x2="136" y2="230"/>
+    <line x1="290" y1="204" x2="290" y2="256"/>
+    <line x1="264" y1="230" x2="316" y2="230"/>
+  </g>
+  <!-- Frame with hinge in middle -->
+  <line x1="110" y1="230" x2="195" y2="180" stroke="#d84315" stroke-width="7"/>
+  <circle cx="195" cy="180" r="6" fill="#f5f5f5" stroke="#111" stroke-width="2"/>
+  <line x1="195" y1="180" x2="290" y2="230" stroke="#d84315" stroke-width="7"/>
+  <line x1="200" y1="180" x2="200" y2="140" stroke="#d84315" stroke-width="7"/>
+  <line x1="200" y1="140" x2="185" y2="130" stroke="#111" stroke-width="4"/>
+  <line x1="200" y1="140" x2="215" y2="130" stroke="#111" stroke-width="4"/>
+  <line x1="285" y1="230" x2="270" y2="180" stroke="#d84315" stroke-width="7"/>
+  <rect x="262" y="172" width="20" height="7" fill="#111" rx="1"/>
+  <!-- Snow Goose -->
+  <ellipse cx="230" cy="150" rx="42" ry="24" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <path d="M 265 155 Q 275 155 275 165 L 262 165 Z" fill="#1a1a1a"/>
+  <path d="M 268 145 Q 278 148 275 158 L 262 152 Z" fill="#1a1a1a"/>
+  <circle cx="195" cy="128" r="18" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <polygon points="177,128 158,127 177,134" fill="#d84315"/>
+  <path d="M 172 128 L 158 127 L 172 130" fill="#8b1a0f"/>
+  <path d="M 168 132 Q 172 134 168 136" stroke="#8b1a0f" stroke-width="1" fill="none"/>
+  <circle cx="192" cy="123" r="2" fill="#000"/>
+  <line x1="230" y1="172" x2="200" y2="220" stroke="#d84315" stroke-width="3"/>
+</svg>

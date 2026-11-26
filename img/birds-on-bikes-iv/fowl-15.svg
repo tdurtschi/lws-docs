@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <title>Brant goose on an e-bike</title>
+  <line x1="20" y1="262" x2="380" y2="262" stroke="#9e9e9e" stroke-width="3" stroke-linecap="round"/>
+  <!-- wheels, rear hub motor -->
+  <g stroke="#37474f" fill="none">
+    <circle cx="105" cy="220" r="42" stroke-width="6"/>
+    <circle cx="295" cy="220" r="42" stroke-width="6"/>
+    <g stroke-width="1.5">
+      <path d="M105 178v84M63 220h84M75 190l60 60M75 250l60-60"/>
+      <path d="M295 178v84M253 220h84M265 190l60 60M265 250l60-60"/>
+    </g>
+  </g>
+  <circle cx="105" cy="220" r="14" fill="#546e7a" stroke="#37474f" stroke-width="3"/>
+  <!-- stout frame -->
+  <g stroke="#00838f" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M195 222L163 142"/>
+    <path d="M195 222L266 148"/>
+    <path d="M166 148L266 148"/>
+    <path d="M163 145L105 220"/>
+    <path d="M195 222L105 220"/>
+    <path d="M270 143L295 220"/>
+  </g>
+  <!-- battery on down tube -->
+  <rect x="196" y="172" width="52" height="16" rx="4" transform="rotate(-40 222 180)" fill="#263238"/>
+  <path d="M226 166 l-6 10 h8 l-6 10" stroke="#ffd600" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- display on bars -->
+  <path d="M266 148L262 128h-24" fill="none" stroke="#212121" stroke-width="5" stroke-linecap="round"/>
+  <rect x="248" y="118" width="14" height="9" rx="2" fill="#00e5ff"/>
+  <path d="M147 140h32" stroke="#212121" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="195" cy="222" r="10" fill="none" stroke="#37474f" stroke-width="4"/>
+  <line x1="195" y1="222" x2="212" y2="245" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M204 246h18" stroke="#212121" stroke-width="6" stroke-linecap="round"/>
+  <!-- brant: black head/neck/chest with white necklace, pale flanks -->
+  <path d="M132 100 l-24 -12 5 14 -7 12 19 0z" fill="#455a64"/>
+  <ellipse cx="168" cy="112" rx="41" ry="26" fill="#78909c"/>
+  <path d="M144 118 C156 126 172 130 186 128 L186 116 C170 120 154 118 146 112 Z" fill="#eceff1"/>
+  <path d="M190 100 C186 122 178 132 170 138 L202 130 C203 116 199 106 196 98 Z" fill="#212121"/>
+  <path d="M196 102 C212 96 226 86 232 72" stroke="#212121" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M212 92 l6 6 M218 86 l6 6" stroke="#fafafa" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="236" cy="64" r="14" fill="#212121"/>
+  <path d="M248 62 L266 66 L248 70 Z" fill="#37474f"/>
+  <circle cx="240" cy="60" r="2.4" fill="#fff"/>
+  <path d="M156 102 C182 102 222 116 254 132 C222 132 186 126 160 120 Z" fill="#546e7a"/>
+  <polyline points="182,134 196,192 211,243" fill="none" stroke="#37474f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M203 244h17" stroke="#37474f" stroke-width="5" stroke-linecap="round"/>
+</svg>
